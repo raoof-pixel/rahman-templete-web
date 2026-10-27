@@ -1,7 +1,7 @@
 'use client'
 /* Generated from the CanadianSME design prototype (CanadianSME Homepage.dc.html), then wired to CMS data.
    Markup and inline styles are kept 1:1 with the prototype; hover/focus styles live in states.css. */
-import { Fragment } from 'react'
+import { Fragment, type CSSProperties } from 'react'
 
 import { useV } from '../context'
 import { u } from '../href'
@@ -1220,7 +1220,7 @@ export default function Home() {
                           Latest
                         </span>
                         {" "}
-                        <a href={u(t?.latestHref)} title={t?.latestTitle} style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "15px", lineHeight: "1.4", height: "42px", color: "#14181D", display: "-webkit-box", WebkitLineClamp: "2", WebkitBoxOrient: "vertical", overflow: "hidden", "--h0": t?.ink }} className="h_184f6d5">
+                        <a href={u(t?.latestHref)} title={t?.latestTitle} style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "15px", lineHeight: "1.4", height: "42px", color: "#14181D", display: "-webkit-box", WebkitLineClamp: "2", WebkitBoxOrient: "vertical", overflow: "hidden", "--h0": t?.ink } as CSSProperties} className="h_184f6d5">
                           {t?.latestTitle}
                         </a>
                         {" "}

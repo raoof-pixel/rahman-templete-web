@@ -722,7 +722,7 @@ export default function Advertise() {
                 <span style={{ fontWeight: "400", color: "#5A6470", fontFamily: "inherit" }}>
                   Your brand, audience, goals, key dates and anything else we should know.
                 </span>
-                <textarea id="adv-details" ref={v.advRefdetails} rows="6" required={true} aria-required="true" aria-invalid={v.advInvdetails} aria-describedby="adv-details-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#14181D", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBddetails ?? ""}`, resize: "vertical" }} className="f_d9ff5e2">
+                <textarea id="adv-details" ref={v.advRefdetails} rows={6} required={true} aria-required="true" aria-invalid={v.advInvdetails} aria-describedby="adv-details-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#14181D", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBddetails ?? ""}`, resize: "vertical" }} className="f_d9ff5e2">
 
                 </textarea>
                 <span id="adv-details-err" style={{ fontFamily: "inherit", fontWeight: "500", fontSize: "13px", color: "#B42318", minHeight: "0" }}>

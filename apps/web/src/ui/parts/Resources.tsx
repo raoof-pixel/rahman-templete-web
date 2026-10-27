@@ -63,7 +63,7 @@ export default function Resources() {
                       {" "}
                       <article style={{ display: "flex", flexDirection: "column", gap: "12px", height: "100%" }}>
                         {" "}
-                        <div role="button" tabIndex="0" aria-label={`Download ${r?.title ?? ""}`} onClick={r?.openGate} onKeyDown={r?.gateKey} style={{ position: "relative", display: "block", aspectRatio: "3/4", border: "1px solid #E4E7EC", borderRadius: "10px", overflow: "hidden", background: "#fff", boxShadow: "0 8px 20px rgba(16,24,40,0.06)", cursor: "pointer" }} className="h_ed6f648">
+                        <div role="button" tabIndex={0} aria-label={`Download ${r?.title ?? ""}`} onClick={r?.openGate} onKeyDown={r?.gateKey} style={{ position: "relative", display: "block", aspectRatio: "3/4", border: "1px solid #E4E7EC", borderRadius: "10px", overflow: "hidden", background: "#fff", boxShadow: "0 8px 20px rgba(16,24,40,0.06)", cursor: "pointer" }} className="h_ed6f648">
                           <Slot id={r?.slot} shape="rect" placeholder={r?.image} />
                         </div>
                         {" "}

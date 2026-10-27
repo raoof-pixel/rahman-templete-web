@@ -27,6 +27,12 @@ const post = {
   html: '%%BODY%%',
   source: '',
   tags: [],
+  imgWidth: 0,
+  imgHeight: 0,
+  imgLarge: '',
+  audio: '',
+  listen: true,
+  extras: {},
 }
 
 export default async function PreviewTemplate() {

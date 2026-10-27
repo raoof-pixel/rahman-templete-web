@@ -115,7 +115,7 @@ export default function Contact() {
             {" "}
             <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#5A6470" }}>
               Message
-              <textarea ref={v.cMsgRef} rows="5" style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #D0D5DD", fontSize: "14px", fontFamily: "inherit", resize: "vertical" }}>
+              <textarea ref={v.cMsgRef} rows={5} style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #D0D5DD", fontSize: "14px", fontFamily: "inherit", resize: "vertical" }}>
 
               </textarea>
             </label>
