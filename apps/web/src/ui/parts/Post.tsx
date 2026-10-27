@@ -91,14 +91,14 @@ export default function Post() {
             <>
               {/* Shown at its real shape: banners with text are never cropped. */}
               <div data-preview-hero="" style={{ borderRadius: "10px", overflow: "hidden", border: "1px solid #E4E7EC", marginBottom: "14px", background: "#F4F6F8", display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <img src={v.post?.img} alt={v.post?.alt} style={{ display: "block", width: "auto", maxWidth: "100%", height: "auto", maxHeight: "680px" }} />
+                <img src={v.post?.img} srcSet={v.post?.imgLarge ? `${v.post?.img} 1280w, ${v.post?.imgLarge} 1920w` : undefined} sizes={v.post?.imgLarge ? "(max-width: 1280px) 100vw, 1232px" : undefined} width={v.post?.imgWidth || undefined} height={v.post?.imgHeight || undefined} alt={v.post?.alt} fetchPriority="high" style={{ display: "block", width: "auto", maxWidth: "100%", height: "auto", maxHeight: "680px" }} />
               </div>
               <p style={{ fontSize: "12.5px", color: "#5A6470", marginBottom: "40px" }}>{v.post?.caption}</p>
             </>
           ) : null}
           <div style={{ display: "grid", gridTemplateColumns: v.postCols, gap: "48px", alignItems: "start" }}>
             <div style={{ maxWidth: "68ch", minWidth: "0", fontSize: "18px", lineHeight: "30px", color: "#14181D", display: "flex", flexDirection: "column", gap: "0" }}>
-              <ArticleTools key={v.post?.slug} quickRead={v.postQuickRead} readTime={v.post?.read} />
+              <ArticleTools key={v.post?.slug} quickRead={v.postQuickRead} readTime={v.post?.read} audio={v.post?.audio} listen={v.post?.listen !== false} />
               {v.postBody}
               <div data-csme-noread="" style={{ display: "flex", gap: "18px", alignItems: "flex-start", padding: "22px", border: "1px solid #E4E7EC", borderRadius: "10px", marginTop: "14px" }}>
                 <div aria-hidden="true" style={{ width: "96px", height: "96px", borderRadius: "50%", overflow: "hidden", flexShrink: "0", background: "#101828", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "28px", letterSpacing: "0.02em" }}>

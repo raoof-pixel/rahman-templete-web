@@ -23,6 +23,7 @@
     "audit": "pnpm audit --prod",
     "test": "pnpm test:security && pnpm test:site",
     "seed:prototype": "cross-env NODE_OPTIONS=--no-deprecation tsx --env-file-if-exists=.env src/scripts/seed-prototype.ts",
+    "seed:extras": "cross-env NODE_OPTIONS=--no-deprecation tsx --env-file-if-exists=.env src/scripts/seed-article-extras.ts",
     "test:site": "tsx --tsconfig tsconfig.test.json --test src/site/__tests__/*.test.ts"
   },
   "dependencies": {

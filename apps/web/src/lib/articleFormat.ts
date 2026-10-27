@@ -3,29 +3,16 @@
  * without changing its words.
  *  1. cleans stray markdown (**, *) and styles "Interview by …" credit lines
  *  2. turns bold interview questions / short bold lines into headings (sidebar "In this article")
- *  3. adds editorial extras from `article-extras.json` (made per article, checked against the text):
- *     section headings for articles without any, short sidebar labels, a verbatim pull quote,
- *     verbatim key figures. Anything that does not match the article text is skipped.
- * Styles live in app/site.css (.csme-prose …).
+ *  3. adds the article's "AI & layout" extras from the CMS (PostFull.extras): section headings for
+ *     articles without any, short sidebar labels, a verbatim pull quote, verbatim key figures.
+ *     Anything that does not match the article text is skipped.
+ * Styles live in ui/article-tools.css (.csme-prose …).
  */
-import extrasData from '@/data/article-extras.json'
+import type { ArticleExtras } from '@canadiansme/shared'
 
-export type QuickRead = { points: string[]; reviewed: boolean }
-export type ArticleExtras = {
-  quickRead?: QuickRead
-  pull?: string
-  stats?: { value: string; label: string }[]
-  /** short sidebar label, keyed by textKey(heading) */
-  labels?: Record<string, string>
-  /** section headings for articles without any, placed before the paragraph whose textKey matches */
-  sections?: { before: string; text: string }[]
-}
+export type QuickRead = NonNullable<ArticleExtras['quickRead']>
 export type TocItem = { id: string; label: string }
 export type FormattedArticle = { html: string; toc: TocItem[] }
-
-const EXTRAS = extrasData as Record<string, ArticleExtras>
-
-export const extrasFor = (slug: string | undefined): ArticleExtras => (slug && EXTRAS[slug]) || {}
 
 const ENT: Record<string, string> = { '&nbsp;': ' ', '&amp;': '&', '&#8217;': '’', '&#8216;': '‘', '&#8220;': '“', '&#8221;': '”', '&#8211;': '–', '&#8212;': '—', '&quot;': '"', '&#39;': "'" }
 
@@ -52,12 +39,18 @@ const isBoldOnly = (block: string) => {
 
 const cache = new Map<string, FormattedArticle>()
 
-export function formatArticle(html: string, slug?: string): FormattedArticle {
-  const cacheKey = (slug || '') + ':' + (html || '').length
+/** Matches a heading/paragraph to an editor-entered snippet: same text, or starts with it (15+ chars). */
+const matches = (text: string, snippet: string) => {
+  const a = textKey(text)
+  const b = textKey(snippet)
+  return Boolean(b) && (a === b || (b.length >= 15 && a.startsWith(b)))
+}
+
+export function formatArticle(html: string, slug?: string, extras: ArticleExtras = {}): FormattedArticle {
+  const cacheKey = (slug || '') + ':' + (html || '').length + ':' + JSON.stringify(extras).length
   const hit = cache.get(cacheKey)
   if (hit) return hit
 
-  const extras = extrasFor(slug)
   // Split into known blocks; anything between them (h5/h6, hr, embeds, stray text) is kept untouched.
   const src = html || ''
   const blocks: string[] = []
@@ -70,8 +63,8 @@ export function formatArticle(html: string, slug?: string): FormattedArticle {
   }
   if (src.slice(last).trim()) blocks.push(src.slice(last))
   const fullText = plainText(html)
-  const sections = new Map((extras.sections || []).map((s) => [s.before, s.text]))
-  const labels = extras.labels || {}
+  const sections = [...(extras.sections || [])]
+  const labels = extras.labels || []
   const toc: TocItem[] = []
   const out: string[] = []
   let n = 0
@@ -79,7 +72,7 @@ export function formatArticle(html: string, slug?: string): FormattedArticle {
 
   const heading = (text: string, inner: string, question: boolean) => {
     const id = 'sec-' + ++n
-    const label = labels[textKey(text)] || (text.length > 60 ? text.slice(0, 56).replace(/\s+\S*$/, '') + '…' : text)
+    const label = labels.find((l) => matches(text, l.heading))?.label || (text.length > 60 ? text.slice(0, 56).replace(/\s+\S*$/, '') + '…' : text)
     toc.push({ id, label })
     return `<h2 id="${id}"${question ? ' class="csme-q"' : ''}>${inner}</h2>`
   }
@@ -88,8 +81,12 @@ export function formatArticle(html: string, slug?: string): FormattedArticle {
     const tag = (b.match(/^<(p|h2|h3|h4|ul|ol|blockquote|figure|div|table)\b/) || [])[1]
     const raw = plainText(b)
     const t = raw.replace(/\*+/g, '').trim()
-    const added = tag === 'p' ? sections.get(textKey(t)) : undefined
-    if (added) out.push(heading(added, esc(added), false))
+    // AI section heading placed before this paragraph (each heading used once)
+    const si = tag === 'p' && t ? sections.findIndex((x) => matches(t, x.before)) : -1
+    if (si !== -1) {
+      const added = sections.splice(si, 1)[0].text
+      out.push(heading(added, esc(added), false))
+    }
     if (tag === 'p' && CREDIT.test(raw)) {
       out.push(`<p class="csme-credit">${esc(t)}</p>`)
       return

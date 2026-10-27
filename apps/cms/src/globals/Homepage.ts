@@ -160,7 +160,7 @@ export const Homepage: GlobalConfig = {
           {
             name: 'tools',
             type: 'array',
-            maxRows: 6,
+            maxRows: 8, // the design shows 7 tools (GST/HST, payroll, cash flow, loan, self-employed, import, pricing)
             fields: [
               { name: 'mark', type: 'text', admin: { description: 'Short symbol, e.g. "%" or "$".' } },
               { name: 'title', type: 'text', required: true },

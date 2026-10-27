@@ -14,7 +14,7 @@ export const rows = <T = Doc>(v: unknown): T[] => (Array.isArray(v) ? (v as T[])
 export const texts = (v: unknown): string[] => rows<Doc>(v).map((r) => str(r?.text)).filter(Boolean)
 
 /** Absolute URL of a media document (or a size of it). Local-storage URLs are relative to the CMS. */
-export const mediaUrl = (m: unknown, base: string, size?: 'thumbnail' | 'card' | 'large' | 'og'): string => {
+export const mediaUrl = (m: unknown, base: string, size?: 'thumbnail' | 'card' | 'large' | 'xlarge' | 'og'): string => {
   const d = obj(m)
   if (!d) return ''
   const u = str((size && d.sizes?.[size]?.url) || d.url || d.wpUrl)

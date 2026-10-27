@@ -179,6 +179,29 @@ export type PostFull = {
   html: string
   source: string // original press-release URL or ""
   tags: Link[]
+  /** Featured image at its real size (pixels), so the page reserves space and never crops it. */
+  imgWidth: number
+  imgHeight: number
+  /** Larger WebP for wide/high-density screens ("" if the original is smaller). */
+  imgLarge: string
+  /** Article's own recording (MP3 URL) or "". When set, Listen plays it instead of the browser voice. */
+  audio: string
+  /** false hides the Listen bar for this article. */
+  listen: boolean
+  /** Quick Read + layout extras ("AI & layout" in the CMS). */
+  extras: ArticleExtras
+}
+/** "AI & layout" extras for the #a1 article layout. Never changes the article text. */
+export type ArticleExtras = {
+  quickRead?: { points: string[]; reviewed: boolean }
+  /** one sentence copied exactly from the article */
+  pull?: string
+  /** numbers stated in the article; shown only when every value appears in the text */
+  stats?: { value: string; label: string }[]
+  /** short "In this article" labels, keyed by the heading's text (or its first words) */
+  labels?: { heading: string; label: string }[]
+  /** headings for articles without any, placed before the paragraph starting with `before` */
+  sections?: { before: string; text: string }[]
 }
 export type AuthorInfo = { name: string; role: string; bio: string; slug: string; img: string }
 export type MorePost = { href: string; title: string; cat: string; excerpt: string; img: string; alt: string; author: string; initials: string; meta: string }

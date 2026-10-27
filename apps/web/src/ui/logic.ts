@@ -2,7 +2,7 @@
 // generated markup in ./parts renders against. Behaviour is the prototype's; types are loose by design.
 /* eslint-disable */
 import { createElement, createRef } from 'react'
-import { extrasFor, formatArticle } from '@/lib/articleFormat'
+import { formatArticle } from '@/lib/articleFormat'
 
 import type { SiteProps } from './types'
 
@@ -748,8 +748,8 @@ export class SiteLogic {
       authorHref: P && P.author.slug ? '/author/' + P.author.slug + '/' : '/contributors/',
     }
     // Article body in the #a1 structure + Quick Read; see lib/articleFormat.ts
-    const article = formatArticle(post0.html || '', post0.slug)
-    const extras = extrasFor(post0.slug)
+    const extras = post0.extras || {}
+    const article = formatArticle(post0.html || '', post0.slug, extras)
     const slides = C.SLIDES
     const slideN = slides.length || 1
     const slideI = (((this.state.slide || 0) % slideN) + slideN) % slideN

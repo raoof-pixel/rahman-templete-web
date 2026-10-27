@@ -1,4 +1,4 @@
-import { lexicalToHtml, type AuthorInfo, type ListData, type MorePost, type PostData, type PostFull } from '@canadiansme/shared'
+import { lexicalToHtml, type ArticleExtras, type AuthorInfo, type ListData, type MorePost, type PostData, type PostFull } from '@canadiansme/shared'
 
 import {
   articleCard,
@@ -37,6 +37,30 @@ export const authorInfo = (a: Doc | null, base: string): AuthorInfo =>
     ? { name: str(a.name), role: str(a.jobTitle), bio: str(a.bio), slug: str(a.slug), img: mediaUrl(a.avatar, base, 'thumbnail') }
     : NEWSROOM
 
+/** "AI & layout" group → the website's ArticleExtras (empty rows dropped). */
+export const articleExtras = (p: Doc): ArticleExtras => {
+  const x = obj(p.extras)
+  if (!x) return {}
+  const qr = obj(x.quickRead)
+  const points = rows(qr?.points).map((r) => str(obj(r)?.text).trim()).filter(Boolean)
+  const stats = rows(x.keyFigures)
+    .map((r) => ({ value: str(obj(r)?.value).trim(), label: str(obj(r)?.label).trim() }))
+    .filter((f) => f.value && f.label)
+  const sections = rows(x.sections)
+    .map((r) => ({ text: str(obj(r)?.heading).trim(), before: str(obj(r)?.before).trim() }))
+    .filter((h) => h.text && h.before)
+  const labels = rows(x.tocLabels)
+    .map((r) => ({ heading: str(obj(r)?.heading).trim(), label: str(obj(r)?.label).trim() }))
+    .filter((l) => l.heading && l.label)
+  const out: ArticleExtras = {}
+  if (points.length) out.quickRead = { points, reviewed: Boolean(qr?.reviewed) }
+  if (str(x.pullQuote).trim()) out.pull = str(x.pullQuote).trim()
+  if (stats.length) out.stats = stats
+  if (sections.length) out.sections = sections
+  if (labels.length) out.labels = labels
+  return out
+}
+
 export const postFull = (p: Doc, base: string): PostFull => {
   const media = obj(p.featuredImage)
   const cat = catTitle(p)
@@ -61,6 +85,12 @@ export const postFull = (p: Doc, base: string): PostFull => {
       .map(obj)
       .filter((t): t is Doc => Boolean(t?.slug))
       .map((t) => ({ href: `/tag/${t.slug}/`, label: str(t.title) })),
+    imgWidth: Number(media?.width) || 0,
+    imgHeight: Number(media?.height) || 0,
+    imgLarge: obj(media?.sizes)?.xlarge?.url ? mediaUrl(media, base, 'xlarge') : '',
+    audio: mediaUrl(p.audio, base),
+    listen: !p.hideListen,
+    extras: articleExtras(p),
   }
 }
 

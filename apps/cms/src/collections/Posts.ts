@@ -15,6 +15,7 @@ import {
   publishedOrAuthenticated,
 } from '../access'
 import { auditAfterChange, auditAfterDelete } from './AuditLogs'
+import { articleAudioFields, articleExtrasField } from '../fields/articleExtras'
 import { legacyHtmlFields } from '../fields/legacyHtml'
 import { articleEditor } from '../fields/richText'
 import { slug } from '../fields/slug'
@@ -161,6 +162,7 @@ export const Posts: CollectionConfig = {
       editor: articleEditor,
     },
     ...legacyHtmlFields(),
+    articleExtrasField(),
 
     // ----- Sidebar -----
     slug(),
@@ -248,6 +250,7 @@ export const Posts: CollectionConfig = {
       admin: { position: 'sidebar' },
       filterOptions: ({ id }) => (id ? { id: { not_equals: id } } : true),
     },
+    ...articleAudioFields(),
     {
       name: 'readingTime',
       type: 'number',

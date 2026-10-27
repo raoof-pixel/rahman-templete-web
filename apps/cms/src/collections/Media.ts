@@ -74,10 +74,13 @@ export const Media: CollectionConfig = {
       'audio/mpeg',
       'video/mp4',
     ],
+    // Website sizes are WebP (smaller, same quality); never enlarged beyond the original.
+    // "og" stays JPEG because some social networks still don't read WebP share images.
     imageSizes: [
-      { name: 'thumbnail', width: 300, height: 200, position: 'centre' },
-      { name: 'card', width: 640 },
-      { name: 'large', width: 1280 },
+      { name: 'thumbnail', width: 300, height: 200, position: 'centre', formatOptions: { format: 'webp', options: { quality: 82 } } },
+      { name: 'card', width: 640, formatOptions: { format: 'webp', options: { quality: 82 } } },
+      { name: 'large', width: 1280, formatOptions: { format: 'webp', options: { quality: 82 } } },
+      { name: 'xlarge', width: 1920, formatOptions: { format: 'webp', options: { quality: 82 } } },
       { name: 'og', width: 1200, height: 630, position: 'centre' },
     ],
   },

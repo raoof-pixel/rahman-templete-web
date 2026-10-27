@@ -1,8 +1,10 @@
 'use client'
 /* Quick Read (AI summary) + Listen (read the article aloud) for article pages.
    Ported from the design template's article-tools.js. Styles: ui/article-tools.css.
-   Listen uses the browser's own speech engine (no cost, no network). It reads the title, intro and
-   article body, highlights the paragraph being read and skips anything marked data-csme-noread. */
+   Listen plays the article's own recording when the CMS has one (PostFull.audio, e.g. the MP3s
+   imported from WordPress). Otherwise it uses the browser's own speech engine (no cost, no network):
+   it reads the title, intro and article body, highlights the paragraph being read and skips anything
+   marked data-csme-noread. */
 import { useCallback, useEffect, useId, useRef, useState } from 'react'
 
 import type { QuickRead } from '@/lib/articleFormat'
@@ -149,8 +151,9 @@ function QuickReadBox({ data, speak }: { data: QuickRead; speak?: (text: string)
   )
 }
 
-export default function ArticleTools({ quickRead, readTime, listen = true }: { quickRead?: QuickRead; readTime?: string; listen?: boolean }) {
+export default function ArticleTools({ quickRead, readTime, listen = true, audio = '' }: { quickRead?: QuickRead; readTime?: string; listen?: boolean; audio?: string }) {
   const rootRef = useRef<HTMLDivElement>(null)
+  const audioRef = useRef<HTMLAudioElement>(null)
   const [tts, setTts] = useState(false)
   const [state, setState] = useState<'idle' | 'playing' | 'paused'>('idle')
   const [pct, setPct] = useState(0)
@@ -185,6 +188,10 @@ export default function ArticleTools({ quickRead, readTime, listen = true }: { q
 
   const stop = useCallback(() => {
     const st = s.current
+    if (audioRef.current) {
+      audioRef.current.pause()
+      audioRef.current.currentTime = 0
+    }
     if (ttsAvailable()) window.speechSynthesis.cancel()
     st.playing = false
     st.paused = false
@@ -240,6 +247,14 @@ export default function ArticleTools({ quickRead, readTime, listen = true }: { q
   const playPause = () => {
     const st = s.current
     setNote('')
+    const a = audioRef.current
+    if (audio && a) {
+      if (a.paused) {
+        a.playbackRate = st.rate
+        a.play().catch(() => setNote('The recording could not be played. Try again.'))
+      } else a.pause()
+      return
+    }
     if (st.playing && !st.paused) {
       st.paused = true
       window.speechSynthesis.cancel()
@@ -277,6 +292,7 @@ export default function ArticleTools({ quickRead, readTime, listen = true }: { q
     setRate(r)
     s.current.rate = r
     store.set('csme-tts-rate', r)
+    if (audioRef.current) audioRef.current.playbackRate = r
     if (s.current.playing && !s.current.paused) {
       window.speechSynthesis.cancel()
       setTimeout(next, 60)
@@ -293,13 +309,42 @@ export default function ArticleTools({ quickRead, readTime, listen = true }: { q
     }
   }, [stop])
 
-  const idle = 'Hear the full article read aloud' + (readTime ? ' · about ' + readTime.replace(/\s*read$/, '') : '')
+  const idle = (audio ? 'Hear the audio version of this article' : 'Hear the full article read aloud') + (readTime ? ' · about ' + readTime.replace(/\s*read$/, '') : '')
   const status = note || (state === 'paused' ? `Paused · ${pct}% read` : state === 'playing' ? `Reading aloud · ${pct}%` : idle)
 
   return (
     <div ref={rootRef} data-csme-tools="">
       {quickRead?.points?.length ? <QuickReadBox data={quickRead} speak={tts ? speak : undefined} /> : null}
-      {listen && tts ? (
+      {audio ? (
+        <audio
+          ref={audioRef}
+          src={audio}
+          preload="none"
+          onPlay={() => {
+            s.current.playing = true
+            s.current.paused = false
+            setState('playing')
+          }}
+          onPause={() => {
+            const a = audioRef.current
+            s.current.paused = Boolean(a && a.currentTime > 0 && !a.ended)
+            s.current.playing = s.current.paused
+            setState(s.current.paused ? 'paused' : 'idle')
+          }}
+          onEnded={() => {
+            s.current.playing = false
+            s.current.paused = false
+            setState('idle')
+            setPct(0)
+          }}
+          onTimeUpdate={() => {
+            const a = audioRef.current
+            if (a && a.duration) setPct(Math.round((a.currentTime / a.duration) * 100))
+          }}
+          onError={() => setNote('The recording could not be loaded.')}
+        />
+      ) : null}
+      {listen && (audio || tts) ? (
         <div className="csme-ls" role="region" aria-label="Listen to this article">
           <button type="button" className="csme-ls-play" onClick={playPause} aria-label={state === 'playing' ? 'Pause reading' : state === 'paused' ? 'Resume reading' : 'Listen to this article'}>
             {state === 'playing' ? Icon.pause : Icon.play}

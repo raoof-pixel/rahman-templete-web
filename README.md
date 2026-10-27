@@ -63,6 +63,28 @@ pnpm dev                                       # CMS http://localhost:3000/admin
   support on-demand revalidation).
 - **Preview** in the CMS shows a draft inside the real article design (`/_preview/` template).
 
+## Article page: Quick Read, Listen and "AI & layout" fields
+
+Every article has an **AI & layout** group in the CMS (`apps/cms/src/fields/articleExtras.ts`):
+Quick Read points (+ "reviewed by the newsroom"), pull quote, key figures, section headings for
+articles without any, and short "In this article" labels. In the sidebar: **Article audio** (MP3) and
+**Hide the Listen bar**. The website (`apps/web/src/lib/articleFormat.ts`) only shows a pull quote or
+key figure when its exact text is in the article, and never changes the article text.
+
+Listen plays the article's own MP3 when there is one, otherwise the browser reads the article aloud.
+The accessibility button (bottom left) is on every page.
+
+After pulling these changes (local or staging database only):
+
+```bash
+pnpm install
+pnpm --filter @canadiansme/cms migrate:create article_extras   # creates the migration for the new fields
+pnpm migrate                                                    # adds the columns/tables (nothing removed)
+pnpm generate                                                   # CMS types + admin import map
+pnpm --filter @canadiansme/cms seed:extras                      # test data for the 43 demo articles
+pnpm typecheck && pnpm dev
+```
+
 ## Security in brief
 
 - Website: strict Content-Security-Policy, HSTS, no-sniff, frame-deny, referrer policy; forms go through
