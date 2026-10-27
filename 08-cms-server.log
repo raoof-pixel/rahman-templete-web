@@ -1,0 +1,220 @@
+
+> @canadiansme/cms@1.0.0 start /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms
+> cross-env NODE_OPTIONS=--no-deprecation next start -p 3000
+
+   ▲ Next.js 15.4.11
+   - Local:        http://localhost:3000
+   - Network:      http://10.1.0.15:3000
+
+ ✓ Starting...
+ ✓ Ready in 590ms
+[15:09:30] [33mWARN[39m: [36mNo email adapter provided. Email will be written to console. More info at https://payloadcms.com/docs/email/overview.[39m
+[15:09:30] [31mERROR[39m: [36mPassword must be at least 12 characters.[39m
+    err: {
+      "type": "f",
+      "message": "Password must be at least 12 characters.",
+      "stack":
+          APIError: Password must be at least 12 characters.
+              at g.hooks.beforeOperation (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/5865.js:3:14074)
+              at e (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:78:22351)
+              at V (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:332:22676)
+              at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 400,
+      "name": "APIError"
+    }
+[15:09:31] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[15:09:31] [31mERROR[39m: [36mPassword must be at least 12 characters.[39m
+    err: {
+      "type": "f",
+      "message": "Password must be at least 12 characters.",
+      "stack":
+          APIError: Password must be at least 12 characters.
+              at g.hooks.beforeOperation (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/5865.js:3:14074)
+              at e (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:78:22351)
+              at V (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:332:22676)
+              at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+              at async bh (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:50690)
+              at async includes.a.handler (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:25510)
+              at async q (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:6250)
+              at async /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:8943
+              at async rb.do (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:21059)
+              at async rb.handle (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:25902)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 400,
+      "name": "APIError"
+    }
+[15:09:31] [31mERROR[39m: [36mThe email or password provided is incorrect.[39m
+    err: {
+      "type": "i",
+      "message": "The email or password provided is incorrect.",
+      "stack":
+          AuthenticationError: The email or password provided is incorrect.
+              at E (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:321:4578)
+              at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+              at async A (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:27669)
+              at async includes.a.handler (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:25510)
+              at async q (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:6250)
+              at async /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:8943
+              at async rb.do (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:21059)
+              at async rb.handle (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:25902)
+              at async k (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/app/(payload)/api/[...slug]/route.js:1:6828)
+              at async rb.handleResponse (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:1:104365)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 401,
+      "name": "AuthenticationError"
+    }
+[15:09:31] [31mERROR[39m: [36mThe email or password provided is incorrect.[39m
+    err: {
+      "type": "i",
+      "message": "The email or password provided is incorrect.",
+      "stack":
+          AuthenticationError: The email or password provided is incorrect.
+              at E (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:321:4578)
+              at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+              at async A (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:27669)
+              at async includes.a.handler (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:25510)
+              at async q (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:6250)
+              at async /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:8943
+              at async rb.do (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:21059)
+              at async rb.handle (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:25902)
+              at async k (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/app/(payload)/api/[...slug]/route.js:1:6828)
+              at async rb.handleResponse (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:1:104365)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 401,
+      "name": "AuthenticationError"
+    }
+[15:09:32] [31mERROR[39m: [36mThe email or password provided is incorrect.[39m
+    err: {
+      "type": "i",
+      "message": "The email or password provided is incorrect.",
+      "stack":
+          AuthenticationError: The email or password provided is incorrect.
+              at E (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:321:4578)
+              at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+              at async A (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:27669)
+              at async includes.a.handler (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:25510)
+              at async q (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:6250)
+              at async /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:8943
+              at async rb.do (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:21059)
+              at async rb.handle (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:25902)
+              at async k (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/app/(payload)/api/[...slug]/route.js:1:6828)
+              at async rb.handleResponse (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:1:104365)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 401,
+      "name": "AuthenticationError"
+    }
+[15:09:32] [31mERROR[39m: [36mThe email or password provided is incorrect.[39m
+    err: {
+      "type": "i",
+      "message": "The email or password provided is incorrect.",
+      "stack":
+          AuthenticationError: The email or password provided is incorrect.
+              at E (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:321:4578)
+              at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+              at async A (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:27669)
+              at async includes.a.handler (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:25510)
+              at async q (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:6250)
+              at async /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:8943
+              at async rb.do (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:21059)
+              at async rb.handle (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:25902)
+              at async k (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/app/(payload)/api/[...slug]/route.js:1:6828)
+              at async rb.handleResponse (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:1:104365)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 401,
+      "name": "AuthenticationError"
+    }
+[15:09:32] [31mERROR[39m: [36mThe email or password provided is incorrect.[39m
+    err: {
+      "type": "i",
+      "message": "The email or password provided is incorrect.",
+      "stack":
+          AuthenticationError: The email or password provided is incorrect.
+              at E (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:321:4578)
+              at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+              at async A (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:27669)
+              at async includes.a.handler (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:25510)
+              at async q (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:6250)
+              at async /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:8943
+              at async rb.do (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:21059)
+              at async rb.handle (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:25902)
+              at async k (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/app/(payload)/api/[...slug]/route.js:1:6828)
+              at async rb.handleResponse (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:1:104365)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 401,
+      "name": "AuthenticationError"
+    }
+[15:09:32] [31mERROR[39m: [36mThis user is locked due to having too many failed login attempts.[39m
+    err: {
+      "type": "j",
+      "message": "This user is locked due to having too many failed login attempts.",
+      "stack":
+          LockedAuth: This user is locked due to having too many failed login attempts.
+              at D (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:321:2887)
+              at E (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:321:4249)
+              at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+              at async A (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:27669)
+              at async includes.a.handler (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:25510)
+              at async q (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:6250)
+              at async /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:8943
+              at async rb.do (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:21059)
+              at async rb.handle (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:25902)
+              at async k (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/app/(payload)/api/[...slug]/route.js:1:6828)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 401,
+      "name": "LockedAuth"
+    }
+[15:09:32] [31mERROR[39m: [36mThis account can only be used with an API key.[39m
+    err: {
+      "type": "f",
+      "message": "This account can only be used with an API key.",
+      "stack":
+          APIError: This account can only be used with an API key.
+              at g.hooks.beforeLogin (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/5865.js:3:14779)
+              at E (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:321:5541)
+              at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+              at async A (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:27669)
+              at async includes.a.handler (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/4948.js:98:25510)
+              at async q (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:6250)
+              at async /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/chunks/7473.js:1:8943
+              at async rb.do (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:21059)
+              at async rb.handle (/home/runner/work/rahman-templete-web/rahman-templete-web/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:5:25902)
+              at async k (/home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/.next/server/app/(payload)/api/[...slug]/route.js:1:6828)
+      "data": null,
+      "isOperational": true,
+      "isPublic": true,
+      "status": 403,
+      "name": "APIError"
+    }
+[15:09:32] [33mWARN[39m: [36mFrontend revalidate failed: fetch failed[39m
+[15:09:32] [33mWARN[39m: [36mFrontend revalidate failed: fetch failed[39m
+[15:09:32] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[15:09:32] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[15:09:32] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[15:09:32] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[15:09:32] [31mERROR[39m: [36mInvalid MIME type: image/svg+xml., SVG file contains potentially harmful content.[39m
+[15:09:32] [32mINFO[39m: [36mThe following field is invalid: file[39m
+[15:09:32] [31mERROR[39m: [36mFile type text/plain (from extension ) is not allowed.[39m
+[15:09:32] [32mINFO[39m: [36mThe following field is invalid: file[39m
+[15:09:32] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[15:09:32] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[15:09:32] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+[15:09:32] [32mINFO[39m: [36mYou are not allowed to perform this action.[39m
+  authors: 447 (from data/wp-authors.json)
+[15:09:34] [33mWARN[39m: [36mFrontend revalidate failed: fetch failed[39m

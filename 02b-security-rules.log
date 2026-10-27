@@ -1,0 +1,27 @@
+
+> @canadiansme/cms@1.0.0 test:security /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms
+> node --import tsx --test tests/security-rules.test.mjs
+
+✔ every rule is documented with a valid severity (1.5048ms)
+✔ script tags are critical and name the host they load (14.401371ms)
+✔ event handlers and javascript:/vbscript:/data: URLs are found, also when entity-encoded (11.037821ms)
+✔ iframes are only trusted from the sanitizer allow-list (0.60803ms)
+✔ hidden content with links is high, without links low (2.668591ms)
+✔ spam keywords count in links and clusters, not single mentions (0.653174ms)
+✔ obfuscation and redirects (0.621255ms)
+✔ long base64 payloads are reported, inline images are not (0.681648ms)
+✔ IP links, shorteners, cloaked links and link floods (4.879685ms)
+✔ rich-text (Lexical) content: URLs kept raw, typed text escaped (0.754454ms)
+✔ names, text fields and URLs (1.685709ms)
+✔ uploaded files (0.663874ms)
+✔ emails and social links (0.447949ms)
+✔ excerpts are at most 160 characters (0.711734ms)
+✔ malformed markup cannot make the scan slow (411.145726ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 678.963742

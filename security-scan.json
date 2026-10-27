@@ -1,0 +1,214 @@
+{
+  "generatedAt": "2026-10-27T15:11:01.015Z",
+  "durationMs": 720,
+  "scanned": {
+    "posts": 20,
+    "pages": 38,
+    "categories": 55,
+    "tags": 159,
+    "authors": 447,
+    "media": 16,
+    "users": 4,
+    "redirects": 1,
+    "settings": 2
+  },
+  "summary": {
+    "total": 15,
+    "bySeverity": {
+      "critical": 1,
+      "high": 5,
+      "medium": 6,
+      "low": 3
+    },
+    "byRule": {
+      "script-tag": 1,
+      "untrusted-embed": 3,
+      "spam-link": 1,
+      "suspicious-domain": 1,
+      "url-shortener": 2,
+      "external-link-flood": 2,
+      "new-admin": 1,
+      "failed-logins": 1,
+      "admin-account": 1,
+      "suspicious-redirect": 1,
+      "spam-redirect-path": 1
+    }
+  },
+  "findings": [
+    {
+      "collection": "posts",
+      "id": 5,
+      "title": "Scanner Seed Article",
+      "slug": "scanner-seed-article",
+      "field": "excerpt",
+      "rule": "script-tag",
+      "severity": "critical",
+      "excerpt": "<script>",
+      "count": 1,
+      "adminUrl": "/admin/collections/posts/5"
+    },
+    {
+      "collection": "posts",
+      "id": 1,
+      "title": "Security Test Article",
+      "slug": "security-test-article",
+      "field": "legacyHtml",
+      "rule": "untrusted-embed",
+      "severity": "high",
+      "excerpt": "<iframe loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\">",
+      "count": 1,
+      "adminUrl": "/admin/collections/posts/1"
+    },
+    {
+      "collection": "posts",
+      "id": 5,
+      "title": "Scanner Seed Article",
+      "slug": "scanner-seed-article",
+      "field": "legacyHtml",
+      "rule": "spam-link",
+      "severity": "high",
+      "excerpt": "buy viagra online → https://cheap-pills.xyz/viagra",
+      "count": 1,
+      "adminUrl": "/admin/collections/posts/5"
+    },
+    {
+      "collection": "posts",
+      "id": 5,
+      "title": "Scanner Seed Article",
+      "slug": "scanner-seed-article",
+      "field": "legacyHtml",
+      "rule": "suspicious-domain",
+      "severity": "medium",
+      "excerpt": "buy viagra online → https://cheap-pills.xyz/viagra",
+      "count": 1,
+      "adminUrl": "/admin/collections/posts/5"
+    },
+    {
+      "collection": "posts",
+      "id": 19,
+      "title": "Business Woman Of The Month: Shelagh Stoneham, Founder of Power WearHouse Inc.",
+      "slug": "business-woman-of-the-month-shelagh-stoneham-founder-of-power-wearhouse-inc-2",
+      "field": "legacyHtml",
+      "rule": "url-shortener",
+      "severity": "low",
+      "excerpt": "https://lnkd.in/dbqmSKN → https://lnkd.in/dbqmSKN",
+      "count": 1,
+      "adminUrl": "/admin/collections/posts/19"
+    },
+    {
+      "collection": "posts",
+      "id": 19,
+      "title": "Business Woman Of The Month: Shelagh Stoneham, Founder of Power WearHouse Inc.",
+      "slug": "business-woman-of-the-month-shelagh-stoneham-founder-of-power-wearhouse-inc-2",
+      "field": "content",
+      "rule": "url-shortener",
+      "severity": "low",
+      "excerpt": "https://lnkd.in/dbqmSKN → https://lnkd.in/dbqmSKN",
+      "count": 1,
+      "adminUrl": "/admin/collections/posts/19"
+    },
+    {
+      "collection": "pages",
+      "id": 7,
+      "title": "advisor new",
+      "slug": "advisor-new",
+      "field": "legacyHtml",
+      "rule": "untrusted-embed",
+      "severity": "high",
+      "excerpt": "<iframe id=\"JotFormIFrame-242062854189462\" title=\"CanadianSME Advisory Membership Benefits \" allow=\"geolocation; microp…",
+      "count": 1,
+      "adminUrl": "/admin/collections/pages/7"
+    },
+    {
+      "collection": "pages",
+      "id": 17,
+      "title": "Strategic partners",
+      "slug": "strategic-partners",
+      "field": "legacyHtml",
+      "rule": "external-link-flood",
+      "severity": "medium",
+      "excerpt": "65 links to other websites",
+      "count": 1,
+      "adminUrl": "/admin/collections/pages/17"
+    },
+    {
+      "collection": "pages",
+      "id": 17,
+      "title": "Strategic partners",
+      "slug": "strategic-partners",
+      "field": "content",
+      "rule": "external-link-flood",
+      "severity": "medium",
+      "excerpt": "65 links to other websites",
+      "count": 1,
+      "adminUrl": "/admin/collections/pages/17"
+    },
+    {
+      "collection": "pages",
+      "id": 31,
+      "title": "About Us",
+      "slug": "about-us",
+      "field": "legacyHtml",
+      "rule": "untrusted-embed",
+      "severity": "high",
+      "excerpt": "<iframe title=\"CanadianSME Small Business Magazine October 2026\" allow=\"clipboard-write; autoplay; encrypted-media; ful…",
+      "count": 1,
+      "adminUrl": "/admin/collections/pages/31"
+    },
+    {
+      "collection": "users",
+      "id": 1,
+      "title": "Test Admin <admin@example.com>",
+      "field": "createdAt",
+      "rule": "new-admin",
+      "severity": "medium",
+      "excerpt": "admin@example.com created 2026-10-27",
+      "count": 1,
+      "adminUrl": "/admin/collections/users/1"
+    },
+    {
+      "collection": "audit-logs",
+      "id": "",
+      "title": "author.b@example.com",
+      "field": "userEmail",
+      "rule": "failed-logins",
+      "severity": "medium",
+      "excerpt": "6 failed logins for author.b@example.com in the last 7 days",
+      "count": 6,
+      "adminUrl": "/admin/collections/audit-logs?where[action][equals]=login-failed&where[userEmail][equals]=author.b%40example.com"
+    },
+    {
+      "collection": "users",
+      "id": 1,
+      "title": "Test Admin <admin@example.com>",
+      "field": "roles",
+      "rule": "admin-account",
+      "severity": "low",
+      "excerpt": "admin@example.com — roles: admin — created 2026-10-27",
+      "count": 1,
+      "adminUrl": "/admin/collections/users/1"
+    },
+    {
+      "collection": "redirects",
+      "id": 1,
+      "title": "/cheap-viagra-online/",
+      "field": "to.url",
+      "rule": "suspicious-redirect",
+      "severity": "high",
+      "excerpt": "/cheap-viagra-online/ → https://bit.ly/abc123 (Shortened link)",
+      "count": 1,
+      "adminUrl": "/admin/collections/redirects/1"
+    },
+    {
+      "collection": "redirects",
+      "id": 1,
+      "title": "/cheap-viagra-online/",
+      "field": "from",
+      "rule": "spam-redirect-path",
+      "severity": "medium",
+      "excerpt": "/cheap-viagra-online/",
+      "count": 1,
+      "adminUrl": "/admin/collections/redirects/1"
+    }
+  ]
+}

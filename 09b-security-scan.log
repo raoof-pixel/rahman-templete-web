@@ -1,0 +1,31 @@
+
+> @canadiansme/cms@1.0.0 security:scan /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms
+> cross-env NODE_OPTIONS=--no-deprecation tsx --env-file-if-exists=.env src/scripts/security-scan.ts --out=../../ci-output
+
+.env not found. Continuing without it.
+.env not found. Continuing without it.
+.env not found. Continuing without it.
+[15:11:00] [33mWARN[39m: [36mNo email adapter provided. Email will be written to console. More info at https://payloadcms.com/docs/email/overview.[39m
+posts: page 1/1, 6 findings so far   
+pages: page 1/2, 9 findings so far   pages: page 2/2, 10 findings so far   
+categories: page 1/1, 10 findings so far   
+tags: page 1/2, 10 findings so far   tags: page 2/2, 10 findings so far   
+authors: page 1/5, 10 findings so far   authors: page 2/5, 10 findings so far   authors: page 3/5, 10 findings so far   authors: page 4/5, 10 findings so far   authors: page 5/5, 10 findings so far   
+media: page 1/1, 10 findings so far   
+users: page 1/1, 13 findings so far   
+redirects: page 1/1, 15 findings so far   
+settings: page 1/1, 15 findings so far   
+# Security scan
+
+Scanned: posts 20, pages 38, categories 55, tags 159, authors 447, media 16, users 4, redirects 1, settings 2
+
+| Severity | Findings |
+| --- | ---: |
+| critical | 1 |
+| high | 5 |
+| medium | 6 |
+| low | 3 |
+
+## By rule
+
+- **Iframe or embed from an unknown site** (`untrusted-embed`): 3

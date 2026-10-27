@@ -1,0 +1,24 @@
+                                                                  slug                                                                  |  _status  | use_legacy_html | has_image | html_len 
+----------------------------------------------------------------------------------------------------------------------------------------+-----------+-----------------+-----------+----------
+ security-test-article                                                                                                                  | published | t               | f         |      413
+ ig-wealth-management-advisor-perception-study-canadian-advisors-prioritize-high-net-worth-growth-but-dealer-support-lags               | published | f               | t         |     7282
+ cisco-expands-partner-opportunity-with-new-cisco-360-program-updates-high-yield-customer-experience-offerings-and-ai-ready-innovations | published | f               | t         |    20376
+ sirva-and-vialto-partners-announce-strategic-alliance-to-deliver-a-more-connected-relocation-and-global-mobility-experience            | published | f               | t         |     7956
+ from-practice-management-pioneer-to-global-legal-ai-leader-clio-unveils-new-brand-identity                                             | published | t               | t         |     8775
+ ai-facilitated-non-consensual-intimate-images-ivado-and-eon-institute-present-a-canada-mexico-assessment-to-address-gaps               | published | f               | t         |     7275
+ global-x-announces-change-to-risk-rating-for-the-unhedged-units-of-global-x-1-3-year-u-s-treasury-bond-index-etf                       | published | t               | t         |     3466
+ powerbank-strengthens-balance-sheet-and-solar-portfolio-with-14-reduction-in-project-debt-with-completion-of-ca25-4m-refinancing       | published | f               | t         |     5081
+ mackenzie-investments-announces-october-2026-distributions-for-its-exchange-traded-funds                                               | published | t               | t         |     3148
+ scotia-global-asset-management-expands-etf-lineup-with-new-asset-allocation-and-systematic-etfs                                        | published | t               | t         |     8782
+ zafin-signs-definitive-agreement-to-acquire-naehas                                                                                     | published | t               | t         |     6797
+ cibc-expands-support-for-skilled-trades-through-new-national-initiatives                                                               | published | f               | t         |     4605
+ meridian-credit-union-champions-ontario-entrepreneurs-through-its-2026-small-business-big-impact-awards                                | published | t               | t         |    14924
+ top-5-payment-processors-for-canadian-small-businesses                                                                                 | published | t               | t         |    17425
+ business-woman-of-the-month-shelagh-stoneham-founder-of-power-wearhouse-inc-2                                                          | published | t               | t         |     6987
+ rapidus-and-hcltech-announce-partnership-for-next-generation-semiconductor-technologies                                                | published | f               | t         |     3926
+ secret-draft                                                                                                                           | draft     | f               | f         |         
+ newswire-bot-article                                                                                                                   | draft     | f               | f         |         
+ author-own-article                                                                                                                     | draft     | f               | f         |         
+ scanner-seed-article                                                                                                                   | draft     | t               | f         |       82
+(20 rows)
+

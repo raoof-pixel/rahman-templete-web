@@ -1,0 +1,18 @@
+PASS  homepage returns 200  (200)
+PASS  homepage has lang en-CA
+PASS  homepage has one h1
+PASS  newest article renders  (/security-test-article/ -> 200)
+PASS  article has NewsArticle JSON-LD
+PASS  article has canonical
+PASS  article without trailing slash redirects
+PASS  unknown URL returns 404
+PASS  /latest/ returns 200
+PASS  /search/?q=business returns 200
+PASS  /feed/ is RSS
+PASS  /sitemap.xml returns 200
+PASS  /robots.txt returns 200
+PASS  /_preview/ template has placeholders
+PASS  /api/revalidate rejects a wrong secret
+PASS  /api/revalidate accepts the right secret  (200)
+
+All website checks passed

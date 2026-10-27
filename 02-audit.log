@@ -1,0 +1,304 @@
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ critical            │ Next.js: Unauthenticated Remote Code Execution on      │
+│                     │ windows-hosted servers                                 │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=13.4.0 <15.5.24                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.24                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-p293-qw3h-jr36      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ critical            │ Next.js: Unauthenticated Remote Code Execution in      │
+│                     │ Image Optimization API when AVIF files are used        │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=10.0.0 <15.5.24                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.24                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-2xp9-vwfh-vxw4      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ critical            │ Next.js: Unauthenticated Remote Code Execution in      │
+│                     │ Image Optimization API when SVG files are used         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=10.0.0 <=15.5.27                                     │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.28                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-2464-fhr4-w9xw      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js has a Denial of Service with Server Components │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=13.0.0 <15.5.15                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.15                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-q4gf-8mx6-v5v3      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js Vulnerable to Denial of Service with Server    │
+│                     │ Components                                             │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=13.0.0 <15.5.16                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.16                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-8h8q-6873-q5fj      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js has a Middleware / Proxy bypass in App Router  │
+│                     │ applications via segment-prefetch routes - Incomplete  │
+│                     │ Fix Follow-Up                                          │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=15.2.0 <15.5.18                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.18                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-26hh-7cqf-hhc6      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js vulnerable to Denial of Service via connection │
+│                     │ exhaustion in applications using Cache Components      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=15.0.0 <15.5.16                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.16                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-mg66-mrh9-m8jx      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js vulnerable to server-side request forgery in   │
+│                     │ applications using WebSocket upgrades                  │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=13.4.13 <15.5.16                                     │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.16                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-c4j6-fc7j-m34r      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js has a Middleware / Proxy bypass through        │
+│                     │ dynamic route parameter injection                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=15.4.0 <15.5.16                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.16                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-492v-c6pp-mqqv      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js has a Middleware / Proxy bypass in App Router  │
+│                     │ applications via segment-prefetch routes               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=15.2.0 <15.5.16                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.16                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-267c-6grr-h53f      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js has a Middleware / Proxy bypass in Pages       │
+│                     │ Router applications using i18n                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=12.2.0 <15.5.16                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.16                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-36qx-fr4f-26g5      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js: Denial of Service in App Router using Server  │
+│                     │ Actions                                                │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=13.0.0 <15.5.21                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.21                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-m99w-x7hq-7vfj      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js: Server-Side Request Forgery in Server Actions │
+│                     │ on custom servers                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=14.1.1 <15.5.21                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.21                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-89xv-2m56-2m9x      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js: Server-Side Request Forgery in rewrites via   │
+│                     │ attacker-controlled destination hostname               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=12.0.0 <15.5.21                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.21                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-p9j2-gv94-2wf4      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ PostCSS: Arbitrary file read and information           │
+│                     │ disclosure via attacker-controlled sourceMappingURL in │
+│                     │ CSS comments                                           │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ postcss                                                │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ <=8.5.11                                               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=8.5.12                                               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next>postcss                                 │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-6g55-p6wh-862q      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ PostCSS: Path Traversal in Previous Source Map         │
+│                     │ Auto-Loading (sourceMappingURL) leads to Arbitrary     │
+│                     │ .map File Disclosure                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ postcss                                                │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ <=8.5.17                                               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=8.5.18                                               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next>postcss                                 │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-r28c-9q8g-f849      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Next.js: Denial of Service in App Router using Server  │
+│                     │ Actions                                                │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ next                                                   │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=13.0.0 <=15.5.27                                     │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=15.5.28                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>next                                         │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-p3m5-59mp-jv5r      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+┌─────────────────────┬────────────────────────────────────────────────────────┐
+│ high                │ Happy DOM: Incomplete fix for CVE-2026-33943:          │
+│                     │ unsanitized import alias leads to host code execution  │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Package             │ happy-dom                                              │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Vulnerable versions │ >=17.0.0 <=21.0.3                                      │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Patched versions    │ >=21.0.4                                               │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ Paths               │ apps__cms>@payloadcms/richtext-lexical>@lexical/       │
+│                     │ headless>happy-dom                                     │
+├─────────────────────┼────────────────────────────────────────────────────────┤
+│ More info           │ https://github.com/advisories/GHSA-834v-8h66-3h79      │
+└─────────────────────┴────────────────────────────────────────────────────────┘
+41 vulnerabilities found
+Severity: 2 low | 21 moderate | 15 high | 3 critical
+::error title=critical vulnerability in next::Next.js: Unauthenticated Remote Code Execution on windows-hosted servers (fixed in >=15.5.24) https://github.com/advisories/GHSA-p293-qw3h-jr36
+::error title=critical vulnerability in next::Next.js: Unauthenticated Remote Code Execution in Image Optimization API when AVIF files are used (fixed in >=15.5.24) https://github.com/advisories/GHSA-2xp9-vwfh-vxw4
+::error title=critical vulnerability in next::Next.js: Unauthenticated Remote Code Execution in Image Optimization API when SVG files are used (fixed in >=15.5.28) https://github.com/advisories/GHSA-2464-fhr4-w9xw
+::warning title=high vulnerability in next::Next.js has a Denial of Service with Server Components (fixed in >=15.5.15) https://github.com/advisories/GHSA-q4gf-8mx6-v5v3
+::warning title=high vulnerability in next::Next.js Vulnerable to Denial of Service with Server Components (fixed in >=15.5.16) https://github.com/advisories/GHSA-8h8q-6873-q5fj
+::warning title=high vulnerability in next::Next.js has a Middleware / Proxy bypass in App Router applications via segment-prefetch routes - Incomplete Fix Follow-Up (fixed in >=15.5.18) https://github.com/advisories/GHSA-26hh-7cqf-hhc6
+::warning title=high vulnerability in next::Next.js vulnerable to Denial of Service via connection exhaustion in applications using Cache Components (fixed in >=15.5.16) https://github.com/advisories/GHSA-mg66-mrh9-m8jx
+::warning title=high vulnerability in next::Next.js vulnerable to server-side request forgery in applications using WebSocket upgrades (fixed in >=15.5.16) https://github.com/advisories/GHSA-c4j6-fc7j-m34r
+::warning title=high vulnerability in next::Next.js has a Middleware / Proxy bypass through dynamic route parameter injection (fixed in >=15.5.16) https://github.com/advisories/GHSA-492v-c6pp-mqqv
+::warning title=high vulnerability in next::Next.js has a Middleware / Proxy bypass in App Router applications via segment-prefetch routes (fixed in >=15.5.16) https://github.com/advisories/GHSA-267c-6grr-h53f
+::warning title=high vulnerability in next::Next.js has a Middleware / Proxy bypass in Pages Router applications using i18n (fixed in >=15.5.16) https://github.com/advisories/GHSA-36qx-fr4f-26g5
+::warning title=high vulnerability in next::Next.js: Denial of Service in App Router using Server Actions (fixed in >=15.5.21) https://github.com/advisories/GHSA-m99w-x7hq-7vfj
+::warning title=high vulnerability in next::Next.js: Server-Side Request Forgery in Server Actions on custom servers (fixed in >=15.5.21) https://github.com/advisories/GHSA-89xv-2m56-2m9x
+::warning title=high vulnerability in next::Next.js: Server-Side Request Forgery in rewrites via attacker-controlled destination hostname (fixed in >=15.5.21) https://github.com/advisories/GHSA-p9j2-gv94-2wf4
+::warning title=high vulnerability in postcss::PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments (fixed in >=8.5.12) https://github.com/advisories/GHSA-6g55-p6wh-862q
+::warning title=high vulnerability in postcss::PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL) leads to Arbitrary .map File Disclosure (fixed in >=8.5.18) https://github.com/advisories/GHSA-r28c-9q8g-f849
+::warning title=high vulnerability in next::Next.js: Denial of Service in App Router using Server Actions (fixed in >=15.5.28) https://github.com/advisories/GHSA-p3m5-59mp-jv5r
+::warning title=high vulnerability in happy-dom::Happy DOM: Incomplete fix for CVE-2026-33943: unsanitized import alias leads to host code execution (fixed in >=21.0.4) https://github.com/advisories/GHSA-834v-8h66-3h79
+## Dependency audit (`pnpm audit --prod`)
+
+| Critical | High | Moderate | Low |
+| ---: | ---: | ---: | ---: |
+| 3 | 15 | 21 | 2 |
+
+| Severity | Package | Problem | Fixed in |
+| --- | --- | --- | --- |
+| **critical** | `next` | [Next.js: Unauthenticated Remote Code Execution on windows-hosted servers](https://github.com/advisories/GHSA-p293-qw3h-jr36) | >=15.5.24 |
+| **critical** | `next` | [Next.js: Unauthenticated Remote Code Execution in Image Optimization API when AVIF files are used](https://github.com/advisories/GHSA-2xp9-vwfh-vxw4) | >=15.5.24 |
+| **critical** | `next` | [Next.js: Unauthenticated Remote Code Execution in Image Optimization API when SVG files are used](https://github.com/advisories/GHSA-2464-fhr4-w9xw) | >=15.5.28 |
+| **high** | `next` | [Next.js has a Denial of Service with Server Components](https://github.com/advisories/GHSA-q4gf-8mx6-v5v3) | >=15.5.15 |
+| **high** | `next` | [Next.js Vulnerable to Denial of Service with Server Components](https://github.com/advisories/GHSA-8h8q-6873-q5fj) | >=15.5.16 |
+| **high** | `next` | [Next.js has a Middleware / Proxy bypass in App Router applications via segment-prefetch routes - Incomplete Fix Follow-Up](https://github.com/advisories/GHSA-26hh-7cqf-hhc6) | >=15.5.18 |
+| **high** | `next` | [Next.js vulnerable to Denial of Service via connection exhaustion in applications using Cache Components](https://github.com/advisories/GHSA-mg66-mrh9-m8jx) | >=15.5.16 |
+| **high** | `next` | [Next.js vulnerable to server-side request forgery in applications using WebSocket upgrades](https://github.com/advisories/GHSA-c4j6-fc7j-m34r) | >=15.5.16 |
+| **high** | `next` | [Next.js has a Middleware / Proxy bypass through dynamic route parameter injection](https://github.com/advisories/GHSA-492v-c6pp-mqqv) | >=15.5.16 |
+| **high** | `next` | [Next.js has a Middleware / Proxy bypass in App Router applications via segment-prefetch routes](https://github.com/advisories/GHSA-267c-6grr-h53f) | >=15.5.16 |
+| **high** | `next` | [Next.js has a Middleware / Proxy bypass in Pages Router applications using i18n](https://github.com/advisories/GHSA-36qx-fr4f-26g5) | >=15.5.16 |
+| **high** | `next` | [Next.js: Denial of Service in App Router using Server Actions](https://github.com/advisories/GHSA-m99w-x7hq-7vfj) | >=15.5.21 |
+| **high** | `next` | [Next.js: Server-Side Request Forgery in Server Actions on custom servers](https://github.com/advisories/GHSA-89xv-2m56-2m9x) | >=15.5.21 |
+| **high** | `next` | [Next.js: Server-Side Request Forgery in rewrites via attacker-controlled destination hostname](https://github.com/advisories/GHSA-p9j2-gv94-2wf4) | >=15.5.21 |
+| **high** | `postcss` | [PostCSS: Arbitrary file read and information disclosure via attacker-controlled sourceMappingURL in CSS comments](https://github.com/advisories/GHSA-6g55-p6wh-862q) | >=8.5.12 |
+| **high** | `postcss` | [PostCSS: Path Traversal in Previous Source Map Auto-Loading (sourceMappingURL) leads to Arbitrary .map File Disclosure](https://github.com/advisories/GHSA-r28c-9q8g-f849) | >=8.5.18 |
+| **high** | `next` | [Next.js: Denial of Service in App Router using Server Actions](https://github.com/advisories/GHSA-p3m5-59mp-jv5r) | >=15.5.28 |
+| **high** | `happy-dom` | [Happy DOM: Incomplete fix for CVE-2026-33943: unsanitized import alias leads to host code execution](https://github.com/advisories/GHSA-834v-8h66-3h79) | >=21.0.4 |
+
+Fix: `pnpm up <package>` (or add a `pnpm.overrides` entry in package.json), then re-run CI.
+

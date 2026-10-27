@@ -1,0 +1,16 @@
+
+> canadiansme@ generate /home/runner/work/rahman-templete-web/rahman-templete-web
+> pnpm --filter @canadiansme/cms generate:types && pnpm --filter @canadiansme/cms generate:importmap
+
+
+> @canadiansme/cms@1.0.0 generate:types /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms
+> cross-env NODE_OPTIONS=--no-deprecation payload generate:types
+
+[15:08:12] [32mINFO[39m: [36mCompiling TS types for Collections and Globals...[39m
+[15:08:13] [32mINFO[39m: [36mTypes written to /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms/src/payload-types.ts[39m
+
+> @canadiansme/cms@1.0.0 generate:importmap /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms
+> cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap
+
+Generating import map
+No new imports found, skipping writing import map

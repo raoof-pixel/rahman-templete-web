@@ -1,0 +1,42 @@
+
+> canadiansme@ typecheck /home/runner/work/rahman-templete-web/rahman-templete-web
+> turbo run typecheck
+
+
+Attention:
+Turborepo now collects completely anonymous telemetry regarding usage.
+This information is used to shape the Turborepo roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://turborepo.com/docs/telemetry
+
+• Packages in scope: @canadiansme/cms, @canadiansme/shared, @canadiansme/web
+• Running typecheck in 3 packages
+• Remote caching disabled
+::group::@canadiansme/shared:typecheck
+cache miss, executing 4c53bcbd1d32de25
+
+> @canadiansme/shared@1.0.0 typecheck /home/runner/work/rahman-templete-web/rahman-templete-web/packages/shared
+> tsc --noEmit
+
+::endgroup::
+::group::@canadiansme/cms:typecheck
+cache miss, executing 440fd1832c37ee42
+
+> @canadiansme/cms@1.0.0 typecheck /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms
+> tsc --noEmit
+
+::endgroup::
+::group::@canadiansme/web:typecheck
+cache miss, executing d13ce4d715dc99e8
+
+> @canadiansme/web@1.0.0 typecheck /home/runner/work/rahman-templete-web/rahman-templete-web/apps/web
+> next typegen && tsc --noEmit
+
+Generating route types...
+✓ Route types generated successfully
+::endgroup::
+
+ Tasks:    3 successful, 3 total
+Cached:    0 cached, 3 total
+  Time:    12.786s 
+

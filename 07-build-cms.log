@@ -1,0 +1,38 @@
+
+> canadiansme@ build:cms /home/runner/work/rahman-templete-web/rahman-templete-web
+> pnpm --filter @canadiansme/cms build
+
+
+> @canadiansme/cms@1.0.0 build /home/runner/work/rahman-templete-web/rahman-templete-web/apps/cms
+> cross-env NODE_OPTIONS=--no-deprecation next build
+
+⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+   ▲ Next.js 15.4.11
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 25.0s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/5) ...
+   Generating static pages (1/5) 
+   Generating static pages (2/5) 
+   Generating static pages (3/5) 
+ ✓ Generating static pages (5/5)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /_not-found                            994 B         103 kB
+├ ƒ /admin/[[...segments]]                 448 B         798 kB
+├ ƒ /api/[...slug]                         178 B         102 kB
+├ ƒ /api/graphql                           127 B         102 kB
+└ ƒ /api/graphql-playground                178 B         102 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/1902-525a296c674c4d89.js      44.5 kB
+  ├ chunks/87c73c54-3c195070c5cbb22b.js  54.1 kB
+  └ other shared chunks (total)           3.3 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
