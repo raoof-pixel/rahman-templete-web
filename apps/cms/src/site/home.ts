@@ -119,7 +119,7 @@ export function toHomeData(i: HomeInput): HomeData {
     const leadSlot = obj(c.lead)?.post || obj(c.lead)?.title ? c.lead : auto[0] ? { post: auto[0] } : c.lead
     const lead = story(leadSlot, base)
     const picked = rows(c.more)
-    const more = (picked.length ? picked : auto.slice(1, 3).map((p) => ({ post: p }))).map((m) => ({
+    const more = (picked.length ? picked : auto.slice(1, 3).map((p): Doc => ({ post: p }))).map((m: Doc) => ({
       title: str(m.title) || str(obj(m.post)?.title),
       href: str(m.href) || postHref(m.post),
     }))

@@ -307,7 +307,7 @@ export const siteEndpoints: Endpoint[] = [
     if (!terms.length) return json({ results: [], total: 0 })
     const p = req.payload
     // Every term must appear in the title or the excerpt (Postgres ILIKE through Payload's `like`).
-    const match: Where = { and: terms.map((t) => ({ or: [{ title: { like: t } }, { excerpt: { like: t } }] })) }
+    const match: Where = { and: terms.map((t): Where => ({ or: [{ title: { like: t } } as Where, { excerpt: { like: t } } as Where] })) }
     const [r, provinces, legal, settings] = await Promise.all([
       posts(p, match, 60),
       findAll(p, 'provinces', { depth: 0, limit: 50 }),

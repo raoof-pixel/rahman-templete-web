@@ -73,7 +73,7 @@ export const textList = (name: string, label: string, description?: string, text
   type: 'array',
   label,
   admin: { description },
-  fields: [{ name: 'text', type: textarea ? 'textarea' : 'text', required: true }],
+  fields: [textarea ? { name: 'text', type: 'textarea', required: true } : { name: 'text', type: 'text', required: true }],
 })
 
 export const orderField: Field = {

@@ -117,7 +117,7 @@ export default function AccessibilityPanel() {
           </div>
           <div className="csme-a11y-grid">
             {TOGGLES.map(([k, label]) => (
-              <button key={k} type="button" className="csme-a11y-tg" aria-pressed={prefs[k]} onClick={() => update({ ...prefs, [k]: !prefs[k] })}>
+              <button key={k} type="button" className="csme-a11y-tg" aria-pressed={prefs[k]} onClick={() => update({ ...prefs, ...({ [k]: !prefs[k] } as Pick<Prefs, Toggle>) })}>
                 {label}
               </button>
             ))}
