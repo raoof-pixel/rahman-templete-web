@@ -1,0 +1,212 @@
+/* Quick Read, Listen and the accessibility panel (ui/ArticleTools.tsx, ui/AccessibilityPanel.tsx),
+   plus the #a1 article typography for imported article bodies (lib/articleFormat.ts).
+   Ported from the design template (article-tools.js + the #a1 article layout). */
+
+/* ---------------------------------------------------------------- article body (#a1 layout) */
+.csme-prose p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #14181d;
+  margin: 0 0 24px;
+}
+.csme-prose strong,
+.csme-prose b {
+  font-weight: 600;
+  color: #14181d;
+}
+.csme-prose h2 {
+  font-family: Sora, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.015em;
+  color: #14181d;
+  margin: 40px 0 16px;
+  text-wrap: pretty;
+  scroll-margin-top: 110px;
+}
+.csme-prose h2.csme-q {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.01em;
+  margin: 40px 0 14px;
+}
+.csme-prose h3,
+.csme-prose h4 {
+  font-family: Sora, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #14181d;
+  margin: 28px 0 12px;
+  text-wrap: pretty;
+}
+.csme-prose a {
+  color: #004fb8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.csme-prose ul,
+.csme-prose ol {
+  font-size: 18px;
+  line-height: 30px;
+  color: #14181d;
+  margin: 0 0 24px;
+}
+.csme-prose blockquote {
+  margin: 8px 0 26px;
+  border-left: 3px solid #002364;
+  padding: 6px 0 6px 24px;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #14181d;
+}
+.csme-prose .csme-lead {
+  font-family: Sora, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 32px;
+  color: #14181d;
+  text-wrap: pretty;
+}
+.csme-prose .csme-credit {
+  font-size: 14px;
+  line-height: 22px;
+  color: #5a6470;
+  font-style: italic;
+}
+.csme-prose blockquote.csme-pull {
+  margin: 14px 0 30px;
+  border-left-color: #d71920;
+  font-family: Sora, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+.csme-prose .csme-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 24px;
+  background: #f4f6f8;
+  border-radius: 10px;
+  margin: 6px 0 28px;
+}
+.csme-prose .csme-stat-v {
+  display: block;
+  font-family: Sora, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.1;
+  color: #002364;
+  margin-bottom: 6px;
+}
+.csme-prose .csme-stat-l {
+  display: block;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #5a6470;
+}
+/* images inside articles keep their real shape and never overflow */
+.csme-prose img {
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 8px;
+}
+.csme-prose figure {
+  margin: 0 0 24px;
+  max-width: 100%;
+}
+
+/* ---------------------------------------------------------------- Quick Read */
+.csme-qr { position: relative; border-radius: 12px; padding: 1.5px; background: linear-gradient(120deg, #002364, #004fb8 45%, #d71920); margin: 0 0 18px }
+.csme-qr-in { background: #fff; border-radius: 10.5px; overflow: hidden }
+.csme-qr-btn { all: unset; box-sizing: border-box; display: flex; align-items: center; gap: 12px; width: 100%; padding: 14px 18px; cursor: pointer }
+.csme-qr-btn:focus-visible { outline: 3px solid #004fb8; outline-offset: -3px; border-radius: 10px }
+.csme-qr-ic { color: #d71920; display: flex; flex-shrink: 0 }
+.csme-qr-t { display: block; font-family: Sora, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 16px; line-height: 1.3; color: #002364 }
+.csme-qr-s { display: block; font-size: 12.5px; line-height: 1.4; color: #5a6470; margin-top: 2px }
+.csme-qr-chev { margin-left: auto; color: #5a6470; display: flex; transition: transform 0.2s }
+.csme-qr[data-open='true'] .csme-qr-chev { transform: rotate(180deg) }
+.csme-qr-body { padding: 0 18px 16px 52px }
+.csme-qr-body ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px }
+.csme-qr-body li { position: relative; padding-left: 16px; font-size: 16px; line-height: 1.55; color: #14181d }
+.csme-qr-body li::before { content: ''; position: absolute; left: 0; top: 0.62em; width: 7px; height: 7px; border-radius: 50%; background: #d71920 }
+.csme-qr-foot { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 14px; padding-top: 12px; border-top: 1px solid #e4e7ec; font-size: 12.5px; color: #5a6470 }
+.csme-qr-foot button { all: unset; cursor: pointer; color: #004fb8; font-weight: 600 }
+.csme-qr-foot button:focus-visible { outline: 2px solid #004fb8; outline-offset: 2px }
+
+/* ---------------------------------------------------------------- Listen */
+.csme-ls { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 12px 14px; border: 1px solid #e4e7ec; border-radius: 12px; background: #f4f6f8; margin: 0 0 18px }
+.csme-ls-play { all: unset; box-sizing: border-box; width: 42px; height: 42px; border-radius: 50%; background: #101828; color: #fff; display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0 }
+.csme-ls-play:hover { background: #000 }
+.csme-ls-play:focus-visible, .csme-ls-stop:focus-visible, .csme-ls select:focus-visible { outline: 3px solid #004fb8; outline-offset: 2px }
+.csme-ls-meta { flex: 1; min-width: 160px }
+.csme-ls-t { display: flex; align-items: center; gap: 6px; font-family: Sora, 'Helvetica Neue', Arial, sans-serif; font-weight: 700; font-size: 14.5px; color: #14181d }
+.csme-ls-s { display: block; font-size: 12.5px; color: #5a6470; margin-top: 2px }
+.csme-ls-bar { height: 4px; border-radius: 2px; background: #e4e7ec; margin-top: 8px; overflow: hidden }
+.csme-ls-bar i { display: block; height: 100%; width: 0; background: #d71920; transition: width 0.3s }
+.csme-ls-stop { all: unset; box-sizing: border-box; width: 34px; height: 34px; border-radius: 8px; border: 1.5px solid #d0d5dd; background: #fff; color: #14181d; display: flex; align-items: center; justify-content: center; cursor: pointer }
+.csme-ls select { font: 600 13px Sora, 'Helvetica Neue', Arial, sans-serif; padding: 7px 8px; border: 1.5px solid #d0d5dd; border-radius: 8px; background: #fff; color: #14181d; cursor: pointer }
+.csme-reading { background: #fff4cc !important; box-shadow: 0 0 0 6px #fff4cc; border-radius: 4px; transition: background 0.2s }
+
+/* ---------------------------------------------------------------- accessibility panel */
+.csme-a11y-fab { all: unset; box-sizing: border-box; position: fixed; left: 20px; bottom: 24px; z-index: 70; width: 52px; height: 52px; border-radius: 50%; background: #004fb8; color: #fff; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 6px 18px rgba(16, 24, 40, 0.25) }
+.csme-a11y-fab:hover { background: #002364 }
+.csme-a11y-fab:focus-visible { outline: 3px solid #ffb800; outline-offset: 3px }
+.csme-a11y-panel { position: fixed; left: 20px; bottom: 88px; z-index: 71; width: min(340px, calc(100vw - 40px)); max-height: calc(100vh - 120px); overflow: auto; background: #fff; color: #14181d; border: 1px solid #e4e7ec; border-radius: 14px; box-shadow: 0 18px 48px rgba(16, 24, 40, 0.28); font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif }
+.csme-a11y-panel[hidden] { display: none }
+.csme-a11y-h { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; border-bottom: 1px solid #e4e7ec; position: sticky; top: 0; background: #fff }
+.csme-a11y-h h2 { margin: 0; font: 700 16px Sora, 'Helvetica Neue', Arial, sans-serif }
+.csme-a11y-x { all: unset; cursor: pointer; font-size: 22px; line-height: 1; padding: 4px 8px; border-radius: 6px }
+.csme-a11y-b { padding: 14px 18px 18px; display: flex; flex-direction: column; gap: 14px }
+.csme-a11y-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 14.5px }
+.csme-a11y-seg { display: flex; border: 1.5px solid #d0d5dd; border-radius: 8px; overflow: hidden }
+.csme-a11y-seg button { all: unset; cursor: pointer; padding: 6px 11px; font: 600 13px Sora, 'Helvetica Neue', Arial, sans-serif; color: #14181d }
+.csme-a11y-seg button + button { border-left: 1.5px solid #d0d5dd }
+.csme-a11y-seg button[aria-pressed='true'] { background: #002364; color: #fff }
+.csme-a11y-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px }
+.csme-a11y-tg { all: unset; box-sizing: border-box; cursor: pointer; padding: 12px 10px; border: 1.5px solid #d0d5dd; border-radius: 10px; font: 600 13px Sora, 'Helvetica Neue', Arial, sans-serif; text-align: center; line-height: 1.3 }
+.csme-a11y-tg[aria-pressed='true'] { border-color: #002364; background: #eaf0fb; color: #002364; box-shadow: inset 0 0 0 1px #002364 }
+.csme-a11y-panel button:focus-visible { outline: 3px solid #004fb8; outline-offset: 2px }
+.csme-a11y-reset { all: unset; cursor: pointer; text-align: center; padding: 10px; border-radius: 8px; background: #f4f6f8; font: 600 13px Sora, 'Helvetica Neue', Arial, sans-serif }
+.csme-a11y-note { font-size: 12px; color: #5a6470; line-height: 1.5 }
+.csme-guide { position: fixed; left: 0; right: 0; height: 44px; pointer-events: none; z-index: 69; background: rgba(255, 229, 120, 0.28); border-top: 2px solid #d71920; border-bottom: 2px solid #d71920; display: none }
+html.a11y-guide .csme-guide { display: block }
+
+/* modes (override the design's inline styles, hence !important) */
+html.a11y-size-1 body { zoom: 1.12 }
+html.a11y-size-2 body { zoom: 1.25 }
+html.a11y-size-3 body { zoom: 1.4 }
+html.a11y-font body,
+html.a11y-font body *:not(svg):not(path) { font-family: Verdana, 'Atkinson Hyperlegible', Tahoma, sans-serif !important; letter-spacing: 0.02em !important; word-spacing: 0.08em !important }
+html.a11y-space body p,
+html.a11y-space body li,
+html.a11y-space body blockquote { line-height: 2 !important }
+html.a11y-space body p { margin-bottom: 1.1em !important }
+html.a11y-links body a { text-decoration: underline !important; text-underline-offset: 3px !important; text-decoration-thickness: 2px !important }
+html.a11y-links body a:not(.csme-a11y-fab) { outline: 2px dashed #d71920; outline-offset: 2px }
+html.a11y-contrast body,
+html.a11y-contrast body *:not(img):not(video):not(svg):not(path):not(circle):not(rect) { background-color: #000 !important; color: #fff !important; border-color: #fff !important; box-shadow: none !important; text-shadow: none !important }
+html.a11y-contrast body a,
+html.a11y-contrast body a * { color: #ffe14d !important }
+html.a11y-contrast body button,
+html.a11y-contrast body input,
+html.a11y-contrast body select { border: 1.5px solid #fff !important }
+html.a11y-contrast .csme-a11y-panel [aria-pressed='true'] { background-color: #ffe14d !important; color: #000 !important }
+html.a11y-contrast .csme-reading { background: #3b2f00 !important; box-shadow: 0 0 0 6px #3b2f00 }
+html.a11y-motion *,
+html.a11y-motion *::before,
+html.a11y-motion *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important }
+html.a11y-cursor,
+html.a11y-cursor * { cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40'><path d='M4 2l26 14-11 3-5 11z' fill='black' stroke='white' stroke-width='2'/></svg>") 4 2, auto !important }
+@media print {
+  .csme-a11y-fab,
+  .csme-a11y-panel,
+  .csme-ls,
+  .csme-guide { display: none !important }
+}

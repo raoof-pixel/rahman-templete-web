@@ -15,14 +15,14 @@ export default function Offers() {
         {" "}
         <nav aria-label="Breadcrumb" style={{ background: "#F4F6F8", borderBottom: "1px solid #E4E7EC" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#667085", display: "flex", gap: "8px" }}>
-            <a href={u("#home")} style={{ color: "#667085" }} className="h_1dd7993">
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#5A6470", display: "flex", gap: "8px" }}>
+            <a href={u("#home")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Home
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <span style={{ color: "#101828" }}>
+            <span style={{ color: "#14181D" }}>
               Exclusive Offers
             </span>
           </div>
@@ -33,11 +33,11 @@ export default function Offers() {
           {" "}
           <div style={{ margin: "0 auto", padding: "60px 24px", display: "flex", flexDirection: "column", gap: "16px", maxWidth: "1280px" }}>
             {" "}
-            <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#FF6B72" }}>
+            <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8" }}>
               Reader perks
             </span>
             {" "}
-            <h1 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(32px,4vw,50px)", lineHeight: "1.08", letterSpacing: "-0.02em", maxWidth: "20ch", textWrap: "pretty" }}>
+            <h1 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(32px,4vw,50px)", lineHeight: "1.08", letterSpacing: "-0.025em", maxWidth: "20ch", textWrap: "pretty" }}>
               Exclusive Offers for Canadian Small Businesses
             </h1>
             {" "}
@@ -54,11 +54,11 @@ export default function Offers() {
           <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "36px 24px", display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(240px,1fr))", gap: "24px" }}>
             {" "}
             <div style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
-              <span style={{ width: "36px", height: "36px", flexShrink: "0", borderRadius: "50%", background: "#D71920", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "15px" }}>
+              <span style={{ width: "36px", height: "36px", flexShrink: "0", borderRadius: "50%", background: "#D71920", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "15px" }}>
                 1
               </span>
               <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-                <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16.5px", color: "#101828" }}>
+                <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "16.5px", color: "#14181D" }}>
                   Browse offers
                 </h2>
                 <p style={{ fontSize: "14px", lineHeight: "1.55", color: "#475467" }}>
@@ -68,11 +68,11 @@ export default function Offers() {
             </div>
             {" "}
             <div style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
-              <span style={{ width: "36px", height: "36px", flexShrink: "0", borderRadius: "50%", background: "#D71920", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "15px" }}>
+              <span style={{ width: "36px", height: "36px", flexShrink: "0", borderRadius: "50%", background: "#D71920", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "15px" }}>
                 2
               </span>
               <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-                <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16.5px", color: "#101828" }}>
+                <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "16.5px", color: "#14181D" }}>
                   Unlock your code
                 </h2>
                 <p style={{ fontSize: "14px", lineHeight: "1.55", color: "#475467" }}>
@@ -82,11 +82,11 @@ export default function Offers() {
             </div>
             {" "}
             <div style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
-              <span style={{ width: "36px", height: "36px", flexShrink: "0", borderRadius: "50%", background: "#D71920", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "15px" }}>
+              <span style={{ width: "36px", height: "36px", flexShrink: "0", borderRadius: "50%", background: "#D71920", color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "15px" }}>
                 3
               </span>
               <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-                <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16.5px", color: "#101828" }}>
+                <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "16.5px", color: "#14181D" }}>
                   Redeem with the partner
                 </h2>
                 <p style={{ fontSize: "14px", lineHeight: "1.55", color: "#475467" }}>
@@ -103,7 +103,7 @@ export default function Offers() {
           {" "}
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "16px", flexWrap: "wrap", marginBottom: "24px" }}>
             {" "}
-            <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "14px", color: "#475467" }}>
+            <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "14px", color: "#475467" }}>
               {v.offerCount}
             </span>
             {" "}
@@ -112,7 +112,7 @@ export default function Offers() {
               {(v.offerCats || []).map((c: any, _i7: number) => (
                 <Fragment key={c?.key ?? c?.id ?? c?.slug ?? _i7}>
                   {" "}
-                  <button type="button" role="tab" aria-selected={c?.active} onClick={c?.onClick} style={{ padding: "8px 14px", borderRadius: "999px", border: `1.5px solid ${c?.border ?? ""}`, background: c?.bg, color: c?.fg, fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", cursor: "pointer" }}>
+                  <button type="button" role="tab" aria-selected={c?.active} onClick={c?.onClick} style={{ padding: "8px 14px", borderRadius: "999px", border: `1.5px solid ${c?.border ?? ""}`, background: c?.bg, color: c?.fg, fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", cursor: "pointer" }}>
                     {c?.label}
                   </button>
                   {" "}
@@ -136,7 +136,7 @@ export default function Offers() {
                       <Slot id={o?.slot} shape="rect" placeholder="Partner logo" />
                     </div>
                     {" "}
-                    <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#667085" }}>
+                    <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470" }}>
                       {o?.cat}
                     </span>
                     {" "}
@@ -144,11 +144,11 @@ export default function Offers() {
                   {" "}
                   <div style={{ padding: "20px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                     {" "}
-                    <span style={{ alignSelf: "flex-start", padding: "5px 10px", borderRadius: "6px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px" }}>
+                    <span style={{ alignSelf: "flex-start", padding: "5px 10px", borderRadius: "6px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px" }}>
                       {o?.value}
                     </span>
                     {" "}
-                    <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17px", lineHeight: "1.3", color: "#101828", textWrap: "pretty" }}>
+                    <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17px", lineHeight: "1.3", color: "#14181D", textWrap: "pretty" }}>
                       {o?.title}
                     </h3>
                     {" "}
@@ -156,11 +156,11 @@ export default function Offers() {
                       {o?.desc}
                     </p>
                     {" "}
-                    <span style={{ fontSize: "12.5px", color: "#667085" }}>
+                    <span style={{ fontSize: "12.5px", color: "#5A6470" }}>
                       {o?.partner} · {o?.expires}
                     </span>
                     {" "}
-                    <button type="button" onClick={o?.claim} style={{ marginTop: "6px", padding: "12px", borderRadius: "8px", border: "0", background: "#101828", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px", cursor: "pointer" }} className="h_cc7d4fa">
+                    <button type="button" onClick={o?.claim} style={{ marginTop: "6px", padding: "12px", borderRadius: "8px", border: "0", background: "#101828", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px", cursor: "pointer" }} className="h_cc7d4fa">
                       Claim offer
                     </button>
                     {" "}
@@ -173,7 +173,7 @@ export default function Offers() {
             {" "}
           </div>
           {" "}
-          <p style={{ marginTop: "22px", fontSize: "12.5px", lineHeight: "1.6", color: "#667085" }}>
+          <p style={{ marginTop: "22px", fontSize: "12.5px", lineHeight: "1.6", color: "#5A6470" }}>
             Offers are provided by our partners and subject to their terms. CanadianSME may receive a commission.
           </p>
           {" "}
@@ -185,14 +185,14 @@ export default function Offers() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
               {" "}
-              <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "26px", lineHeight: "1.2" }}>
+              <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "26px", lineHeight: "1.2", letterSpacing: "-0.015em" }}>
                 Questions about offers
               </h2>
               {" "}
               <dl style={{ display: "flex", flexDirection: "column", gap: "0", margin: "0", borderTop: "2px solid #101828" }}>
                 {" "}
                 <div style={{ padding: "18px 0", borderBottom: "1px solid #E4E7EC", display: "flex", flexDirection: "column", gap: "6px" }}>
-                  <dt style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16px", color: "#101828" }}>
+                  <dt style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16px", color: "#14181D" }}>
                     Who can claim these offers?
                   </dt>
                   <dd style={{ margin: "0", fontSize: "14.5px", lineHeight: "1.6", color: "#475467" }}>
@@ -201,7 +201,7 @@ export default function Offers() {
                 </div>
                 {" "}
                 <div style={{ padding: "18px 0", borderBottom: "1px solid #E4E7EC", display: "flex", flexDirection: "column", gap: "6px" }}>
-                  <dt style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16px", color: "#101828" }}>
+                  <dt style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16px", color: "#14181D" }}>
                     Do I have to subscribe?
                   </dt>
                   <dd style={{ margin: "0", fontSize: "14.5px", lineHeight: "1.6", color: "#475467" }}>
@@ -210,7 +210,7 @@ export default function Offers() {
                 </div>
                 {" "}
                 <div style={{ padding: "18px 0", borderBottom: "1px solid #E4E7EC", display: "flex", flexDirection: "column", gap: "6px" }}>
-                  <dt style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16px", color: "#101828" }}>
+                  <dt style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16px", color: "#14181D" }}>
                     Is CanadianSME paid for these offers?
                   </dt>
                   <dd style={{ margin: "0", fontSize: "14.5px", lineHeight: "1.6", color: "#475467" }}>
@@ -219,7 +219,7 @@ export default function Offers() {
                 </div>
                 {" "}
                 <div style={{ padding: "18px 0", borderBottom: "1px solid #E4E7EC", display: "flex", flexDirection: "column", gap: "6px" }}>
-                  <dt style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16px", color: "#101828" }}>
+                  <dt style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16px", color: "#14181D" }}>
                     How often are offers added?
                   </dt>
                   <dd style={{ margin: "0", fontSize: "14.5px", lineHeight: "1.6", color: "#475467" }}>
@@ -233,11 +233,11 @@ export default function Offers() {
             {" "}
             <div style={{ background: "#101828", color: "#fff", borderRadius: "14px", padding: "32px", display: "flex", flexDirection: "column", gap: "14px" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#FF6B72" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8" }}>
                 For partners
               </span>
               {" "}
-              <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "24px", lineHeight: "1.25" }}>
+              <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "24px", lineHeight: "1.25", letterSpacing: "-0.015em" }}>
                 Offer something to Canada’s small business owners
               </h2>
               {" "}
@@ -245,7 +245,7 @@ export default function Offers() {
                 Put your product in front of owner-operators across every province through the website, the Tuesday Briefing and CanadianSME events.
               </p>
               {" "}
-              <a href={u("#become-partner")} style={{ alignSelf: "flex-start", padding: "13px 20px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14.5px" }} className="h_900112d">
+              <a href={u("#become-partner")} style={{ alignSelf: "flex-start", padding: "13px 20px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14.5px" }} className="h_900112d">
                 List an offer →
               </a>
               {" "}

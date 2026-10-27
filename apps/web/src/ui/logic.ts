@@ -2,6 +2,7 @@
 // generated markup in ./parts renders against. Behaviour is the prototype's; types are loose by design.
 /* eslint-disable */
 import { createElement, createRef } from 'react'
+import { extrasFor, formatArticle } from '@/lib/articleFormat'
 
 import type { SiteProps } from './types'
 
@@ -739,7 +740,16 @@ export class SiteLogic {
         .map((w) => w[0])
         .join(''),
       shortDate: post0.dateISO ? new Date(post0.dateISO).toLocaleDateString('en-CA', { month: 'short', day: 'numeric', year: 'numeric', timeZone: TZ }) : '',
+      // #a1 article layout (design template): breadcrumb, category pill, meta line, image caption
+      crumb: (post0.title || '').length > 60 ? post0.title.slice(0, 60).replace(/\s+\S*$/, '') + '…' : post0.title || '',
+      pill: /^Sponsored/.test(post0.cat || '') ? 'Sponsored · ' + catShort : catShort,
+      metaLine: [post0.date ? 'Published ' + post0.date : '', post0.read].filter(Boolean).join(' · '),
+      caption: post0.alt && post0.alt.trim() !== (post0.title || '').trim() ? post0.alt : '',
+      authorHref: P && P.author.slug ? '/author/' + P.author.slug + '/' : '/contributors/',
     }
+    // Article body in the #a1 structure + Quick Read; see lib/articleFormat.ts
+    const article = formatArticle(post0.html || '', post0.slug)
+    const extras = extrasFor(post0.slug)
     const slides = C.SLIDES
     const slideN = slides.length || 1
     const slideI = (((this.state.slide || 0) % slideN) + slideN) % slideN
@@ -811,8 +821,21 @@ export class SiteLogic {
       },
       post,
       postDisplay: this.d('post'),
-      // Article HTML is cleaned by the CMS (sanitize-html allow-list) before it is stored.
-      postBody: createElement('div', { style: { maxWidth: '70ch' }, className: 'csme-prose', dangerouslySetInnerHTML: { __html: post.html || '' } }),
+      // Article HTML is cleaned by the CMS (sanitize-html allow-list) before it is stored; the formatter
+      // only adds headings/classes and verified extras around it.
+      postBody: createElement('div', { style: { maxWidth: '68ch' }, className: 'csme-prose', dangerouslySetInnerHTML: { __html: article.html } }),
+      postCols: this.state.w < 960 ? 'minmax(0,1fr)' : 'minmax(0,1fr) 300px',
+      postHasToc: article.toc.length > 1,
+      postToc: article.toc.slice(0, 10).map((t) => ({
+        label: t.label,
+        href: '#' + t.id,
+        go: (ev: { preventDefault: () => void }) => {
+          ev.preventDefault()
+          const el = document.getElementById(t.id)
+          if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth' })
+        },
+      })),
+      postQuickRead: extras.quickRead,
       nextDeadline,
       today: this.today(),
       homeDisplay: this.d('home'),

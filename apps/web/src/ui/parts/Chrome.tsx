@@ -18,7 +18,7 @@ export default function Chrome() {
         {" "}
         <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "9px 24px", display: "flex", alignItems: "center", gap: "20px", flexWrap: "wrap" }}>
           {" "}
-          <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", color: "#fff" }}>
+          <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", color: "#fff" }}>
             {v.today}
           </span>
           {" "}
@@ -30,23 +30,23 @@ export default function Chrome() {
           {" "}
           <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: "14px" }}>
             {" "}
-            <a href={u(v.social?.linkedin || '#')} target="_blank" rel="noopener" aria-label="CanadianSME on LinkedIn" style={{ color: "#C8CDD6", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "11.5px" }} className="h_1f6476f">
+            <a href={u(v.social?.linkedin || '#')} target="_blank" rel="noopener" aria-label="CanadianSME on LinkedIn" style={{ color: "#C8CDD6", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "11.5px" }} className="h_1f6476f">
               in
             </a>
             {" "}
-            <a href={u(v.social?.youtube || '#')} target="_blank" rel="noopener" aria-label="CanadianSME on YouTube" style={{ color: "#C8CDD6", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "11.5px" }} className="h_1f6476f">
+            <a href={u(v.social?.youtube || '#')} target="_blank" rel="noopener" aria-label="CanadianSME on YouTube" style={{ color: "#C8CDD6", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "11.5px" }} className="h_1f6476f">
               YT
             </a>
             {" "}
-            <a href={u(v.social?.instagram || '#')} target="_blank" rel="noopener" aria-label="CanadianSME on Instagram" style={{ color: "#C8CDD6", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "11.5px" }} className="h_1f6476f">
+            <a href={u(v.social?.instagram || '#')} target="_blank" rel="noopener" aria-label="CanadianSME on Instagram" style={{ color: "#C8CDD6", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "11.5px" }} className="h_1f6476f">
               IG
             </a>
             {" "}
-            <a href={u(v.social?.facebook || '#')} target="_blank" rel="noopener" aria-label="CanadianSME on Facebook" style={{ color: "#C8CDD6", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "11.5px" }} className="h_1f6476f">
+            <a href={u(v.social?.facebook || '#')} target="_blank" rel="noopener" aria-label="CanadianSME on Facebook" style={{ color: "#C8CDD6", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "11.5px" }} className="h_1f6476f">
               FB
             </a>
             {" "}
-            <a href={u(v.social?.x || '#')} target="_blank" rel="noopener" aria-label="CanadianSME on X" style={{ color: "#C8CDD6", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "11.5px" }} className="h_1f6476f">
+            <a href={u(v.social?.x || '#')} target="_blank" rel="noopener" aria-label="CanadianSME on X" style={{ color: "#C8CDD6", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "11.5px" }} className="h_1f6476f">
               X
             </a>
             {" "}
@@ -81,31 +81,31 @@ export default function Chrome() {
             <ul style={{ display: "flex", alignItems: "center", gap: "0", flexWrap: "nowrap", marginLeft: v.navMl, whiteSpace: "nowrap" }}>
               {" "}
               <li>
-                <a href={u("#home")} style={{ display: "block", padding: "8px 6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#D71920", borderRadius: "6px" }} className="h_6ddf5e9">
+                <a href={u("#home")} style={{ display: "block", padding: "8px 6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#002364", borderRadius: "6px" }} className="h_6ddf5e9">
                   Home
                 </a>
               </li>
               {" "}
               <li>
-                <a href={u("#latest")} style={{ display: "block", padding: "8px 6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#101828", borderRadius: "6px" }} className="h_cc35a7e">
+                <a href={u("#latest")} style={{ display: "block", padding: "8px 6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#14181D", borderRadius: "6px" }} className="h_dfeecd6">
                   Latest
                 </a>
               </li>
               {" "}
               <li data-mega="business" onMouseEnter={v.openMega}>
-                <a href={u("#business")} style={{ display: "block", padding: "8px 6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#101828", borderRadius: "6px" }} className="h_cc35a7e">
+                <a href={u("#business")} style={{ display: "block", padding: "8px 6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#14181D", borderRadius: "6px" }} className="h_dfeecd6">
                   Business
                 </a>
               </li>
               {" "}
               <li data-mega="technology" onMouseEnter={v.openMega}>
-                <a href={u("#technology")} style={{ display: "block", padding: "8px 6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#101828", borderRadius: "6px" }} className="h_cc35a7e">
+                <a href={u("#technology")} style={{ display: "block", padding: "8px 6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#14181D", borderRadius: "6px" }} className="h_dfeecd6">
                   Technology &amp; AI
                 </a>
               </li>
               {" "}
               <li data-mega="about" onMouseEnter={v.openMega}>
-                <a href={u("#about")} style={{ display: "block", padding: "8px 6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#101828", borderRadius: "6px" }} className="h_cc35a7e">
+                <a href={u("#about")} style={{ display: "block", padding: "8px 6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#14181D", borderRadius: "6px" }} className="h_dfeecd6">
                   About Us ▾
                 </a>
               </li>
@@ -118,12 +118,12 @@ export default function Chrome() {
             {" "}
             <label style={{ display: "flex", alignItems: "center", gap: "8px", height: "40px", padding: "0 12px", border: "1.5px solid #D0D5DD", borderRadius: "8px", background: "#F9FAFB" }} className="fw_fb531e9">
               {" "}
-              <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" style={{ flex: "0 0 auto", color: "#667085" }}>
+              <svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true" style={{ flex: "0 0 auto", color: "#5A6470" }}>
                 <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" strokeWidth="2.2" />
                 <path d="M16.5 16.5L21 21" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
               </svg>
               {" "}
-              <input type="search" aria-label="Search CanadianSME" placeholder="Search the site" value={v.hdrQuery} onChange={v.hdrInput} onFocus={v.hdrFocus} onBlur={v.hdrBlur} onKeyDown={v.hdrKey} autoComplete="off" style={{ flex: "1", minWidth: "0", border: "0", background: "transparent", outline: "none", fontSize: "13.5px", color: "#101828" }} />
+              <input type="search" aria-label="Search CanadianSME" placeholder="Search the site" value={v.hdrQuery} onChange={v.hdrInput} onFocus={v.hdrFocus} onBlur={v.hdrBlur} onKeyDown={v.hdrKey} autoComplete="off" style={{ flex: "1", minWidth: "0", border: "0", background: "transparent", outline: "none", fontSize: "13.5px", color: "#14181D" }} />
               {" "}
             </label>
             {" "}
@@ -140,11 +140,11 @@ export default function Chrome() {
                         <li>
                           <button type="button" onMouseDown={h?.go} style={{ width: "100%", display: "flex", flexDirection: "column", gap: "3px", textAlign: "left", padding: "12px 16px", background: "#fff", border: "0", borderBottom: "1px solid #F2F4F7", cursor: "pointer" }} className="h_0a19fc9">
                             {" "}
-                            <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#D71920" }}>
+                            <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                               {h?.kind}
                             </span>
                             {" "}
-                            <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "14px", lineHeight: "1.35", color: "#101828" }}>
+                            <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "14px", lineHeight: "1.35", color: "#14181D" }}>
                               {h?.title}
                             </span>
                             {" "}
@@ -161,13 +161,13 @@ export default function Chrome() {
               {" "}
               {v.hdrNone ? (
                 <>
-                  <p style={{ padding: "16px", fontSize: "13.5px", color: "#667085" }}>
+                  <p style={{ padding: "16px", fontSize: "13.5px", color: "#5A6470" }}>
                     No matches yet — press Enter to search everything.
                   </p>
                 </>
               ) : null}
               {" "}
-              <button type="submit" style={{ width: "100%", padding: "12px 16px", background: "#F9FAFB", border: "0", borderTop: "1px solid #E4E7EC", textAlign: "left", cursor: "pointer", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#1E5AA8" }} className="h_1dd7993">
+              <button type="submit" style={{ width: "100%", padding: "12px 16px", background: "#F9FAFB", border: "0", borderTop: "1px solid #E4E7EC", textAlign: "left", cursor: "pointer", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#004FB8" }} className="h_9e87cbe">
                 {v.hdrAll} →
               </button>
               {" "}
@@ -177,11 +177,11 @@ export default function Chrome() {
           {" "}
           <div style={{ display: "flex", alignItems: "center", gap: "10px", flexShrink: "0", marginLeft: "auto" }}>
             {" "}
-            <a href={u("#advertise-with-us")} style={{ padding: "8px 14px", borderRadius: "8px", border: "1.5px solid #1E5AA8", background: "#1E5AA8", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13px", whiteSpace: "nowrap" }} className="h_02a9d34">
+            <a href={u("#advertise-with-us")} style={{ padding: "8px 14px", borderRadius: "8px", border: "1.5px solid #1E5AA8", background: "#1E5AA8", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13px", whiteSpace: "nowrap" }} className="h_02a9d34">
               Advertise With Us
             </a>
             {" "}
-            <a href={u("#newsletter")} style={{ padding: "9px 16px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13px", whiteSpace: "nowrap", boxShadow: "0 1px 2px rgba(215,25,32,0.35)" }} className="h_900112d">
+            <a href={u("#newsletter")} style={{ padding: "9px 16px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13px", whiteSpace: "nowrap", boxShadow: "0 1px 2px rgba(215,25,32,0.35)" }} className="h_900112d">
               Subscribe Free
             </a>
             {" "}
@@ -198,7 +198,7 @@ export default function Chrome() {
                 {" "}
                 <div>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#D71920", marginBottom: "12px" }}>
+                  <h3 style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "12px" }}>
                     {col?.heading}
                   </h3>
                   {" "}
@@ -208,7 +208,7 @@ export default function Chrome() {
                       <Fragment key={link?.key ?? link?.id ?? link?.slug ?? _i10}>
                         {" "}
                         <li>
-                          <a href={u(link?.href)} style={{ color: "#101828" }} className="h_1dd7993">
+                          <a href={u(link?.href)} style={{ color: "#14181D" }} className="h_9e87cbe">
                             {link?.label}
                           </a>
                         </li>
@@ -225,17 +225,17 @@ export default function Chrome() {
             {" "}
             <div style={{ background: "#F4F6F8", border: "1px solid #E4E7EC", borderRadius: "10px", padding: "16px", display: "flex", gap: "14px", alignItems: "center" }}>
               {" "}
-              <div style={{ width: "86px", height: "86px", flexShrink: "0", borderRadius: "8px", background: "#101828", display: "flex", alignItems: "center", justifyContent: "center", color: "#D4A72C", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.1em" }}>
+              <div style={{ width: "86px", height: "86px", flexShrink: "0", borderRadius: "8px", background: "#101828", display: "flex", alignItems: "center", justifyContent: "center", color: "#7FA3E8", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.1em" }}>
                 {v.megaBadge}
               </div>
               {" "}
               <div>
                 {" "}
-                <span style={{ display: "inline-block", fontFamily: "Sora,sans-serif", fontSize: "10px", fontWeight: "700", letterSpacing: "0.12em", textTransform: "uppercase", color: "#D71920", marginBottom: "6px" }}>
+                <span style={{ display: "inline-block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontSize: "10px", fontWeight: "500", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "6px" }}>
                   Editor’s Pick
                 </span>
                 {" "}
-                <a href={u(v.megaFeaturedHref)} style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "16px", lineHeight: "1.25", color: "#101828" }} className="h_1dd7993">
+                <a href={u(v.megaFeaturedHref)} style={{ display: "block", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "16px", lineHeight: "1.25", color: "#14181D" }} className="h_9e87cbe">
                   {v.megaFeatured}
                 </a>
                 {" "}
@@ -253,44 +253,44 @@ export default function Chrome() {
           {" "}
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "18px" }}>
             {" "}
-            <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "16px" }}>
+            <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "16px" }}>
               Menu
             </span>
             {" "}
-            <button type="button" onClick={v.closeDrawer} aria-label="Close menu" style={{ background: "none", border: "0", fontSize: "22px", cursor: "pointer", color: "#667085" }}>
+            <button type="button" onClick={v.closeDrawer} aria-label="Close menu" style={{ background: "none", border: "0", fontSize: "22px", cursor: "pointer", color: "#5A6470" }}>
               ×
             </button>
             {" "}
           </div>
           {" "}
-          <ul style={{ display: "flex", flexDirection: "column", gap: "2px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "15px" }}>
+          <ul style={{ display: "flex", flexDirection: "column", gap: "2px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "15px" }}>
             {" "}
             <li>
-              <a href={u("#home")} style={{ display: "block", padding: "11px 8px", borderBottom: "1px solid #F0F2F5", color: "#101828" }}>
+              <a href={u("#home")} style={{ display: "block", padding: "11px 8px", borderBottom: "1px solid #F0F2F5", color: "#14181D" }}>
                 Home
               </a>
             </li>
             {" "}
             <li>
-              <a href={u("#latest")} style={{ display: "block", padding: "11px 8px", borderBottom: "1px solid #F0F2F5", color: "#101828" }}>
+              <a href={u("#latest")} style={{ display: "block", padding: "11px 8px", borderBottom: "1px solid #F0F2F5", color: "#14181D" }}>
                 Latest
               </a>
             </li>
             {" "}
             <li>
-              <a href={u("#business")} style={{ display: "block", padding: "11px 8px", borderBottom: "1px solid #F0F2F5", color: "#101828" }}>
+              <a href={u("#business")} style={{ display: "block", padding: "11px 8px", borderBottom: "1px solid #F0F2F5", color: "#14181D" }}>
                 Business
               </a>
             </li>
             {" "}
             <li>
-              <a href={u("#technology")} style={{ display: "block", padding: "11px 8px", borderBottom: "1px solid #F0F2F5", color: "#101828", fontSize: "15px" }}>
+              <a href={u("#technology")} style={{ display: "block", padding: "11px 8px", borderBottom: "1px solid #F0F2F5", color: "#14181D", fontSize: "15px" }}>
                 Technology &amp; AI
               </a>
             </li>
             {" "}
             <li>
-              <a href={u("#about")} style={{ display: "block", padding: "11px 8px", borderBottom: "1px solid #F0F2F5", color: "#101828", fontSize: "15px" }}>
+              <a href={u("#about")} style={{ display: "block", padding: "11px 8px", borderBottom: "1px solid #F0F2F5", color: "#14181D", fontSize: "15px" }}>
                 About Us
               </a>
             </li>
@@ -327,7 +327,7 @@ export default function Chrome() {
             {" "}
           </ul>
           {" "}
-          <a href={u("#newsletter")} onClick={v.closeDrawer} style={{ display: "block", textAlign: "center", marginTop: "18px", padding: "13px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700" }}>
+          <a href={u("#newsletter")} onClick={v.closeDrawer} style={{ display: "block", textAlign: "center", marginTop: "18px", padding: "13px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700" }}>
             Subscribe Free
           </a>
           {" "}

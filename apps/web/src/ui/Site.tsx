@@ -3,6 +3,7 @@ import { type ReactNode, useEffect, useReducer, useRef } from 'react'
 
 import { VContext } from './context'
 import { SiteLogic } from './logic'
+import AccessibilityPanel from './AccessibilityPanel'
 import After from './parts/After'
 import Chrome from './parts/Chrome'
 import MainTail from './parts/MainTail'
@@ -49,6 +50,7 @@ export function Site({ route, D, children }: SiteProps & { children: ReactNode }
           <MainTail />
         </main>
         <After />
+        <AccessibilityPanel />
       </div>
     </VContext.Provider>
   )

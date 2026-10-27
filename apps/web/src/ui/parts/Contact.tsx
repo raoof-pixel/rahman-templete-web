@@ -15,14 +15,14 @@ export default function Contact() {
         {" "}
         <nav aria-label="Breadcrumb" style={{ background: "#F4F6F8", borderBottom: "1px solid #E4E7EC" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#667085", display: "flex", gap: "8px" }}>
-            <a href={u("#home")} style={{ color: "#667085" }} className="h_1dd7993">
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#5A6470", display: "flex", gap: "8px" }}>
+            <a href={u("#home")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Home
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <span style={{ color: "#101828" }}>
+            <span style={{ color: "#14181D" }}>
               Contact
             </span>
           </div>
@@ -33,18 +33,18 @@ export default function Contact() {
           {" "}
           <div>
             {" "}
-            <h1 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(30px,3.4vw,44px)", lineHeight: "1.1", marginBottom: "16px" }}>
+            <h1 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(30px,3.4vw,44px)", lineHeight: "1.1", marginBottom: "16px", letterSpacing: "-0.025em" }}>
               Contact CanadianSME
             </h1>
             {" "}
-            <p style={{ fontSize: "17px", lineHeight: "1.7", color: "#667085", maxWidth: "48ch", marginBottom: "30px" }}>
+            <p style={{ fontSize: "17px", lineHeight: "1.7", color: "#5A6470", maxWidth: "48ch", marginBottom: "30px" }}>
               Story tips, partnership enquiries, event questions, or feedback on something we published — we read everything.
             </p>
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "20px", fontSize: "15px", lineHeight: "1.6", color: "#475467" }}>
               {" "}
               <div>
-                <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#98A2B3", marginBottom: "5px" }}>
+                <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470", marginBottom: "5px" }}>
                   Editorial
                 </span>
                 <a href={u("#submit")}>
@@ -53,7 +53,7 @@ export default function Contact() {
               </div>
               {" "}
               <div>
-                <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#98A2B3", marginBottom: "5px" }}>
+                <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470", marginBottom: "5px" }}>
                   Advertising
                 </span>
                 <a href={u("#advertise-with-us")}>
@@ -62,7 +62,7 @@ export default function Contact() {
               </div>
               {" "}
               <div>
-                <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#98A2B3", marginBottom: "5px" }}>
+                <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470", marginBottom: "5px" }}>
                   Office
                 </span>
                 Toronto, Ontario, Canada
@@ -77,19 +77,19 @@ export default function Contact() {
             {" "}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(160px,1fr))", gap: "14px" }}>
               {" "}
-              <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#667085" }}>
+              <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#5A6470" }}>
                 Name
                 <input type="text" ref={v.cNameRef} style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #D0D5DD", fontSize: "14px" }} />
               </label>
               {" "}
-              <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#667085" }}>
+              <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#5A6470" }}>
                 Email
                 <input type="email" ref={v.cEmailRef} style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #D0D5DD", fontSize: "14px" }} />
               </label>
               {" "}
             </div>
             {" "}
-            <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#667085" }}>
+            <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#5A6470" }}>
               Reason for contact
               <select ref={v.cTopicRef} style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #D0D5DD", fontSize: "14px", background: "#fff" }}>
                 <option value="">
@@ -113,7 +113,7 @@ export default function Contact() {
               </select>
             </label>
             {" "}
-            <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#667085" }}>
+            <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#5A6470" }}>
               Message
               <textarea ref={v.cMsgRef} rows="5" style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #D0D5DD", fontSize: "14px", fontFamily: "inherit", resize: "vertical" }}>
 
@@ -124,7 +124,7 @@ export default function Contact() {
               {v.contactMessage}
             </span>
             {" "}
-            <button type="submit" style={{ padding: "15px", borderRadius: "8px", border: "0", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "pointer" }} className="h_58d1318">
+            <button type="submit" style={{ padding: "15px", borderRadius: "8px", border: "0", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "pointer" }} className="h_58d1318">
               Send message
             </button>
             {" "}

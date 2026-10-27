@@ -15,20 +15,20 @@ export default function Ups() {
         {" "}
         <nav aria-label="Breadcrumb" style={{ background: "#F4F6F8", borderBottom: "1px solid #E4E7EC" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#667085", display: "flex", gap: "8px", flexWrap: "wrap" }}>
-            <a href={u("#home")} style={{ color: "#667085" }} className="h_1dd7993">
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#5A6470", display: "flex", gap: "8px", flexWrap: "wrap" }}>
+            <a href={u("#home")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Home
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <a href={u("#about")} style={{ color: "#667085" }} className="h_1dd7993">
+            <a href={u("#about")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               About Us
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <span style={{ color: "#101828" }}>
+            <span style={{ color: "#14181D" }}>
               UPS Small Business of the Day
             </span>
           </div>
@@ -43,11 +43,11 @@ export default function Ups() {
               {" "}
               <img src="https://canadiansme.ca/wp-content/uploads/2023/12/UPSlogo-1920w.webp" alt="UPS" style={{ width: "64px", height: "auto", display: "block" }} />
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#F5A3A6" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8" }}>
                 Partner programme · Powered by CanadianSME
               </span>
               {" "}
-              <h1 id="ups-h1" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(32px,3.8vw,50px)", lineHeight: "1.08", letterSpacing: "-0.02em", textWrap: "pretty" }}>
+              <h1 id="ups-h1" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(34px,4.4vw,56px)", lineHeight: "1.04", letterSpacing: "-0.025em", textWrap: "pretty" }}>
                 UPS Small Business of the Day
               </h1>
               {" "}
@@ -61,11 +61,11 @@ export default function Ups() {
               {" "}
               <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "6px" }}>
                 {" "}
-                <a href="https://forms.canadiansme.ca/ups-small-business" target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "13px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_635546e">
+                <a href="https://forms.canadiansme.ca/ups-small-business" target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "13px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_635546e">
                   Apply now
                 </a>
                 {" "}
-                <a href={u("#ups-featured")} style={{ display: "inline-flex", alignItems: "center", padding: "13px 22px", borderRadius: "8px", border: "1.5px solid #fff", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14.5px" }} className="h_f5a17ae">
+                <a href={u("#ups-featured")} style={{ display: "inline-flex", alignItems: "center", padding: "13px 22px", borderRadius: "8px", border: "1.5px solid #fff", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14.5px" }} className="h_f5a17ae">
                   See featured businesses
                 </a>
                 {" "}
@@ -86,15 +86,15 @@ export default function Ups() {
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: "24px", flexWrap: "wrap", paddingBottom: "14px", marginBottom: "28px", borderBottom: "2px solid #101828" }}>
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                 Featured
               </span>
-              <h2 id="ups-feat-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.02em", color: "#101828", textWrap: "pretty" }}>
+              <h2 id="ups-feat-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.015em", color: "#14181D", textWrap: "pretty" }}>
                 Featured UPS Small Businesses of the Day
               </h2>
             </div>
             {" "}
-            <a href="https://canadiansme.ca/category/ups-small-business-of-the-day/" target="_blank" rel="noopener" style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }}>
+            <a href="https://canadiansme.ca/category/ups-small-business-of-the-day/" target="_blank" rel="noopener" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }}>
               Explore more →
             </a>
             {" "}
@@ -110,21 +110,21 @@ export default function Ups() {
               {" "}
               <div style={{ padding: "18px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                   Small Business of the Day
                 </span>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
-                  <a href={u("#post-lemon-lily-tea-brings-natural-flavours-and-sustainable-innovation-to-canadian-tea-lovers")} style={{ color: "#101828", textDecoration: "none" }} className="h_1dd7993">
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
+                  <a href={u("#post-lemon-lily-tea-brings-natural-flavours-and-sustainable-innovation-to-canadian-tea-lovers")} style={{ color: "#14181D", textDecoration: "none" }} className="h_9e87cbe">
                     Lemon Lily Tea Brings Natural Flavours and Sustainable Innovation to Canadian Tea Lovers
                   </a>
                 </h3>
                 {" "}
-                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#667085" }}>
+                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#5A6470" }}>
                   As Canadians grow more concerned about what’s in their daily cup…
                 </p>
                 {" "}
-                <span style={{ marginTop: "auto", fontSize: "13px", color: "#667085" }}>
+                <span style={{ marginTop: "auto", fontSize: "13px", color: "#5A6470" }}>
                   October 20, 2026
                 </span>
                 {" "}
@@ -140,21 +140,21 @@ export default function Ups() {
               {" "}
               <div style={{ padding: "18px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                   Small Business of the Day
                 </span>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
-                  <a href={u("#post-park-fifth-co-redefining-canadian-occasion-wear-with-timeless-elegance-and-sustainable-fashion")} style={{ color: "#101828", textDecoration: "none" }} className="h_1dd7993">
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
+                  <a href={u("#post-park-fifth-co-redefining-canadian-occasion-wear-with-timeless-elegance-and-sustainable-fashion")} style={{ color: "#14181D", textDecoration: "none" }} className="h_9e87cbe">
                     Park &amp; Fifth Co: Redefining Canadian Occasion Wear with Timeless Elegance and Sustainable Fashion
                   </a>
                 </h3>
                 {" "}
-                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#667085" }}>
+                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#5A6470" }}>
                   Learn how Vancouver-based Park &amp; Fifth Co is reinventing wedding…
                 </p>
                 {" "}
-                <span style={{ marginTop: "auto", fontSize: "13px", color: "#667085" }}>
+                <span style={{ marginTop: "auto", fontSize: "13px", color: "#5A6470" }}>
                   October 20, 2026
                 </span>
                 {" "}
@@ -170,21 +170,21 @@ export default function Ups() {
               {" "}
               <div style={{ padding: "18px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                   Small Business of the Day
                 </span>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
-                  <a href={u("#post-nanuk-protecting-valuable-gear-with-canadian-made-innovation")} style={{ color: "#101828", textDecoration: "none" }} className="h_1dd7993">
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
+                  <a href={u("#post-nanuk-protecting-valuable-gear-with-canadian-made-innovation")} style={{ color: "#14181D", textDecoration: "none" }} className="h_9e87cbe">
                     NANUK: Protecting Valuable Gear with Canadian-Made Innovation
                   </a>
                 </h3>
                 {" "}
-                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#667085" }}>
+                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#5A6470" }}>
                   When important equipment must travel through rain, dust, collision, harsh…
                 </p>
                 {" "}
-                <span style={{ marginTop: "auto", fontSize: "13px", color: "#667085" }}>
+                <span style={{ marginTop: "auto", fontSize: "13px", color: "#5A6470" }}>
                   October 20, 2026
                 </span>
                 {" "}
@@ -200,21 +200,21 @@ export default function Ups() {
               {" "}
               <div style={{ padding: "18px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                   Small Business of the Day
                 </span>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
-                  <a href={u("#post-larch-wood-canada-crafting-heirloom-kitchen-essentials-from-cape-breton")} style={{ color: "#101828", textDecoration: "none" }} className="h_1dd7993">
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
+                  <a href={u("#post-larch-wood-canada-crafting-heirloom-kitchen-essentials-from-cape-breton")} style={{ color: "#14181D", textDecoration: "none" }} className="h_9e87cbe">
                     Larch Wood Canada: Crafting Heirloom Kitchen Essentials from Cape Breton
                   </a>
                 </h3>
                 {" "}
-                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#667085" }}>
+                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#5A6470" }}>
                   Larch Wood Canada, based in East Margaree on Cape Breton…
                 </p>
                 {" "}
-                <span style={{ marginTop: "auto", fontSize: "13px", color: "#667085" }}>
+                <span style={{ marginTop: "auto", fontSize: "13px", color: "#5A6470" }}>
                   October 20, 2026
                 </span>
                 {" "}
@@ -230,21 +230,21 @@ export default function Ups() {
               {" "}
               <div style={{ padding: "18px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                   Small Business of the Day
                 </span>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
-                  <a href={u("#post-grynd-building-canadian-sports-nutrition-around-real-food-and-better-fuel")} style={{ color: "#101828", textDecoration: "none" }} className="h_1dd7993">
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
+                  <a href={u("#post-grynd-building-canadian-sports-nutrition-around-real-food-and-better-fuel")} style={{ color: "#14181D", textDecoration: "none" }} className="h_9e87cbe">
                     GRYND: Building Canadian Sports Nutrition Around Real Food and Better Fuel
                   </a>
                 </h3>
                 {" "}
-                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#667085" }}>
+                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#5A6470" }}>
                   For athletes, nutrition is frequently a practical question. Can food…
                 </p>
                 {" "}
-                <span style={{ marginTop: "auto", fontSize: "13px", color: "#667085" }}>
+                <span style={{ marginTop: "auto", fontSize: "13px", color: "#5A6470" }}>
                   October 20, 2026
                 </span>
                 {" "}
@@ -260,21 +260,21 @@ export default function Ups() {
               {" "}
               <div style={{ padding: "18px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                   Small Business of the Day
                 </span>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
-                  <a href={u("#post-neferland-creating-smarter-sustainable-products-for-messy-childhood-moments")} style={{ color: "#101828", textDecoration: "none" }} className="h_1dd7993">
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.3", textWrap: "pretty" }}>
+                  <a href={u("#post-neferland-creating-smarter-sustainable-products-for-messy-childhood-moments")} style={{ color: "#14181D", textDecoration: "none" }} className="h_9e87cbe">
                     Neferland: Creating Smarter, Sustainable Products for Messy Childhood Moments
                   </a>
                 </h3>
                 {" "}
-                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#667085" }}>
+                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#5A6470" }}>
                   Childhood is inherently messy. From first foods and finger painting…
                 </p>
                 {" "}
-                <span style={{ marginTop: "auto", fontSize: "13px", color: "#667085" }}>
+                <span style={{ marginTop: "auto", fontSize: "13px", color: "#5A6470" }}>
                   October 20, 2026
                 </span>
                 {" "}
@@ -296,11 +296,11 @@ export default function Ups() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                 How it works
               </span>
               {" "}
-              <h2 id="ups-about-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.02em", color: "#101828", textWrap: "pretty" }}>
+              <h2 id="ups-about-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.015em", color: "#14181D", textWrap: "pretty" }}>
                 UPS Small Business of the Day, powered by CanadianSME
               </h2>
               {" "}
@@ -313,7 +313,7 @@ export default function Ups() {
               </p>
               {" "}
               <div>
-                <a href="https://forms.canadiansme.ca/ups-small-business" target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "13px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_635546e">
+                <a href="https://forms.canadiansme.ca/ups-small-business" target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "13px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_635546e">
                   Apply now
                 </a>
               </div>
@@ -330,11 +330,11 @@ export default function Ups() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                 UPS Canada
               </span>
               {" "}
-              <h2 id="ups-support-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.02em", color: "#101828", textWrap: "pretty" }}>
+              <h2 id="ups-support-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.015em", color: "#14181D", textWrap: "pretty" }}>
                 How is UPS Canada supporting Canadian small businesses?
               </h2>
               {" "}
@@ -347,7 +347,7 @@ export default function Ups() {
               </p>
               {" "}
               <div>
-                <a href="https://forms.canadiansme.ca/ups-small-business" target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "13px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_635546e">
+                <a href="https://forms.canadiansme.ca/ups-small-business" target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "13px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_635546e">
                   Apply now
                 </a>
               </div>
@@ -374,11 +374,11 @@ export default function Ups() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                 Why it matters
               </span>
               {" "}
-              <h2 id="ups-why-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.02em", color: "#101828", textWrap: "pretty" }}>
+              <h2 id="ups-why-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.015em", color: "#14181D", textWrap: "pretty" }}>
                 Why supporting small businesses is more important than ever
               </h2>
               {" "}
@@ -395,7 +395,7 @@ export default function Ups() {
               </p>
               {" "}
               <div>
-                <a href="https://forms.canadiansme.ca/ups-small-business" target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "13px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_635546e">
+                <a href="https://forms.canadiansme.ca/ups-small-business" target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "13px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_635546e">
                   Apply now
                 </a>
               </div>
@@ -411,10 +411,10 @@ export default function Ups() {
           <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "64px 24px", display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,340px),1fr))", gap: "36px", alignItems: "center" }}>
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#F5C9CC" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#F5C9CC" }}>
                 Women exporters
               </span>
-              <h2 id="ups-women-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.02em", color: "#fff", textWrap: "pretty" }}>
+              <h2 id="ups-women-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.015em", color: "#fff", textWrap: "pretty" }}>
                 Supporting women supports economic growth
               </h2>
             </div>
@@ -426,7 +426,7 @@ export default function Ups() {
               </p>
               {" "}
               <div>
-                <a href="https://about.ups.com/ca/en/our-impact/community/equity-and-economic-empowerment/ups-expands-women-exporters-program-to-canada.html" target="_blank" rel="noopener" style={{ display: "inline-flex", padding: "13px 22px", borderRadius: "8px", background: "#fff", color: "#7A1F2B", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14.5px" }} className="h_a9a03f7">
+                <a href="https://about.ups.com/ca/en/our-impact/community/equity-and-economic-empowerment/ups-expands-women-exporters-program-to-canada.html" target="_blank" rel="noopener" style={{ display: "inline-flex", padding: "13px 22px", borderRadius: "8px", background: "#fff", color: "#7A1F2B", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14.5px" }} className="h_a9a03f7">
                   Learn more
                 </a>
               </div>
@@ -442,15 +442,15 @@ export default function Ups() {
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: "24px", flexWrap: "wrap", marginBottom: "28px" }}>
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                 Thanks to our partners
               </span>
-              <h2 id="ups-partners-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.02em", color: "#101828", textWrap: "pretty" }}>
+              <h2 id="ups-partners-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.015em", color: "#14181D", textWrap: "pretty" }}>
                 Our supporting partners
               </h2>
             </div>
             {" "}
-            <a href={u("#contact")} style={{ display: "inline-flex", padding: "12px 20px", borderRadius: "8px", border: "1.5px solid #101828", color: "#101828", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_3023cb9">
+            <a href={u("#contact")} style={{ display: "inline-flex", padding: "12px 20px", borderRadius: "8px", border: "1.5px solid #101828", color: "#14181D", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_3023cb9">
               Partner with us
             </a>
             {" "}
@@ -466,15 +466,15 @@ export default function Ups() {
               {" "}
               <div style={{ padding: "0 20px 22px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "19px", lineHeight: "1.25" }}>
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "19px", lineHeight: "1.25" }}>
                   UPS Canada
                 </h3>
                 {" "}
-                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#667085" }}>
+                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#5A6470" }}>
                   Small business shipping made easy. UPS can help save time and money with small business shipping solutions, so you spend more time on your business and less on shipping.
                 </p>
                 {" "}
-                <a href="https://www.ups.com/ca/en/Home.page" target="_blank" rel="noopener" style={{ marginTop: "auto", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#D71920" }}>
+                <a href="https://www.ups.com/ca/en/Home.page" target="_blank" rel="noopener" style={{ marginTop: "auto", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#002364" }}>
                   Learn more →
                 </a>
                 {" "}
@@ -490,15 +490,15 @@ export default function Ups() {
               {" "}
               <div style={{ padding: "0 20px 22px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "19px", lineHeight: "1.25" }}>
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "19px", lineHeight: "1.25" }}>
                   Jelly Academy
                 </h3>
                 {" "}
-                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#667085" }}>
+                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#5A6470" }}>
                   Rapid re-skilling, up-skilling and micro-credentials to land a job or grow in the digital marketing industry.
                 </p>
                 {" "}
-                <a href="https://jellyacademy.ca/" target="_blank" rel="noopener" style={{ marginTop: "auto", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#D71920" }}>
+                <a href="https://jellyacademy.ca/" target="_blank" rel="noopener" style={{ marginTop: "auto", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#002364" }}>
                   Learn more →
                 </a>
                 {" "}
@@ -514,15 +514,15 @@ export default function Ups() {
               {" "}
               <div style={{ padding: "0 20px 22px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "19px", lineHeight: "1.25" }}>
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "19px", lineHeight: "1.25" }}>
                   CanadianSME
                 </h3>
                 {" "}
-                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#667085" }}>
+                <p style={{ fontSize: "14.5px", lineHeight: "1.6", color: "#5A6470" }}>
                   The premier platform for SMEs in Canada, highlighting growing businesses and thought leaders with a focus on innovation, growth and marketing.
                 </p>
                 {" "}
-                <a href={u("#about")} style={{ marginTop: "auto", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#D71920" }}>
+                <a href={u("#about")} style={{ marginTop: "auto", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#002364" }}>
                   Learn more →
                 </a>
                 {" "}
@@ -540,11 +540,11 @@ export default function Ups() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                 Powered by CanadianSME
               </span>
               {" "}
-              <h2 id="ups-mag-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.02em", color: "#101828", textWrap: "pretty" }}>
+              <h2 id="ups-mag-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.015em", color: "#14181D", textWrap: "pretty" }}>
                 Subscribe to CanadianSME Small Business Magazine
               </h2>
               {" "}
@@ -553,7 +553,7 @@ export default function Ups() {
               </p>
               {" "}
               <div>
-                <a href={u("#newsletter-page")} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "13px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_635546e">
+                <a href={u("#newsletter-page")} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", padding: "13px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_635546e">
                   Subscribe now
                 </a>
               </div>

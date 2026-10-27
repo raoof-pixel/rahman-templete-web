@@ -7,6 +7,7 @@ import { absolute, NOINDEX, SITE_NAME, SITE_URL } from '@/lib/seo'
 import './proto-base.css'
 import '../ui/states.css'
 import './site.css'
+import '../ui/article-tools.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -50,7 +51,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" />
         <link rel="preload" as="image" href="/assets/canadiansme-logo.png" fetchPriority="high" />
         <JsonLd data={site} />
       </head>

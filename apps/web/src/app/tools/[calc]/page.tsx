@@ -9,6 +9,9 @@ const TOOLS: Record<string, [string, string]> = {
   payroll: ['Payroll Deductions Estimator', 'Estimate CPP, EI and income tax withheld per pay period, plus the employer contributions, by province.'],
   cashflow: ['13-Week Cash-Flow Forecaster', 'Project your bank balance week by week, including payroll runs and GST/HST remittances.'],
   loan: ['Loan Payment Calculator', 'Compare a term loan, an operating line and equipment financing for the same amount.'],
+  'self-employed': ['Self-Employed Tax and Instalment Estimator', 'Estimate income tax and both halves of CPP on sole-proprietor income, the amount to set aside each month, and whether the CRA will expect quarterly instalments.'],
+  import: ['Import Landed Cost and Tariff Calculator', 'Work out the landed cost of an imported shipment: exchange, freight, duty, surtax or counter-tariff, brokerage and border GST/HST, per unit, with a margin-safe price.'],
+  pricing: ['Pricing, Break-Even and Margin Calculator', 'Find your break-even sales, compare markup and margin, and see how much to raise prices when your costs go up.'],
 }
 
 export const dynamicParams = false

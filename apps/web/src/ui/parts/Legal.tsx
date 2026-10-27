@@ -15,14 +15,14 @@ export default function Legal() {
         {" "}
         <nav aria-label="Breadcrumb" style={{ background: "#F4F6F8", borderBottom: "1px solid #E4E7EC" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#667085", display: "flex", gap: "8px" }}>
-            <a href={u("#home")} style={{ color: "#667085" }} className="h_1dd7993">
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#5A6470", display: "flex", gap: "8px" }}>
+            <a href={u("#home")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Home
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <span style={{ color: "#101828" }}>
+            <span style={{ color: "#14181D" }}>
               {v.legalLabel}
             </span>
           </div>
@@ -33,11 +33,11 @@ export default function Legal() {
           {" "}
           <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "56px 24px 48px", display: "flex", flexDirection: "column", gap: "14px" }}>
             {" "}
-            <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#FF6B72" }}>
+            <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8" }}>
               Legal
             </span>
             {" "}
-            <h1 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(30px,3.4vw,44px)", lineHeight: "1.12", letterSpacing: "-0.01em" }}>
+            <h1 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(30px,3.4vw,44px)", lineHeight: "1.12", letterSpacing: "-0.025em" }}>
               {v.legalTitle}
             </h1>
             {" "}
@@ -55,15 +55,15 @@ export default function Legal() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#667085", marginBottom: "8px" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470", marginBottom: "8px" }}>
                 On this page
               </span>
               {" "}
               {(v.legalSections || []).map((sec: any, _i7: number) => (
                 <Fragment key={sec?.key ?? sec?.id ?? sec?.slug ?? _i7}>
                   {" "}
-                  <button type="button" onClick={sec?.go} style={{ display: "flex", gap: "10px", textAlign: "left", background: "none", border: "0", padding: "6px 0", cursor: "pointer", fontSize: "14px", lineHeight: "1.4", color: "#344054" }} className="h_1dd7993">
-                    <span style={{ color: "#98A2B3", minWidth: "18px" }}>
+                  <button type="button" onClick={sec?.go} style={{ display: "flex", gap: "10px", textAlign: "left", background: "none", border: "0", padding: "6px 0", cursor: "pointer", fontSize: "14px", lineHeight: "1.4", color: "#344054" }} className="h_9e87cbe">
+                    <span style={{ color: "#5A6470", minWidth: "18px" }}>
                       {sec?.n}
                     </span>
                     <span>
@@ -78,19 +78,19 @@ export default function Legal() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "8px", paddingTop: "18px", borderTop: "1px solid #E4E7EC" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#667085" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470" }}>
                 Related
               </span>
               {" "}
               {(v.legalOthers || []).map((o: any, _i7: number) => (
                 <Fragment key={o?.key ?? o?.id ?? o?.slug ?? _i7}>
-                  <a href={u(o?.href)} style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "14px", color: "#1E5AA8" }} className="h_1dd7993">
+                  <a href={u(o?.href)} style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "14px", color: "#004FB8" }} className="h_9e87cbe">
                     {o?.label} →
                   </a>
                 </Fragment>
               ))}
               {" "}
-              <a href={u("#sitemap")} style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "14px", color: "#1E5AA8" }} className="h_1dd7993">
+              <a href={u("#sitemap")} style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "14px", color: "#004FB8" }} className="h_9e87cbe">
                 Sitemap →
               </a>
               {" "}
@@ -109,8 +109,8 @@ export default function Legal() {
                 {" "}
                 <section id={sec?.id} style={{ display: "flex", flexDirection: "column", gap: "14px", paddingTop: "28px", borderTop: "1px solid #E4E7EC" }}>
                   {" "}
-                  <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "22px", lineHeight: "1.3", color: "#101828", display: "flex", gap: "12px" }}>
-                    <span style={{ color: "#D71920" }}>
+                  <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "22px", lineHeight: "1.3", color: "#14181D", display: "flex", gap: "12px" }}>
+                    <span style={{ color: "#002364" }}>
                       {sec?.n}.
                     </span>
                     <span>
@@ -149,7 +149,7 @@ export default function Legal() {
               </Fragment>
             ))}
             {" "}
-            <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", padding: "18px 20px", background: "#F4F6F8", borderRadius: "10px" }}>
+            <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", padding: "18px 20px", background: "#F4F6F8", borderRadius: "10px" }}>
               This page is provided for general information and should be reviewed by qualified legal counsel before publication.
             </p>
             {" "}

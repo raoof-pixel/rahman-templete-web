@@ -15,25 +15,25 @@ export default function NotFound() {
         {" "}
         <div style={{ maxWidth: "700px", margin: "0 auto", padding: "96px 24px 110px", textAlign: "center" }}>
           {" "}
-          <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "76px", color: "#D71920", lineHeight: "1", marginBottom: "16px" }}>
+          <span style={{ display: "block", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "76px", color: "#002364", lineHeight: "1", marginBottom: "16px" }}>
             404
           </span>
           {" "}
-          <h1 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(28px,3vw,40px)", lineHeight: "1.14", marginBottom: "14px" }}>
+          <h1 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(28px,3vw,40px)", lineHeight: "1.14", marginBottom: "14px", letterSpacing: "-0.025em" }}>
             We couldn’t find that page
           </h1>
           {" "}
-          <p style={{ fontSize: "17px", lineHeight: "1.7", color: "#667085", marginBottom: "30px" }}>
+          <p style={{ fontSize: "17px", lineHeight: "1.7", color: "#5A6470", marginBottom: "30px" }}>
             The link may be out of date, or the story may have moved. Try the latest issue, or search for what you need.
           </p>
           {" "}
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
             {" "}
-            <a href={u("#home")} style={{ padding: "14px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_900112d">
+            <a href={u("#home")} style={{ padding: "14px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_900112d">
               Back to homepage
             </a>
             {" "}
-            <a href={u("#search")} style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid #101828", color: "#101828", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_a3b515a">
+            <a href={u("#search")} style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid #101828", color: "#14181D", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_a3b515a">
               Search the site
             </a>
             {" "}

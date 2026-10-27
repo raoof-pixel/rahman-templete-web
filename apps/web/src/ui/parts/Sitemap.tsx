@@ -15,14 +15,14 @@ export default function Sitemap() {
         {" "}
         <nav aria-label="Breadcrumb" style={{ background: "#F4F6F8", borderBottom: "1px solid #E4E7EC" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#667085", display: "flex", gap: "8px" }}>
-            <a href={u("#home")} style={{ color: "#667085" }} className="h_1dd7993">
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#5A6470", display: "flex", gap: "8px" }}>
+            <a href={u("#home")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Home
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <span style={{ color: "#101828" }}>
+            <span style={{ color: "#14181D" }}>
               Sitemap
             </span>
           </div>
@@ -33,11 +33,11 @@ export default function Sitemap() {
           {" "}
           <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "56px 24px 48px", display: "flex", flexDirection: "column", gap: "14px" }}>
             {" "}
-            <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#FF6B72" }}>
+            <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8" }}>
               Find your way
             </span>
             {" "}
-            <h1 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(30px,3.4vw,44px)", lineHeight: "1.12", letterSpacing: "-0.01em" }}>
+            <h1 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(30px,3.4vw,44px)", lineHeight: "1.12", letterSpacing: "-0.025em" }}>
               Sitemap
             </h1>
             {" "}
@@ -56,7 +56,7 @@ export default function Sitemap() {
               {" "}
               <section style={{ display: "flex", flexDirection: "column", gap: "12px", paddingTop: "16px", borderTop: "2px solid #101828" }}>
                 {" "}
-                <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17px", color: "#101828" }}>
+                <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "17px", color: "#14181D" }}>
                   {g?.title}
                 </h2>
                 {" "}
@@ -65,7 +65,7 @@ export default function Sitemap() {
                   {(g?.links || []).map((l: any, _i9: number) => (
                     <Fragment key={l?.key ?? l?.id ?? l?.slug ?? _i9}>
                       <li>
-                        <a href={u(l?.href)} style={{ fontSize: "15px", color: "#344054" }} className="h_1dd7993">
+                        <a href={u(l?.href)} style={{ fontSize: "15px", color: "#344054" }} className="h_9e87cbe">
                           {l?.label}
                         </a>
                       </li>

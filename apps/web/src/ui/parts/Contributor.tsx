@@ -16,20 +16,20 @@ export default function Contributor() {
         {" "}
         <nav aria-label="Breadcrumb" style={{ background: "#F4F6F8", borderBottom: "1px solid #E4E7EC" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#667085", display: "flex", gap: "8px", flexWrap: "wrap" }}>
-            <a href={u("#home")} style={{ color: "#667085" }} className="h_1dd7993">
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#5A6470", display: "flex", gap: "8px", flexWrap: "wrap" }}>
+            <a href={u("#home")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Home
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <a href={u("#contributors")} style={{ color: "#667085" }} className="h_1dd7993">
+            <a href={u("#contributors")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Contributors
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <span style={{ color: "#101828" }}>
+            <span style={{ color: "#14181D" }}>
               {v.author?.author?.name}
             </span>
           </div>
@@ -41,20 +41,20 @@ export default function Contributor() {
           <div style={{ display: "flex", gap: "28px", alignItems: "center", flexWrap: "wrap", paddingBottom: "32px", borderBottom: "1px solid #E4E7EC", marginBottom: "36px" }}>
             {" "}
             <div style={{ width: "132px", height: "132px", borderRadius: "50%", overflow: "hidden", flexShrink: "0" }}>
-              {v.author?.author?.img ? <img fetchPriority="high" decoding="async" src={v.author.author.img} alt={`${v.author.author.name}${v.author.author.role ? ", " + v.author.author.role : ""}`} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} /> : <span aria-hidden="true" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "#101828", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "40px" }}>{(v.author?.author?.name || "").split(/\s+/).map((w: string) => w[0]).slice(0, 2).join("")}</span>}
+              {v.author?.author?.img ? <img fetchPriority="high" decoding="async" src={v.author.author.img} alt={`${v.author.author.name}${v.author.author.role ? ", " + v.author.author.role : ""}`} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} /> : <span aria-hidden="true" style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", background: "#101828", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "40px" }}>{(v.author?.author?.name || "").split(/\s+/).map((w: string) => w[0]).slice(0, 2).join("")}</span>}
             </div>
             {" "}
             <div style={{ minWidth: "260px", flex: "1" }}>
               {" "}
-              <h1 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(28px,3vw,40px)", lineHeight: "1.12", marginBottom: "8px" }}>
+              <h1 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(28px,3vw,40px)", lineHeight: "1.12", marginBottom: "8px", letterSpacing: "-0.025em" }}>
                 {v.author?.author?.name}
               </h1>
               {" "}
-              <p style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "14px", color: "#D71920", marginBottom: "12px" }}>
+              <p style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "14px", color: "#002364", marginBottom: "12px" }}>
                 {v.author?.author?.role}
               </p>
               {" "}
-              <p style={{ fontSize: "16px", lineHeight: "1.7", color: "#667085", maxWidth: "60ch" }}>
+              <p style={{ fontSize: "16px", lineHeight: "1.7", color: "#5A6470", maxWidth: "60ch" }}>
                 {v.author?.author?.bio}
               </p>
               {" "}
@@ -62,7 +62,7 @@ export default function Contributor() {
             {" "}
           </div>
           {" "}
-          <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "26px", marginBottom: "22px" }}>
+          <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "26px", marginBottom: "22px", letterSpacing: "-0.015em" }}>
             Recent work
           </h2>
           {" "}
@@ -73,11 +73,11 @@ export default function Contributor() {
                   <Slot src={r.img} alt={r.alt} shape="rect" placeholder="Article image" style={{ aspectRatio: "auto" }} />
                 </div>
                 <div style={{ padding: "16px", display: "flex", flexDirection: "column", gap: "8px" }}>
-                  <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#D71920" }}>
+                  <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                     {r.cat}
                   </span>
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "18px", lineHeight: "1.25" }}>
-                    <a href={u(r.href)} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "18px", lineHeight: "1.25" }}>
+                    <a href={u(r.href)} style={{ color: "#14181D" }} className="h_9e87cbe">
                       {r.title}
                     </a>
                   </h3>
@@ -87,7 +87,7 @@ export default function Contributor() {
           </div>
           <Pager base={v.author?.base || '/contributors/'} page={v.author?.page || 1} totalPages={v.author?.totalPages || 1} />
           {" "}
-          <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "28px", margin: "56px 0 24px" }}>
+          <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "28px", margin: "56px 0 24px", letterSpacing: "-0.015em" }}>
             Top Contributors
           </h2>
           {" "}
@@ -98,11 +98,11 @@ export default function Contributor() {
                   <Slot src={c.img} alt={c.name} shape="rect" placeholder="Contributor photo" style={{ aspectRatio: "1 / 1" }} />
                 </div>
                 <div>
-                  <a href={u(c.href)} style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "15.5px", color: "#101828" }} className="h_1dd7993">
+                  <a href={u(c.href)} style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "15.5px", color: "#14181D" }} className="h_9e87cbe">
                     {c.name}
                   </a>
                   {c.role ? (
-                    <p style={{ fontSize: "13px", color: "#667085", marginTop: "3px" }}>
+                    <p style={{ fontSize: "13px", color: "#5A6470", marginTop: "3px" }}>
                       {c.role}
                     </p>
                   ) : null}

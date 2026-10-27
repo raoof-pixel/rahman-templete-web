@@ -15,23 +15,23 @@ export default function Issue() {
         {" "}
         <nav aria-label="Breadcrumb" style={{ background: "#F4F6F8", borderBottom: "1px solid #E4E7EC" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#667085", display: "flex", gap: "8px", flexWrap: "wrap" }}>
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#5A6470", display: "flex", gap: "8px", flexWrap: "wrap" }}>
             {" "}
-            <a href={u("#home")} style={{ color: "#667085" }} className="h_1dd7993">
+            <a href={u("#home")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Home
             </a>
             <span aria-hidden="true">
               /
             </span>
             {" "}
-            <a href={u("#magazine")} style={{ color: "#667085" }} className="h_1dd7993">
+            <a href={u("#magazine")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Magazine
             </a>
             <span aria-hidden="true">
               /
             </span>
             {" "}
-            <span style={{ color: "#101828" }}>
+            <span style={{ color: "#14181D" }}>
               {v.issue?.month}
             </span>
             {" "}
@@ -55,11 +55,11 @@ export default function Issue() {
             {" "}
             <div>
               {" "}
-              <span style={{ display: "inline-block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D4A72C", marginBottom: "14px" }}>
+              <span style={{ display: "inline-block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8", marginBottom: "14px" }}>
                 Issue No. {v.issue?.number} · {v.issue?.month} · Free digital access
               </span>
               {" "}
-              <h1 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(28px,3.2vw,42px)", lineHeight: "1.12", marginBottom: "18px" }}>
+              <h1 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(28px,3.2vw,42px)", lineHeight: "1.12", marginBottom: "18px", letterSpacing: "-0.025em" }}>
                 {v.issue?.title}
               </h1>
               {" "}
@@ -68,10 +68,10 @@ export default function Issue() {
               </p>
               {" "}
               <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-                <a href={u(v.issue?.readUrl || '#')} target="_blank" rel="noopener" style={{ padding: "14px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_900112d">
+                <a href={u(v.issue?.readUrl || '#')} target="_blank" rel="noopener" style={{ padding: "14px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_900112d">
                   Read this issue
                 </a>
-                <a href={u("#magazine")} style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid #4A5163", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_28723ae">
+                <a href={u("#magazine")} style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid #4A5163", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_28723ae">
                   View past issues
                 </a>
               </div>
@@ -84,25 +84,25 @@ export default function Issue() {
         {" "}
         <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "56px 24px 72px" }}>
           {" "}
-          <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "28px", marginBottom: "24px" }}>
+          <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "28px", marginBottom: "24px", letterSpacing: "-0.015em" }}>
             Inside this issue
           </h2>
           {" "}
           <ol style={{ display: "flex", flexDirection: "column", gap: "0", margin: "0", padding: "0", listStyle: "none" }}>
             {(v.issue?.inside || []).map((it: any, i: number) => (
               <li key={i} style={{ display: "flex", gap: "20px", alignItems: "baseline", padding: "18px 0", borderBottom: "1px solid #E4E7EC" }}>
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", color: "#E4E7EC", fontSize: "18px" }}>
+                <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", color: "#E4E7EC", fontSize: "18px" }}>
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <div>
                   {it.href ? (
-                    <a href={u(it.href)} style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "20px", color: "#101828" }} className="h_1dd7993">
+                    <a href={u(it.href)} style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "20px", color: "#14181D" }} className="h_9e87cbe">
                       {it.title}
                     </a>
                   ) : (
-                    <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "20px", color: "#101828" }}>{it.title}</span>
+                    <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "20px", color: "#14181D" }}>{it.title}</span>
                   )}
-                  <p style={{ fontSize: "14px", color: "#667085", marginTop: "5px" }}>
+                  <p style={{ fontSize: "14px", color: "#5A6470", marginTop: "5px" }}>
                     {it.meta}
                   </p>
                 </div>

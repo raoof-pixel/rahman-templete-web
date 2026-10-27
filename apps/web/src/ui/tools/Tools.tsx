@@ -5,7 +5,7 @@ import { VContext } from '../context'
 import { ToolsLogic } from './logic'
 import ToolsView from './ToolsView'
 
-export type ToolKey = 'index' | 'gst' | 'payroll' | 'cashflow' | 'loan'
+export type ToolKey = 'index' | 'gst' | 'payroll' | 'cashflow' | 'loan' | 'self-employed' | 'import' | 'pricing'
 
 /** The Tools page (calculators run entirely in the browser; nothing is stored or sent). */
 export function Tools({ view }: { view: ToolKey }) {

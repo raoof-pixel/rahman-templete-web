@@ -15,14 +15,14 @@ export default function About() {
         {" "}
         <nav aria-label="Breadcrumb" style={{ background: "#F4F6F8", borderBottom: "1px solid #E4E7EC" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#667085", display: "flex", gap: "8px" }}>
-            <a href={u("#home")} style={{ color: "#667085" }} className="h_1dd7993">
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#5A6470", display: "flex", gap: "8px" }}>
+            <a href={u("#home")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Home
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <span style={{ color: "#101828" }}>
+            <span style={{ color: "#14181D" }}>
               About
             </span>
           </div>
@@ -33,11 +33,11 @@ export default function About() {
           {" "}
           <div>
             {" "}
-            <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "12px" }}>
+            <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "12px" }}>
               About CanadianSME
             </span>
             {" "}
-            <h1 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(30px,3.4vw,46px)", lineHeight: "1.1", marginBottom: "18px" }}>
+            <h1 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(30px,3.4vw,46px)", lineHeight: "1.1", marginBottom: "18px", letterSpacing: "-0.025em" }}>
               Empowering Canada’s Small and Medium-Sized Businesses
             </h1>
             {" "}
@@ -56,37 +56,37 @@ export default function About() {
         <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "32px 24px 20px", display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(180px,1fr))", gap: "24px" }}>
           {" "}
           <div style={{ padding: "24px", background: "#F4F6F8", borderRadius: "10px" }}>
-            <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "32px", color: "#D71920", lineHeight: "1.1" }}>
+            <span style={{ display: "block", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "32px", color: "#002364", lineHeight: "1.1" }}>
               120K+
             </span>
-            <span style={{ fontSize: "14px", color: "#667085" }}>
+            <span style={{ fontSize: "14px", color: "#5A6470" }}>
               monthly readers
             </span>
           </div>
           {" "}
           <div style={{ padding: "24px", background: "#F4F6F8", borderRadius: "10px" }}>
-            <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "32px", color: "#D71920", lineHeight: "1.1" }}>
+            <span style={{ display: "block", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "32px", color: "#002364", lineHeight: "1.1" }}>
               142
             </span>
-            <span style={{ fontSize: "14px", color: "#667085" }}>
+            <span style={{ fontSize: "14px", color: "#5A6470" }}>
               podcast episodes
             </span>
           </div>
           {" "}
           <div style={{ padding: "24px", background: "#F4F6F8", borderRadius: "10px" }}>
-            <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "32px", color: "#D71920", lineHeight: "1.1" }}>
+            <span style={{ display: "block", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "32px", color: "#002364", lineHeight: "1.1" }}>
               4
             </span>
-            <span style={{ fontSize: "14px", color: "#667085" }}>
+            <span style={{ fontSize: "14px", color: "#5A6470" }}>
               national event series
             </span>
           </div>
           {" "}
           <div style={{ padding: "24px", background: "#F4F6F8", borderRadius: "10px" }}>
-            <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "32px", color: "#D71920", lineHeight: "1.1" }}>
+            <span style={{ display: "block", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "32px", color: "#002364", lineHeight: "1.1" }}>
               10
             </span>
-            <span style={{ fontSize: "14px", color: "#667085" }}>
+            <span style={{ fontSize: "14px", color: "#5A6470" }}>
               provinces covered
             </span>
           </div>
@@ -95,7 +95,7 @@ export default function About() {
         {" "}
         <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "44px 24px 72px" }}>
           {" "}
-          <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "28px", marginBottom: "24px" }}>
+          <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "28px", marginBottom: "24px", letterSpacing: "-0.015em" }}>
             Leadership
           </h2>
           {" "}
@@ -109,11 +109,11 @@ export default function About() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#D71920" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                 Editor &amp; Publisher
               </span>
               {" "}
-              <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "32px", lineHeight: "1.15", color: "#101828" }}>
+              <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "32px", lineHeight: "1.15", color: "#14181D" }}>
                 SK Uddin
               </h3>
               {" "}
@@ -123,11 +123,11 @@ export default function About() {
               {" "}
               <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "6px" }}>
                 {" "}
-                <a href={u("#contact")} style={{ padding: "11px 20px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px" }}>
+                <a href={u("#contact")} style={{ padding: "11px 20px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px" }}>
                   Contact the editor
                 </a>
                 {" "}
-                <a href={u("#contributors")} style={{ padding: "11px 20px", borderRadius: "8px", border: "1.5px solid #101828", color: "#101828", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px" }} className="h_3023cb9">
+                <a href={u("#contributors")} style={{ padding: "11px 20px", borderRadius: "8px", border: "1.5px solid #101828", color: "#14181D", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px" }} className="h_3023cb9">
                   Editorial standards
                 </a>
                 {" "}
@@ -143,7 +143,7 @@ export default function About() {
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 {" "}
-                <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "26px", lineHeight: "1.2" }}>
+                <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "26px", lineHeight: "1.2", letterSpacing: "-0.015em" }}>
                   Our approach
                 </h2>
                 {" "}
@@ -155,7 +155,7 @@ export default function About() {
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 {" "}
-                <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "26px", lineHeight: "1.2" }}>
+                <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "26px", lineHeight: "1.2", letterSpacing: "-0.015em" }}>
                   Our philosophy
                 </h2>
                 {" "}
@@ -167,7 +167,7 @@ export default function About() {
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 {" "}
-                <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "26px", lineHeight: "1.2" }}>
+                <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "26px", lineHeight: "1.2", letterSpacing: "-0.015em" }}>
                   Our mission
                 </h2>
                 {" "}
@@ -191,11 +191,11 @@ export default function About() {
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                   Why we exist
                 </span>
                 {" "}
-                <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,2.8vw,34px)", lineHeight: "1.18", textWrap: "pretty" }}>
+                <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,2.8vw,34px)", lineHeight: "1.18", textWrap: "pretty", letterSpacing: "-0.015em" }}>
                   Small business support you can trust
                 </h2>
                 {" "}
@@ -217,11 +217,11 @@ export default function About() {
             {" "}
             <div style={{ display: "flex", alignItems: "baseline", gap: "14px", paddingBottom: "12px", marginBottom: "26px", borderBottom: "2px solid #101828" }}>
               {" "}
-              <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "15px", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+              <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px", letterSpacing: "0.02em", textTransform: "uppercase" }}>
                 What we run
               </h2>
               {" "}
-              <span style={{ fontSize: "13.5px", color: "#667085" }}>
+              <span style={{ fontSize: "13.5px", color: "#5A6470" }}>
                 Events and programs across the CanadianSME platform
               </span>
               {" "}
@@ -240,15 +240,15 @@ export default function About() {
                     {" "}
                     <div style={{ padding: "22px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                       {" "}
-                      <h4 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17px" }}>
+                      <h4 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17px" }}>
                         {p?.title}
                       </h4>
                       {" "}
-                      <p style={{ fontSize: "14.5px", lineHeight: "1.65", color: "#667085" }}>
+                      <p style={{ fontSize: "14.5px", lineHeight: "1.65", color: "#5A6470" }}>
                         {p?.desc}
                       </p>
                       {" "}
-                      <a href={u(p?.href)} style={{ marginTop: "auto", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#D71920" }}>
+                      <a href={u(p?.href)} style={{ marginTop: "auto", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#002364" }}>
                         {p?.cta}
                       </a>
                       {" "}
@@ -269,7 +269,7 @@ export default function About() {
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                 {" "}
-                <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "26px", lineHeight: "1.2" }}>
+                <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "26px", lineHeight: "1.2", letterSpacing: "-0.015em" }}>
                   Published by Cmarketing Inc.
                 </h2>
                 {" "}
@@ -283,7 +283,7 @@ export default function About() {
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D4A72C" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8" }}>
                   Talk to us
                 </span>
                 {" "}
@@ -293,7 +293,7 @@ export default function About() {
                   +1 437 778 4446
                 </p>
                 {" "}
-                <a href={u("#contact")} style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#fff" }}>
+                <a href={u("#contact")} style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#fff" }}>
                   Contact the team →
                 </a>
                 {" "}
@@ -301,7 +301,7 @@ export default function About() {
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D4A72C" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8" }}>
                   Stay informed
                 </span>
                 {" "}
@@ -309,7 +309,7 @@ export default function About() {
                   Subscribe to CanadianSME Small Business Magazine for upcoming events and insights from industry leaders.
                 </p>
                 {" "}
-                <a href={u("#newsletter")} style={{ alignSelf: "flex-start", padding: "12px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px" }}>
+                <a href={u("#newsletter")} style={{ alignSelf: "flex-start", padding: "12px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px" }}>
                   Subscribe now
                 </a>
                 {" "}

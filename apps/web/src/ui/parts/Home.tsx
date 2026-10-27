@@ -30,7 +30,7 @@ export default function Home() {
                       {" "}
                       <img src={sl?.logo} alt={sl?.logoAlt} style={{ height: "44px", width: "auto", maxWidth: "280px", objectFit: "contain", display: "block" }} />
                       {" "}
-                      <h2 style={{ display: "flex", flexDirection: "column", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,2.8vw,38px)", lineHeight: "1.18", letterSpacing: "-0.01em", color: "#fff" }}>
+                      <h2 style={{ display: "flex", flexDirection: "column", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,2.8vw,38px)", lineHeight: "1.18", letterSpacing: "-0.015em", color: "#fff" }}>
                         {" "}
                         {(sl?.lineItems || []).map((ln: any, _i12: number) => (
                           <Fragment key={ln?.key ?? ln?.id ?? ln?.slug ?? _i12}>
@@ -44,7 +44,7 @@ export default function Home() {
                       {" "}
                       <span style={{ display: "block", width: "64px", height: "4px", background: "#D71920", borderRadius: "2px" }} />
                       {" "}
-                      <a href={u(sl?.href)} target="_blank" rel="noopener" onClick={sl?.onRead} style={{ padding: "14px 28px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px", textDecoration: "none" }} className="h_23a71c2">
+                      <a href={u(sl?.href)} target="_blank" rel="noopener" onClick={sl?.onRead} style={{ padding: "14px 28px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px", textDecoration: "none" }} className="h_23a71c2">
                         {sl?.cta}
                       </a>
                       {" "}
@@ -101,7 +101,7 @@ export default function Home() {
           {" "}
           <div style={{ maxWidth: "1280px", margin: "0 auto 14px", padding: "0 24px", display: "flex", alignItems: "center", gap: "16px" }}>
             {" "}
-            <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#667085", whiteSpace: "nowrap" }}>
+            <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470", whiteSpace: "nowrap" }}>
               Proudly supported by
             </span>
             {" "}
@@ -127,11 +127,11 @@ export default function Home() {
             {" "}
             <div style={{ maxWidth: "660px", display: "flex", flexDirection: "column", gap: "12px" }}>
               {" "}
-              <span style={{ alignSelf: "flex-start", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#0B1B33", background: "#F2C14E", padding: "5px 10px", borderRadius: "4px" }}>
+              <span style={{ alignSelf: "flex-start", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#0B1B33", background: "#F2C14E", padding: "5px 10px", borderRadius: "4px" }}>
                 Sponsored Content
               </span>
               {" "}
-              <h2 id="sponsored-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,2.8vw,36px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty" }}>
+              <h2 id="sponsored-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,2.8vw,36px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty" }}>
                 Insights from our partners
               </h2>
               {" "}
@@ -141,7 +141,7 @@ export default function Home() {
               {" "}
             </div>
             {" "}
-            <a href={u("#advertise-with-us")} style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "12px 20px", borderRadius: "8px", border: "1.5px solid rgba(255,255,255,0.45)", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "14px", whiteSpace: "nowrap" }} className="h_b9cd5ee">
+            <a href={u("#advertise-with-us")} style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "12px 20px", borderRadius: "8px", border: "1.5px solid rgba(255,255,255,0.45)", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "14px", whiteSpace: "nowrap" }} className="h_b9cd5ee">
               Partner with us →
             </a>
             {" "}
@@ -158,7 +158,7 @@ export default function Home() {
               <div style={{ padding: "26px", display: "flex", flexDirection: "column", gap: "12px", flex: "1" }}>
                 {" "}
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", flexWrap: "wrap" }}>
-                  <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "9.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#0B1B33", background: "#F2C14E", padding: "4px 8px", borderRadius: "3px" }}>
+                  <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "9.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#0B1B33", background: "#F2C14E", padding: "4px 8px", borderRadius: "3px" }}>
                     Sponsored
                   </span>
                   <span style={{ fontSize: "12.5px", color: "#DCE4F0" }}>
@@ -169,8 +169,8 @@ export default function Home() {
                   </span>
                 </div>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(20px,2vw,25px)", lineHeight: "1.22", letterSpacing: "-0.01em", textWrap: "pretty" }}>
-                  <a href={u("#post-duca-pfg-financial")} style={{ color: "#fff" }} className="h_16c903e">
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "clamp(20px,2vw,25px)", lineHeight: "1.22", letterSpacing: "-0.01em", textWrap: "pretty" }}>
+                  <a href={u("#post-duca-pfg-financial")} style={{ color: "#fff" }} className="h_fccb1e3">
                     Faster Deals. Stronger Connections: How DUCA and PFG Financial Are Raising the Bar for Consultant and Accountant Partnerships
                   </a>
                 </h3>
@@ -185,7 +185,7 @@ export default function Home() {
                     October 9, 2026 · 3 min read
                   </span>
                   {" "}
-                  <a href={u("#post-duca-pfg-financial")} style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13.5px", color: "#F2C14E" }}>
+                  <a href={u("#post-duca-pfg-financial")} style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13.5px", color: "#7FA3E8" }}>
                     Read the story →
                   </a>
                   {" "}
@@ -206,13 +206,13 @@ export default function Home() {
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", minWidth: "0" }}>
                   {" "}
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
-                    <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "9.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#0B1B33", background: "#F2C14E", padding: "4px 8px", borderRadius: "3px" }}>
+                    <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "9.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#0B1B33", background: "#F2C14E", padding: "4px 8px", borderRadius: "3px" }}>
                       Sponsored
                     </span>
                   </div>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16.5px", lineHeight: "1.3", textWrap: "pretty" }}>
-                    <a href={u("#post-beyond-the-tariff-rate")} style={{ color: "#fff" }} className="h_16c903e">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16.5px", lineHeight: "1.3", textWrap: "pretty" }}>
+                    <a href={u("#post-beyond-the-tariff-rate")} style={{ color: "#fff" }} className="h_fccb1e3">
                       Beyond the Tariff Rate: What Canadian Importers Need to Know as U.S.–Canada Trade Rules Shift
                     </a>
                   </h3>
@@ -241,13 +241,13 @@ export default function Home() {
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px", minWidth: "0" }}>
                   {" "}
                   <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
-                    <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "9.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#0B1B33", background: "#F2C14E", padding: "4px 8px", borderRadius: "3px" }}>
+                    <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "9.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#0B1B33", background: "#F2C14E", padding: "4px 8px", borderRadius: "3px" }}>
                       Sponsored
                     </span>
                   </div>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16.5px", lineHeight: "1.3", textWrap: "pretty" }}>
-                    <a href="https://canadiansme.ca/how-to-implement-sustainable-practices-in-your-small-business/" style={{ color: "#fff" }} className="h_16c903e">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16.5px", lineHeight: "1.3", textWrap: "pretty" }}>
+                    <a href="https://canadiansme.ca/how-to-implement-sustainable-practices-in-your-small-business/" style={{ color: "#fff" }} className="h_fccb1e3">
                       How to Implement Sustainable Practices in Your Small Business
                     </a>
                   </h3>
@@ -284,11 +284,11 @@ export default function Home() {
             {" "}
             <div style={{ padding: "6px 24px 6px 0", display: "flex", flexDirection: "column", justifyContent: "center", gap: "6px" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#FF6B72" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8" }}>
                 This week
               </span>
               {" "}
-              <h2 id="week-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "22px", lineHeight: "1.2", color: "#fff", textWrap: "pretty" }}>
+              <h2 id="week-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "22px", lineHeight: "1.2", color: "#fff", textWrap: "pretty" }}>
                 For your business
               </h2>
               {" "}
@@ -300,7 +300,7 @@ export default function Home() {
                 Next CRA deadline · {v.nextDeadline?.days}
               </span>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "26px", lineHeight: "1" }}>
+              <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "26px", lineHeight: "1" }}>
                 {v.nextDeadline?.date}
               </span>
               {" "}
@@ -310,13 +310,13 @@ export default function Home() {
               {" "}
             </a>
             {" "}
-            <a href="CanadianSME Tools.dc.html#gst" style={{ padding: "6px 24px", borderLeft: "1px solid rgba(255,255,255,0.16)", display: "flex", flexDirection: "column", gap: "6px", color: "#fff" }} className="h_7fdd8e4">
+            <a href="/tools/gst/" style={{ padding: "6px 24px", borderLeft: "1px solid rgba(255,255,255,0.16)", display: "flex", flexDirection: "column", gap: "6px", color: "#fff" }} className="h_7fdd8e4">
               {" "}
               <span style={{ fontSize: "12px", fontWeight: "600", color: "#D0D5DD" }}>
                 Free tool
               </span>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "20px", lineHeight: "1.15" }}>
+              <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "20px", lineHeight: "1.15" }}>
                 GST/HST Calculator
               </span>
               {" "}
@@ -332,7 +332,7 @@ export default function Home() {
                 Grants &amp; programs
               </span>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "20px", lineHeight: "1.15" }}>
+              <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "20px", lineHeight: "1.15" }}>
                 Find funding in your province
               </span>
               {" "}
@@ -348,7 +348,7 @@ export default function Home() {
                 Every Tuesday
               </span>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "20px", lineHeight: "1.15" }}>
+              <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "20px", lineHeight: "1.15" }}>
                 Deadlines &amp; grants in your inbox
               </span>
               {" "}
@@ -366,15 +366,15 @@ export default function Home() {
             {" "}
             <div style={{ maxWidth: "620px" }}>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "10px" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "10px" }}>
                 Editorial
               </span>
               {" "}
-              <h2 id="latest-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(28px,3vw,40px)", lineHeight: "1.12", letterSpacing: "-0.02em", marginBottom: "12px" }}>
+              <h2 id="latest-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(28px,3vw,40px)", lineHeight: "1.12", letterSpacing: "-0.015em", marginBottom: "12px" }}>
                 Latest Business Insights
               </h2>
               {" "}
-              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "#667085", textWrap: "pretty" }}>
+              <p style={{ fontSize: "16px", lineHeight: "1.65", color: "#5A6470", textWrap: "pretty" }}>
                 Stay informed with timely perspectives, actionable advice, and inspiring stories created for Canada’s small business community.
               </p>
               {" "}
@@ -382,13 +382,13 @@ export default function Home() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", minWidth: "270px" }}>
               {" "}
-              <label htmlFor="article-search" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#667085" }}>
+              <label htmlFor="article-search" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#5A6470" }}>
                 Search articles
               </label>
               {" "}
               <input id="article-search" type="search" ref={v.searchRef} onInput={v.onSearch} placeholder="e.g. cash flow, AI, CRM" style={{ padding: "11px 14px", border: "1.5px solid #D0D5DD", borderRadius: "8px", fontSize: "14px", background: "#fff", width: "100%" }} />
               {" "}
-              <span aria-live="polite" style={{ fontSize: "12.5px", color: "#667085" }}>
+              <span aria-live="polite" style={{ fontSize: "12.5px", color: "#5A6470" }}>
                 {v.resultLabel}
               </span>
               {" "}
@@ -424,27 +424,27 @@ export default function Home() {
                       {" "}
                       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px" }}>
                         {" "}
-                        <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#D71920" }}>
+                        <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                           {a?.cat}
                         </span>
                         {" "}
-                        <button type="button" onClick={v.toggleBookmark} aria-pressed="false" aria-label="Bookmark this article" style={{ background: "none", border: "0", cursor: "pointer", color: "#98A2B3", fontSize: "15px", lineHeight: "1", padding: "2px" }}>
+                        <button type="button" onClick={v.toggleBookmark} aria-pressed="false" aria-label="Bookmark this article" style={{ background: "none", border: "0", cursor: "pointer", color: "#5A6470", fontSize: "15px", lineHeight: "1", padding: "2px" }}>
                           ♡
                         </button>
                         {" "}
                       </div>
                       {" "}
-                      <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "20px", lineHeight: "1.24", textWrap: "pretty" }}>
-                        <a href={u(a?.href)} style={{ color: "#101828" }} className="h_1dd7993">
+                      <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "20px", lineHeight: "1.24", textWrap: "pretty" }}>
+                        <a href={u(a?.href)} style={{ color: "#14181D" }} className="h_9e87cbe">
                           {a?.title}
                         </a>
                       </h3>
                       {" "}
-                      <p style={{ fontSize: "14px", lineHeight: "1.6", color: "#667085" }}>
+                      <p style={{ fontSize: "14px", lineHeight: "1.6", color: "#5A6470" }}>
                         {a?.excerpt}
                       </p>
                       {" "}
-                      <div style={{ marginTop: "auto", paddingTop: "12px", borderTop: "1px solid #F0F2F5", fontSize: "12px", color: "#667085", display: "flex", gap: "8px", flexWrap: "wrap" }}>
+                      <div style={{ marginTop: "auto", paddingTop: "12px", borderTop: "1px solid #F0F2F5", fontSize: "12px", color: "#5A6470", display: "flex", gap: "8px", flexWrap: "wrap" }}>
                         <span>
                           {a?.date}
                         </span>
@@ -469,7 +469,7 @@ export default function Home() {
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#98A2B3" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470" }}>
                   Advertisement
                 </span>
                 {" "}
@@ -483,17 +483,17 @@ export default function Home() {
               {" "}
               <div style={{ border: "1px solid #E4E7EC", borderRadius: "10px", padding: "18px" }}>
                 {" "}
-                <span style={{ display: "inline-block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#D4A72C", border: "1px solid #E8D79B", background: "#FDF8EC", padding: "3px 7px", borderRadius: "4px", marginBottom: "12px" }}>
+                <span style={{ display: "inline-block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", border: "1px solid #E8D79B", background: "#FDF8EC", padding: "3px 7px", borderRadius: "4px", marginBottom: "12px" }}>
                   Sponsored Content
                 </span>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "18px", lineHeight: "1.28", marginBottom: "8px" }}>
-                  <a href={u(v.sidebarSponsored?.href || "#sponsored")} style={{ color: "#101828" }} className="h_1dd7993">
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "18px", lineHeight: "1.28", marginBottom: "8px" }}>
+                  <a href={u(v.sidebarSponsored?.href || "#sponsored")} style={{ color: "#14181D" }} className="h_9e87cbe">
                     {v.sidebarSponsored?.title || "How Payment Automation Freed Up 12 Hours a Week"}
                   </a>
                 </h3>
                 {" "}
-                <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085" }}>
+                <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470" }}>
                   {v.sidebarSponsored?.desc || "Paid content presented by a CanadianSME financial partner."}
                 </p>
                 {" "}
@@ -501,7 +501,7 @@ export default function Home() {
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#98A2B3" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470" }}>
                   Advertisement
                 </span>
                 {" "}
@@ -515,7 +515,7 @@ export default function Home() {
               {" "}
               <div style={{ border: "1px solid #E4E7EC", borderRadius: "10px", padding: "18px" }}>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", letterSpacing: "0.06em", textTransform: "uppercase", marginBottom: "14px" }}>
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", letterSpacing: "0.02em", textTransform: "uppercase", marginBottom: "14px" }}>
                   Most Read
                 </h3>
                 {" "}
@@ -525,10 +525,10 @@ export default function Home() {
                     <Fragment key={m?.key ?? m?.id ?? m?.slug ?? _i9}>
                       {" "}
                       <li style={{ display: "flex", gap: "12px" }}>
-                        <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "18px", color: "#E4E7EC" }}>
+                        <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "18px", color: "#E4E7EC" }}>
                           0{m?.n}
                         </span>
-                        <a href={u(m?.href)} style={{ fontSize: "14px", lineHeight: "1.45", color: "#101828" }} className="h_1dd7993">
+                        <a href={u(m?.href)} style={{ fontSize: "14px", lineHeight: "1.45", color: "#14181D" }} className="h_9e87cbe">
                           {m?.title}
                         </a>
                       </li>
@@ -542,7 +542,7 @@ export default function Home() {
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#98A2B3" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470" }}>
                   Advertisement
                 </span>
                 {" "}
@@ -560,7 +560,7 @@ export default function Home() {
           {" "}
           <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
             {" "}
-            <a href={u("#all-articles")} style={{ padding: "14px 26px", borderRadius: "8px", border: "1.5px solid #101828", color: "#101828", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_a3b515a">
+            <a href={u("#all-articles")} style={{ padding: "14px 26px", borderRadius: "8px", border: "1.5px solid #101828", color: "#14181D", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_a3b515a">
               View All Articles
             </a>
             {" "}
@@ -580,17 +580,17 @@ export default function Home() {
             {" "}
             <div style={{ maxWidth: "640px" }}>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "10px" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "10px" }}>
                 Topic
               </span>
               {" "}
-              <h2 id="ai-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty" }}>
+              <h2 id="ai-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty" }}>
                 Artificial Intelligence
               </h2>
               {" "}
             </div>
             {" "}
-            <a href="https://canadiansme.ca/category/artificial-intelligence/" style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#D71920" }}>
+            <a href="https://canadiansme.ca/category/artificial-intelligence/" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#002364" }}>
               All AI coverage →
             </a>
             {" "}
@@ -604,17 +604,17 @@ export default function Home() {
                 <img src={v.aiLead?.img} alt={v.aiLead?.alt} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
               </a>
               {" "}
-              <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(22px,2.4vw,29px)", lineHeight: "1.18", letterSpacing: "-0.01em", textWrap: "pretty" }}>
-                <a href={u(v.aiLead?.href)} style={{ color: "#101828" }} className="h_1dd7993">
+              <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "clamp(22px,2.4vw,29px)", lineHeight: "1.18", letterSpacing: "-0.01em", textWrap: "pretty" }}>
+                <a href={u(v.aiLead?.href)} style={{ color: "#14181D" }} className="h_9e87cbe">
                   {v.aiLead?.title}
                 </a>
               </h3>
               {" "}
-              <p style={{ fontSize: "16px", lineHeight: "1.68", color: "#667085", textWrap: "pretty" }}>
+              <p style={{ fontSize: "16px", lineHeight: "1.68", color: "#5A6470", textWrap: "pretty" }}>
                 {v.aiLead?.excerpt}
               </p>
               {" "}
-              <span style={{ fontSize: "12.5px", color: "#98A2B3" }}>
+              <span style={{ fontSize: "12.5px", color: "#5A6470" }}>
                 {v.aiLead?.date} · {v.aiLead?.read} read
               </span>
               {" "}
@@ -633,17 +633,17 @@ export default function Home() {
                     {" "}
                     <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                       {" "}
-                      <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
-                        <a href={u(m?.href)} style={{ color: "#101828" }} className="h_1dd7993">
+                      <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
+                        <a href={u(m?.href)} style={{ color: "#14181D" }} className="h_9e87cbe">
                           {m?.title}
                         </a>
                       </h3>
                       {" "}
-                      <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                      <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                         {m?.excerpt}
                       </p>
                       {" "}
-                      <span style={{ fontSize: "12px", color: "#98A2B3" }}>
+                      <span style={{ fontSize: "12px", color: "#5A6470" }}>
                         {m?.date} · {m?.read} read
                       </span>
                       {" "}
@@ -664,17 +664,17 @@ export default function Home() {
             {" "}
             <div style={{ maxWidth: "640px" }}>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "10px" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "10px" }}>
                 Interviews
               </span>
               {" "}
-              <h2 id="expert-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty" }}>
+              <h2 id="expert-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty" }}>
                 Expert Insights
               </h2>
               {" "}
             </div>
             {" "}
-            <a href="https://canadiansme.ca/category/email-interview/" target="_blank" rel="noopener" style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#D71920" }}>
+            <a href="https://canadiansme.ca/category/email-interview/" target="_blank" rel="noopener" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#002364" }}>
               All interviews →
             </a>
             {" "}
@@ -688,17 +688,17 @@ export default function Home() {
                 <img src="https://canadiansme.ca/wp-content/uploads/2026/10/Renata-Reis.jpg" alt="Building High‑Trust Teams Through Emotional Intelligence" loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
               </a>
               {" "}
-              <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(22px,2.4vw,29px)", lineHeight: "1.18", letterSpacing: "-0.01em", textWrap: "pretty" }}>
-                <a href={u("#post-building-high-trust-teams-through-emotional-intelligence")} style={{ color: "#101828" }} className="h_1dd7993">
+              <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "clamp(22px,2.4vw,29px)", lineHeight: "1.18", letterSpacing: "-0.01em", textWrap: "pretty" }}>
+                <a href={u("#post-building-high-trust-teams-through-emotional-intelligence")} style={{ color: "#14181D" }} className="h_9e87cbe">
                   Building High‑Trust Teams Through Emotional Intelligence
                 </a>
               </h3>
               {" "}
-              <p style={{ fontSize: "16px", lineHeight: "1.68", color: "#667085", textWrap: "pretty" }}>
+              <p style={{ fontSize: "16px", lineHeight: "1.68", color: "#5A6470", textWrap: "pretty" }}>
                 Nadine Zeinoun Khoury on how emotional intelligence, trust and authentic leadership can transform workplaces and strengthen teams.
               </p>
               {" "}
-              <span style={{ fontSize: "12.5px", color: "#98A2B3" }}>
+              <span style={{ fontSize: "12.5px", color: "#5A6470" }}>
                 Oct 9, 2026 · 6 min read
               </span>
               {" "}
@@ -714,17 +714,17 @@ export default function Home() {
                 {" "}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
-                    <a href={u("#post-making-cross-border-money-work-harder-for-canadian-smes")} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
+                    <a href={u("#post-making-cross-border-money-work-harder-for-canadian-smes")} style={{ color: "#14181D" }} className="h_9e87cbe">
                       Making Cross-Border Money Work Harder for Canadian SMEs
                     </a>
                   </h3>
                   {" "}
-                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                     Jackee Wong, Fractional CMO at Keytom, on why payment speed, transparency and predictability matter for SMEs working across markets.
                   </p>
                   {" "}
-                  <span style={{ fontSize: "12px", color: "#98A2B3" }}>
+                  <span style={{ fontSize: "12px", color: "#5A6470" }}>
                     Oct 9, 2026 · 5 min read
                   </span>
                   {" "}
@@ -740,17 +740,17 @@ export default function Home() {
                 {" "}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
-                    <a href={u("#post-the-it-questions-every-business-owner-should-ask")} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
+                    <a href={u("#post-the-it-questions-every-business-owner-should-ask")} style={{ color: "#14181D" }} className="h_9e87cbe">
                       The IT Questions Every Business Owner Should Ask
                     </a>
                   </h3>
                   {" "}
-                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                     In this exclusive CanadianSME Small Business Magazine interview, Shawn Bedard, President &amp; Founder of JIG Technologies, shares insights…
                   </p>
                   {" "}
-                  <span style={{ fontSize: "12px", color: "#98A2B3" }}>
+                  <span style={{ fontSize: "12px", color: "#5A6470" }}>
                     Aug 19, 2026 · 6 min read
                   </span>
                   {" "}
@@ -766,17 +766,17 @@ export default function Home() {
                 {" "}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
-                    <a href={u("#post-why-human-communication-matters-more-in-the-ai-era")} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
+                    <a href={u("#post-why-human-communication-matters-more-in-the-ai-era")} style={{ color: "#14181D" }} className="h_9e87cbe">
                       Why Human Communication Matters More in the AI Era
                     </a>
                   </h3>
                   {" "}
-                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                     In this exclusive CanadianSME Small Business Magazine interview, Steve Brennan, Co-Founder &amp; General Manager of Stand Up and…
                   </p>
                   {" "}
-                  <span style={{ fontSize: "12px", color: "#98A2B3" }}>
+                  <span style={{ fontSize: "12px", color: "#5A6470" }}>
                     Aug 19, 2026 · 6 min read
                   </span>
                   {" "}
@@ -792,17 +792,17 @@ export default function Home() {
                 {" "}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
-                    <a href={u("#post-business-woman-of-the-month-nouhaila-chelkhaoui")} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
+                    <a href={u("#post-business-woman-of-the-month-nouhaila-chelkhaoui")} style={{ color: "#14181D" }} className="h_9e87cbe">
                       Business Woman of the Month : Nouhaila Chelkhaoui
                     </a>
                   </h3>
                   {" "}
-                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                     Scaling Opportunity for Immigrant Tech Talent in Canada with Nouhaila Chelkhaoui Nouhaila Chelkhaoui, who came to Canada alone…
                   </p>
                   {" "}
-                  <span style={{ fontSize: "12px", color: "#98A2B3" }}>
+                  <span style={{ fontSize: "12px", color: "#5A6470" }}>
                     Aug 5, 2026 · 4 min read
                   </span>
                   {" "}
@@ -820,17 +820,17 @@ export default function Home() {
             {" "}
             <div style={{ maxWidth: "640px" }}>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "10px" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "10px" }}>
                 Topic
               </span>
               {" "}
-              <h2 id="sb-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty" }}>
+              <h2 id="sb-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty" }}>
                 Small Business
               </h2>
               {" "}
             </div>
             {" "}
-            <a href="https://canadiansme.ca/category/small-business/" target="_blank" rel="noopener" style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#D71920" }}>
+            <a href="https://canadiansme.ca/category/small-business/" target="_blank" rel="noopener" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#002364" }}>
               All small business →
             </a>
             {" "}
@@ -844,17 +844,17 @@ export default function Home() {
                 <img src="https://canadiansme.ca/wp-content/uploads/2026/10/Rob-Nikkel.jpg-1.jpeg" alt="What Happens to Institutional Knowledge When “That” Employee Leaves" loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
               </a>
               {" "}
-              <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(22px,2.4vw,29px)", lineHeight: "1.18", letterSpacing: "-0.01em", textWrap: "pretty" }}>
-                <a href={u("#post-what-happens-to-institutional-knowledge-when-that-employee-leaves")} style={{ color: "#101828" }} className="h_1dd7993">
+              <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "clamp(22px,2.4vw,29px)", lineHeight: "1.18", letterSpacing: "-0.01em", textWrap: "pretty" }}>
+                <a href={u("#post-what-happens-to-institutional-knowledge-when-that-employee-leaves")} style={{ color: "#14181D" }} className="h_9e87cbe">
                   What Happens to Institutional Knowledge When “That” Employee Leaves
                 </a>
               </h3>
               {" "}
-              <p style={{ fontSize: "16px", lineHeight: "1.68", color: "#667085", textWrap: "pretty" }}>
+              <p style={{ fontSize: "16px", lineHeight: "1.68", color: "#5A6470", textWrap: "pretty" }}>
                 Institutional knowledge shouldn’t live in one person’s head. Why “Ask Jim” isn’t a strategy.
               </p>
               {" "}
-              <span style={{ fontSize: "12.5px", color: "#98A2B3" }}>
+              <span style={{ fontSize: "12.5px", color: "#5A6470" }}>
                 Oct 19, 2026 · 3 min read
               </span>
               {" "}
@@ -870,17 +870,17 @@ export default function Home() {
                 {" "}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
-                    <a href={u("#post-top-5-business-internet-providers-for-small-businesses-in-canada")} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
+                    <a href={u("#post-top-5-business-internet-providers-for-small-businesses-in-canada")} style={{ color: "#14181D" }} className="h_9e87cbe">
                       Top 5 Business Internet Providers for Small Businesses in Canada
                     </a>
                   </h3>
                   {" "}
-                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                     The internet has quietly become a small business’s most important piece of infrastructure. Five Canadian carriers, from Vancouver to Halifax, keeping small companies running.
                   </p>
                   {" "}
-                  <span style={{ fontSize: "12px", color: "#98A2B3" }}>
+                  <span style={{ fontSize: "12px", color: "#5A6470" }}>
                     Oct 16, 2026 · 7 min read
                   </span>
                   {" "}
@@ -896,17 +896,17 @@ export default function Home() {
                 {" "}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
-                    <a href={u("#post-building-a-small-business-foundation-today-for-growth-tomorrow")} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
+                    <a href={u("#post-building-a-small-business-foundation-today-for-growth-tomorrow")} style={{ color: "#14181D" }} className="h_9e87cbe">
                       Building a Small Business Foundation Today for Growth Tomorrow
                     </a>
                   </h3>
                   {" "}
-                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                     Anthony Chiotis of ADP Canada on payroll foundations, investing in people and building a trusted partner network.
                   </p>
                   {" "}
-                  <span style={{ fontSize: "12px", color: "#98A2B3" }}>
+                  <span style={{ fontSize: "12px", color: "#5A6470" }}>
                     Oct 15, 2026 · 3 min read
                   </span>
                   {" "}
@@ -922,17 +922,17 @@ export default function Home() {
                 {" "}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
-                    <a href={u("#post-magnet-at-toronto-metropolitan-university")} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
+                    <a href={u("#post-magnet-at-toronto-metropolitan-university")} style={{ color: "#14181D" }} className="h_9e87cbe">
                       Magnet at Toronto Metropolitan University
                     </a>
                   </h3>
                   {" "}
-                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                     Shaping the future of work with practical solutions for small businesses — wage subsidies, AI upskilling and more.
                   </p>
                   {" "}
-                  <span style={{ fontSize: "12px", color: "#98A2B3" }}>
+                  <span style={{ fontSize: "12px", color: "#5A6470" }}>
                     Oct 15, 2026 · 2 min read
                   </span>
                   {" "}
@@ -948,17 +948,17 @@ export default function Home() {
                 {" "}
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
-                    <a href={u("#post-ingaged-creative-productions-growing-through-creativity-connection-and-community")} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17.5px", lineHeight: "1.28", textWrap: "pretty" }}>
+                    <a href={u("#post-ingaged-creative-productions-growing-through-creativity-connection-and-community")} style={{ color: "#14181D" }} className="h_9e87cbe">
                       Ingaged Creative Productions: Growing Through Creativity, Connection, and Community
                     </a>
                   </h3>
                   {" "}
-                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                     An Indigenous-owned company bringing creative services and event production together, while building opportunities for clients, artists and a growing team.
                   </p>
                   {" "}
-                  <span style={{ fontSize: "12px", color: "#98A2B3" }}>
+                  <span style={{ fontSize: "12px", color: "#5A6470" }}>
                     Oct 13, 2026 · 3 min read
                   </span>
                   {" "}
@@ -976,11 +976,11 @@ export default function Home() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", maxWidth: "640px" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                 Reader perks
               </span>
               {" "}
-              <h2 id="offers-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty" }}>
+              <h2 id="offers-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty" }}>
                 Exclusive Offers for CanadianSME Readers
               </h2>
               {" "}
@@ -995,7 +995,7 @@ export default function Home() {
               {(v.offerCats || []).map((c: any, _i7: number) => (
                 <Fragment key={c?.key ?? c?.id ?? c?.slug ?? _i7}>
                   {" "}
-                  <button type="button" role="tab" aria-selected={c?.active} onClick={c?.onClick} style={{ padding: "8px 14px", borderRadius: "999px", border: `1.5px solid ${c?.border ?? ""}`, background: c?.bg, color: c?.fg, fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", cursor: "pointer" }}>
+                  <button type="button" role="tab" aria-selected={c?.active} onClick={c?.onClick} style={{ padding: "8px 14px", borderRadius: "999px", border: `1.5px solid ${c?.border ?? ""}`, background: c?.bg, color: c?.fg, fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", cursor: "pointer" }}>
                     {c?.label}
                   </button>
                   {" "}
@@ -1019,7 +1019,7 @@ export default function Home() {
                       <Slot id={o?.slot} shape="rect" placeholder="Partner logo" />
                     </div>
                     {" "}
-                    <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#667085" }}>
+                    <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470" }}>
                       {o?.cat}
                     </span>
                     {" "}
@@ -1027,11 +1027,11 @@ export default function Home() {
                   {" "}
                   <div style={{ padding: "20px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
                     {" "}
-                    <span style={{ alignSelf: "flex-start", padding: "5px 10px", borderRadius: "6px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px" }}>
+                    <span style={{ alignSelf: "flex-start", padding: "5px 10px", borderRadius: "6px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px" }}>
                       {o?.value}
                     </span>
                     {" "}
-                    <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17px", lineHeight: "1.3", color: "#101828", textWrap: "pretty" }}>
+                    <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17px", lineHeight: "1.3", color: "#14181D", textWrap: "pretty" }}>
                       {o?.title}
                     </h3>
                     {" "}
@@ -1039,11 +1039,11 @@ export default function Home() {
                       {o?.desc}
                     </p>
                     {" "}
-                    <span style={{ fontSize: "12.5px", color: "#667085" }}>
+                    <span style={{ fontSize: "12.5px", color: "#5A6470" }}>
                       {o?.partner} · {o?.expires}
                     </span>
                     {" "}
-                    <button type="button" onClick={o?.claim} style={{ marginTop: "6px", padding: "12px", borderRadius: "8px", border: "0", background: "#101828", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px", cursor: "pointer" }} className="h_cc7d4fa">
+                    <button type="button" onClick={o?.claim} style={{ marginTop: "6px", padding: "12px", borderRadius: "8px", border: "0", background: "#101828", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px", cursor: "pointer" }} className="h_cc7d4fa">
                       Claim offer
                     </button>
                     {" "}
@@ -1056,13 +1056,13 @@ export default function Home() {
             {" "}
           </div>
           {" "}
-          <a href={u("#exclusive-offers")} style={{ display: "inline-flex", marginTop: "24px", padding: "12px 20px", borderRadius: "8px", background: "#101828", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_0744446">
+          <a href={u("#exclusive-offers")} style={{ display: "inline-flex", marginTop: "24px", padding: "12px 20px", borderRadius: "8px", background: "#101828", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_0744446">
             See all exclusive offers →
           </a>
           {" "}
-          <p style={{ marginTop: "18px", fontSize: "12.5px", lineHeight: "1.6", color: "#667085" }}>
+          <p style={{ marginTop: "18px", fontSize: "12.5px", lineHeight: "1.6", color: "#5A6470" }}>
             Offers are provided by our partners and subject to their terms. CanadianSME may receive a commission.{" "}
-            <a href={u("#become-partner")} style={{ color: "#1E5AA8", textDecoration: "underline" }}>
+            <a href={u("#become-partner")} style={{ color: "#004FB8", textDecoration: "underline" }}>
               List an offer for our readers →
             </a>
           </p>
@@ -1071,7 +1071,7 @@ export default function Home() {
           {" "}
           <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "36px 24px" }}>
             {" "}
-            <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#98A2B3", marginBottom: "14px" }}>
+            <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470", marginBottom: "14px" }}>
               Advertisement
             </span>
             {" "}
@@ -1093,58 +1093,77 @@ export default function Home() {
             {" "}
           </div>
         </section>
-        <section id="magazine" aria-labelledby="mag-heading" style={{ background: "#101828", color: "#fff" }}>
+        <section id="magazine" aria-labelledby="mag-heading" style={{ position: "relative", overflow: "hidden", color: "#fff", background: "radial-gradient(900px 520px at 100% 0%,rgba(122,31,43,0.55),rgba(16,24,40,0) 70%),radial-gradient(700px 500px at 0% 100%,rgba(30,58,110,0.35),rgba(16,24,40,0) 70%),#0E1525" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "72px 24px", display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(320px,1fr))", gap: "56px", alignItems: "center" }}>
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "44px 24px 56px" }}>
             {" "}
-            <div style={{ display: "flex", justifyContent: "flex-start", position: "relative", isolation: "isolate" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "44px" }}>
               {" "}
-              <div aria-hidden="true" style={{ position: "absolute", left: "-40px", top: "-40px", width: "min(480px,calc(100% + 80px))", height: "calc(100% + 80px)", maxWidth: "480px", borderRadius: "50%", background: "radial-gradient(closest-side,rgba(215,25,32,0.55),rgba(212,167,44,0.22) 55%,rgba(16,24,40,0) 100%)", filter: "blur(30px)", zIndex: "-1", pointerEvents: "none" }} />
-              {" "}
-              <div style={{ width: "100%", maxWidth: "400px", aspectRatio: "3/4", borderRadius: "10px", overflow: "hidden", boxShadow: "0 30px 60px rgba(0,0,0,0.45),0 0 80px rgba(215,25,32,0.35)" }}>
+              <a href={u(v.latestIssue?.href || "#read-magazine")} aria-label="Read the latest issue" style={{ flex: "0 0 auto", width: "min(240px,62vw)", aspectRatio: "3/4", border: "1.5px solid rgba(255,255,255,0.85)", borderRadius: "4px", overflow: "hidden", boxShadow: "0 24px 50px rgba(0,0,0,0.5)", display: "block", background: "#1D2939" }} className="h_aa15b40">
                 {" "}
                 {v.latestIssue?.cover ? (
-                  <img loading="lazy" decoding="async" src={v.latestIssue.cover} alt={v.latestIssue.coverAlt || `CanadianSME Issue ${v.latestIssue.number}, ${v.latestIssue.month} cover`} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                  <img src={v.latestIssue.cover} alt={v.latestIssue.coverAlt || `CanadianSME Issue ${v.latestIssue.number}, ${v.latestIssue.month} cover`} loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
                 ) : (
-                  <img loading="lazy" decoding="async" src="/assets/covers/issue-93-aug-2026.png" alt="CanadianSME Issue 93, August 2026 cover" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+                  <img src="/assets/covers/issue-93-aug-2026.png" alt="CanadianSME Issue 93, August 2026 cover" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
                 )}
+                {" "}
+              </a>
+              {" "}
+              <div style={{ flex: "1 1 360px", minWidth: "0" }}>
+                {" "}
+                <span style={{ display: "inline-flex", alignItems: "center", gap: "7px", padding: "5px 12px", borderRadius: "999px", background: "rgba(215,25,32,0.16)", border: "1px solid rgba(215,25,32,0.28)", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#7FA3E8", marginBottom: "16px" }}>
+                  <span aria-hidden="true" style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#F4A3A6" }} />
+                  {v.latestIssue?.month || 'August 2026'}
+                </span>
+                {" "}
+                <h2 id="mag-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(36px,4.6vw,56px)", lineHeight: "1.05", letterSpacing: "-0.015em", marginBottom: "14px" }}>
+                  The magazine
+                </h2>
+                {" "}
+                <p style={{ fontSize: "17px", lineHeight: "1.6", color: "#D0D5DD", maxWidth: "54ch", textWrap: "pretty", marginBottom: "24px" }}>
+                  CanadianSME Small Business Magazine is free to read every month: interviews, research and practical advice for Canada’s SMEs.
+                </p>
+                {" "}
+                <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+                  {" "}
+                  <a href={u(v.latestIssue?.href || "#read-magazine")} style={{ display: "inline-flex", alignItems: "center", gap: "9px", padding: "13px 22px", borderRadius: "999px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px" }} className="h_900112d">
+                    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" style={{ flexShrink: "0" }}>
+                      <path d="M3 5.5C5.5 4.3 8.5 4.3 12 6c3.5-1.7 6.5-1.7 9-.5V19c-2.5-1.2-5.5-1.2-9 .5-3.5-1.7-6.5-1.7-9-.5z M12 6v13.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+                    </svg>
+                    Read the latest issue
+                  </a>
+                  {" "}
+                  <a href={u("#newsletter")} style={{ display: "inline-flex", alignItems: "center", padding: "13px 22px", borderRadius: "999px", border: "1.5px solid rgba(255,255,255,0.45)", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px" }} className="h_28723ae">
+                    Subscribe free
+                  </a>
+                  {" "}
+                </div>
                 {" "}
               </div>
               {" "}
             </div>
             {" "}
-            <div>
+            <ul aria-label="Past issues" style={{ listStyle: "none", margin: "44px 0 0", padding: "0", display: "flex", flexWrap: "wrap", gap: "18px" }}>
               {" "}
-              <span style={{ display: "inline-block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D4A72C", marginBottom: "14px" }}>
-                {(v.latestIssue?.month || 'August 2026') + ' Edition'}
-              </span>
+              {(v.issues || []).slice(1, 7).map((i: any, _i: number) => (
+                <Fragment key={i?.slug ?? i?.number ?? _i}>
+                  {" "}
+                  <li style={{ width: "120px", display: "flex", flexDirection: "column", alignItems: "center", gap: "12px" }}>
+                    {" "}
+                    <a href={u(i?.href || "#past-issues")} style={{ display: "block", width: "120px", aspectRatio: "3/4", border: "1px solid rgba(255,255,255,0.75)", borderRadius: "3px", overflow: "hidden", background: "#1D2939", boxShadow: "0 10px 24px rgba(0,0,0,0.35)" }} className="h_37595ef">
+                      {i?.cover ? <img src={i.cover} alt={i?.coverAlt || `CanadianSME Issue ${i?.number}, ${i?.month} cover`} loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} /> : null}
+                    </a>
+                    {" "}
+                    <span style={{ fontSize: "13px", lineHeight: "1.4", color: "#C8CDD6", textAlign: "center" }}>
+                      {i?.month}
+                    </span>
+                    {" "}
+                  </li>
+                  {" "}
+                </Fragment>
+              ))}
               {" "}
-              <h2 id="mag-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "500", fontSize: "clamp(26px,2.8vw,36px)", lineHeight: "1.18", letterSpacing: "-0.01em", marginBottom: "18px", textWrap: "pretty" }}>
-                {v.latestIssue?.title || 'Business Growth, SME Development and Young Entrepreneurship'}
-              </h2>
-              {" "}
-              <p style={{ fontSize: "16.5px", lineHeight: "1.7", color: "#C8CDD6", maxWidth: "58ch", textWrap: "pretty", marginBottom: "26px" }}>
-                {v.latestIssue?.desc || 'The latest edition of CanadianSME Small Business Magazine explores the ideas, technologies, and leadership strategies helping Canadian companies scale with confidence. Discover insightful interviews, practical growth advice, emerging business trends, and stories from the entrepreneurs shaping Canada’s future.'}
-              </p>
-              {" "}
-              <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginBottom: "18px" }}>
-                {" "}
-                <a href={u(v.latestIssue?.href || "#read-magazine")} style={{ padding: "14px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_900112d">
-                  Read Digital Magazine
-                </a>
-                {" "}
-                <a href={u("#past-issues")} style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid #4A5163", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_28723ae">
-                  View Past Issues
-                </a>
-                {" "}
-              </div>
-              {" "}
-              <span style={{ display: "inline-flex", alignItems: "center", gap: "7px", fontSize: "12.5px", color: "#98A2B3" }}>
-                <span aria-hidden="true" style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#D4A72C" }} />
-                Free digital access
-              </span>
-              {" "}
-            </div>
+            </ul>
             {" "}
           </div>
         </section>
@@ -1154,11 +1173,11 @@ export default function Home() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "12px", maxWidth: "640px", marginBottom: "36px" }}>
               {" "}
-              <h2 id="topics-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "clamp(30px,3.6vw,46px)", lineHeight: "1.08", letterSpacing: "-0.03em", color: "#101828", textWrap: "pretty" }}>
+              <h2 id="topics-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(30px,3.6vw,46px)", lineHeight: "1.08", letterSpacing: "-0.015em", color: "#14181D", textWrap: "pretty" }}>
                 Explore by topic
               </h2>
               {" "}
-              <p style={{ fontSize: "17px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+              <p style={{ fontSize: "17px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                 Pick a subject and dive in: every topic is packed with interviews, guides and stories from Canadian small business.
               </p>
               {" "}
@@ -1183,11 +1202,11 @@ export default function Home() {
                     {" "}
                     <div style={{ display: "flex", flexDirection: "column", gap: "10px", padding: "16px 8px 0", flex: "1", minWidth: "0" }}>
                       {" "}
-                      <span style={{ alignSelf: "flex-start", padding: "4px 10px", borderRadius: "999px", background: "#FFFFFF", boxShadow: "0 1px 3px rgba(16,24,40,0.08)", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.06em", textTransform: "uppercase", color: t?.ink }}>
+                      <span style={{ alignSelf: "flex-start", padding: "4px 10px", borderRadius: "999px", background: "#FFFFFF", boxShadow: "0 1px 3px rgba(16,24,40,0.08)", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: t?.ink }}>
                         {t?.countLabel}
                       </span>
                       {" "}
-                      <a href={u(t?.href)} title={t?.name} style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "clamp(18px,1.6vw,21px)", lineHeight: "1.2", letterSpacing: "-0.015em", color: "#101828", whiteSpace: "nowrap" }} className="h_ddb7bb6">
+                      <a href={u(t?.href)} title={t?.name} style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(18px,1.6vw,21px)", lineHeight: "1.2", letterSpacing: "-0.015em", color: "#14181D", whiteSpace: "nowrap" }} className="h_a42e9e3">
                         {t?.name}
                       </a>
                       {" "}
@@ -1197,11 +1216,11 @@ export default function Home() {
                       {" "}
                       <div style={{ borderTop: `1px dashed ${t?.line ?? ""}`, marginTop: "auto", paddingTop: "14px", display: "flex", flexDirection: "column", gap: "6px" }}>
                         {" "}
-                        <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.1em", textTransform: "uppercase", color: t?.ink }}>
+                        <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: t?.ink }}>
                           Latest
                         </span>
                         {" "}
-                        <a href={u(t?.latestHref)} title={t?.latestTitle} style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "15px", lineHeight: "1.4", height: "42px", color: "#101828", display: "-webkit-box", WebkitLineClamp: "2", WebkitBoxOrient: "vertical", overflow: "hidden", "--h0": t?.ink }} className="h_184f6d5">
+                        <a href={u(t?.latestHref)} title={t?.latestTitle} style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "15px", lineHeight: "1.4", height: "42px", color: "#14181D", display: "-webkit-box", WebkitLineClamp: "2", WebkitBoxOrient: "vertical", overflow: "hidden", "--h0": t?.ink }} className="h_184f6d5">
                           {t?.latestTitle}
                         </a>
                         {" "}
@@ -1232,11 +1251,11 @@ export default function Home() {
             {" "}
             <div>
               {" "}
-              <span style={{ display: "inline-block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "14px" }}>
+              <span style={{ display: "inline-block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "14px" }}>
                 Entrepreneur Spotlight
               </span>
               {" "}
-              <h2 id="spot-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(28px,3.2vw,42px)", lineHeight: "1.12", letterSpacing: "-0.02em", marginBottom: "18px", textWrap: "pretty" }}>
+              <h2 id="spot-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(28px,3.2vw,42px)", lineHeight: "1.12", letterSpacing: "-0.015em", marginBottom: "18px", textWrap: "pretty" }}>
                 The People Behind Canada’s Most Inspiring Businesses
               </h2>
               {" "}
@@ -1246,11 +1265,11 @@ export default function Home() {
               {" "}
               <div style={{ borderLeft: "3px solid #D71920", padding: "4px 0 4px 20px", marginBottom: "26px" }}>
                 {" "}
-                <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#667085", marginBottom: "10px" }}>
+                <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#5A6470", marginBottom: "10px" }}>
                   Featured Interview
                 </span>
                 {" "}
-                <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "22px", lineHeight: "1.25", marginBottom: "12px" }}>
+                <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "22px", lineHeight: "1.25", marginBottom: "12px" }}>
                   {v.spotlight?.title}
                 </h3>
                 {" "}
@@ -1262,11 +1281,11 @@ export default function Home() {
               {" "}
               <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
                 {" "}
-                <a href={u(v.spotlight?.href)} style={{ padding: "14px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_900112d">
+                <a href={u(v.spotlight?.href)} style={{ padding: "14px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_900112d">
                   Read the Interview
                 </a>
                 {" "}
-                <a href={u("#entrepreneurs")} style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid #101828", color: "#101828", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_a3b515a">
+                <a href={u("#entrepreneurs")} style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid #101828", color: "#14181D", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_a3b515a">
                   Meet More Entrepreneurs
                 </a>
                 {" "}
@@ -1290,21 +1309,21 @@ export default function Home() {
               {" "}
               <div style={{ maxWidth: "820px" }}>
                 {" "}
-                <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "10px" }}>
+                <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "10px" }}>
                   Free tools
                 </span>
                 {" "}
-                <h2 id="tools-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(20px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", marginBottom: "12px", whiteSpace: "nowrap" }}>
+                <h2 id="tools-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(20px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", marginBottom: "12px", whiteSpace: "nowrap" }}>
                   Calculators Built for Canadian Rules
                 </h2>
                 {" "}
-                <p style={{ fontSize: "16.5px", lineHeight: "1.7", color: "#667085", textWrap: "pretty" }}>
+                <p style={{ fontSize: "16.5px", lineHeight: "1.7", color: "#5A6470", textWrap: "pretty" }}>
                   Federal and provincial rates, updated for the current tax year. No sign-up.
                 </p>
                 {" "}
               </div>
               {" "}
-              <a href="CanadianSME Tools.dc.html#index" style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13px", color: "#D71920" }}>
+              <a href="/tools/" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13px", color: "#002364" }}>
                 All tools →
               </a>
               {" "}
@@ -1317,19 +1336,19 @@ export default function Home() {
                   {" "}
                   <a href={u(t?.href)} style={{ background: "#fff", border: "1px solid #E4E7EC", borderRadius: "10px", padding: "24px", display: "flex", flexDirection: "column", gap: "10px", transition: "box-shadow .18s ease,transform .18s ease" }} className="h_907f3b5">
                     {" "}
-                    <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "22px", color: "#D71920", lineHeight: "1" }}>
+                    <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "22px", color: "#002364", lineHeight: "1" }}>
                       {t?.mark}
                     </span>
                     {" "}
-                    <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16.5px", lineHeight: "1.3", color: "#101828", textWrap: "pretty" }}>
+                    <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16.5px", lineHeight: "1.3", color: "#14181D", textWrap: "pretty" }}>
                       {t?.title}
                     </h3>
                     {" "}
-                    <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                    <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                       {t?.desc}
                     </p>
                     {" "}
-                    <span style={{ marginTop: "auto", paddingTop: "8px", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "12.5px", color: "#D71920" }}>
+                    <span style={{ marginTop: "auto", paddingTop: "8px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "12.5px", color: "#002364" }}>
                       Open calculator →
                     </span>
                     {" "}
@@ -1348,31 +1367,31 @@ export default function Home() {
             {" "}
             <div>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "10px" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "10px" }}>
                 Compliance calendar
               </span>
               {" "}
-              <h2 id="dead-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", marginBottom: "14px", textWrap: "pretty" }}>
+              <h2 id="dead-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", marginBottom: "14px", textWrap: "pretty" }}>
                 What’s Due Next
               </h2>
               {" "}
-              <p style={{ fontSize: "16.5px", lineHeight: "1.7", color: "#667085", maxWidth: "46ch", textWrap: "pretty", marginBottom: "22px" }}>
+              <p style={{ fontSize: "16.5px", lineHeight: "1.7", color: "#5A6470", maxWidth: "46ch", textWrap: "pretty", marginBottom: "22px" }}>
                 The filing and remittance dates that carry penalties if you miss them. Reviewed monthly against CRA guidance.
               </p>
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "10px", alignItems: "flex-start" }}>
                 {" "}
-                <a href="CanadianSME Tools.dc.html#cashflow" style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#D71920" }}>
+                <a href="/tools/cashflow/" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#002364" }}>
                   Plan remittances in the cash-flow forecaster →
                 </a>
                 {" "}
-                <a href={u("#newsletter-form")} style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#101828" }}>
+                <a href={u("#newsletter-form")} style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13.5px", color: "#14181D" }}>
                   Get the monthly deadline reminder by email →
                 </a>
                 {" "}
               </div>
               {" "}
-              <p style={{ marginTop: "22px", fontSize: "12.5px", lineHeight: "1.6", color: "#98A2B3", maxWidth: "44ch" }}>
+              <p style={{ marginTop: "22px", fontSize: "12.5px", lineHeight: "1.6", color: "#5A6470", maxWidth: "44ch" }}>
                 Dates shift when a due date falls on a weekend or statutory holiday. Confirm your own filing frequency and year end with the CRA or your accountant.
               </p>
               {" "}
@@ -1385,17 +1404,17 @@ export default function Home() {
                   {" "}
                   <div style={{ display: "grid", gridTemplateColumns: "92px 1fr", gap: "18px", padding: "18px 22px", borderBottom: "1px solid #F0F2F5", alignItems: "baseline" }}>
                     {" "}
-                    <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px", letterSpacing: "0.02em", color: "#D71920" }}>
+                    <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px", letterSpacing: "0.02em", color: "#002364" }}>
                       {d?.date}
                     </span>
                     {" "}
                     <div>
                       {" "}
-                      <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "15.5px", lineHeight: "1.35", color: "#101828", marginBottom: "5px", textWrap: "pretty" }}>
+                      <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "15.5px", lineHeight: "1.35", color: "#14181D", marginBottom: "5px", textWrap: "pretty" }}>
                         {d?.title}
                       </h3>
                       {" "}
-                      <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                      <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                         {d?.who}
                       </p>
                       {" "}
@@ -1420,19 +1439,19 @@ export default function Home() {
             {" "}
             <div>
               {" "}
-              <span style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#fff", color: "#7A1F2B", borderRadius: "999px", padding: "9px 18px", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13px", letterSpacing: "0.12em", textTransform: "uppercase", marginBottom: "20px", boxShadow: "0 6px 18px rgba(0,0,0,0.18)" }}>
+              <span style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#fff", color: "#7A1F2B", borderRadius: "999px", padding: "9px 18px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13px", letterSpacing: "0.02em", textTransform: "uppercase", marginBottom: "20px", boxShadow: "0 6px 18px rgba(0,0,0,0.18)" }}>
                 Business Woman of the Month · {v.wotm?.month}
               </span>
               {" "}
-              <h2 id="wotm-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(28px,3.4vw,42px)", lineHeight: "1.1", letterSpacing: "-0.02em", marginBottom: "10px", textWrap: "pretty" }}>
+              <h2 id="wotm-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(28px,3.4vw,42px)", lineHeight: "1.1", letterSpacing: "-0.015em", marginBottom: "10px", textWrap: "pretty" }}>
                 {v.wotm?.name}
               </h2>
               {" "}
-              <p style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "15px", color: "#FBE3E6", marginBottom: "22px" }}>
+              <p style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "15px", color: "#FBE3E6", marginBottom: "22px" }}>
                 {v.wotm?.role}
               </p>
               {" "}
-              <p style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(18px,2vw,23px)", lineHeight: "1.45", color: "#fff", borderLeft: "3px solid #D71920", paddingLeft: "22px", marginBottom: "22px", textWrap: "pretty" }}>
+              <p style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "clamp(18px,2vw,23px)", lineHeight: "1.45", color: "#fff", borderLeft: "3px solid #D71920", paddingLeft: "22px", marginBottom: "22px", textWrap: "pretty" }}>
                 {v.wotm?.kicker}
               </p>
               {" "}
@@ -1442,11 +1461,11 @@ export default function Home() {
               {" "}
               <div style={{ display: "flex", gap: "14px", flexWrap: "wrap" }}>
                 {" "}
-                <a href={u(v.wotm?.href)} style={{ padding: "14px 26px", borderRadius: "8px", background: "#fff", color: "#7A1F2B", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_2283a38">
+                <a href={u(v.wotm?.href)} style={{ padding: "14px 26px", borderRadius: "8px", background: "#fff", color: "#7A1F2B", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_2283a38">
                   Read her story
                 </a>
                 {" "}
-                <a href={u("#nominate-woman")} style={{ padding: "14px 26px", borderRadius: "8px", border: "1.5px solid rgba(255,255,255,0.55)", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_38e417a">
+                <a href={u("#nominate-woman")} style={{ padding: "14px 26px", borderRadius: "8px", border: "1.5px solid rgba(255,255,255,0.55)", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14.5px", textDecoration: "none" }} className="h_38e417a">
                   Nominate someone
                 </a>
                 {" "}
@@ -1460,15 +1479,15 @@ export default function Home() {
           {" "}
           <div style={{ maxWidth: "640px", marginBottom: "34px" }}>
             {" "}
-            <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "10px" }}>
+            <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "10px" }}>
               Communities
             </span>
             {" "}
-            <h2 id="comm-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", marginBottom: "12px", textWrap: "pretty" }}>
+            <h2 id="comm-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", marginBottom: "12px", textWrap: "pretty" }}>
               Entrepreneurs Building Canada
             </h2>
             {" "}
-            <p style={{ fontSize: "16.5px", lineHeight: "1.7", color: "#667085", textWrap: "pretty" }}>
+            <p style={{ fontSize: "16.5px", lineHeight: "1.7", color: "#5A6470", textWrap: "pretty" }}>
               Dedicated coverage of the founders and networks shaping Canadian business.
             </p>
             {" "}
@@ -1481,7 +1500,7 @@ export default function Home() {
                 {" "}
                 <section style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                   {" "}
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", letterSpacing: "0.06em", textTransform: "uppercase", color: "#101828", paddingBottom: "10px", borderBottom: "2px solid #D71920" }}>
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", letterSpacing: "0.02em", textTransform: "uppercase", color: "#14181D", paddingBottom: "10px", borderBottom: "2px solid #D71920" }}>
                     {c?.heading}
                   </h3>
                   {" "}
@@ -1489,13 +1508,13 @@ export default function Home() {
                     <img src={c?.lead?.img} alt={c?.lead?.alt} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
                   </a>
                   {" "}
-                  <h4 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.3", textWrap: "pretty" }}>
-                    <a href={u(c?.lead?.href)} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h4 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.3", textWrap: "pretty" }}>
+                    <a href={u(c?.lead?.href)} style={{ color: "#14181D" }} className="h_9e87cbe">
                       {c?.lead?.title}
                     </a>
                   </h4>
                   {" "}
-                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                  <p style={{ fontSize: "13.5px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                     {c?.lead?.excerpt}
                   </p>
                   {" "}
@@ -1505,7 +1524,7 @@ export default function Home() {
                       <Fragment key={m?.key ?? m?.id ?? m?.slug ?? _i10}>
                         {" "}
                         <li style={{ fontSize: "13.5px", lineHeight: "1.45" }}>
-                          <a href={u(m?.href)} style={{ color: "#101828" }} className="h_1dd7993">
+                          <a href={u(m?.href)} style={{ color: "#14181D" }} className="h_9e87cbe">
                             {m?.title}
                           </a>
                         </li>
@@ -1515,7 +1534,7 @@ export default function Home() {
                     {" "}
                   </ul>
                   {" "}
-                  <a href={u(c?.href)} style={{ marginTop: "auto", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "12.5px", color: "#D71920" }}>
+                  <a href={u(c?.href)} style={{ marginTop: "auto", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "12.5px", color: "#002364" }}>
                     More on {c?.heading} →
                   </a>
                   {" "}
@@ -1534,15 +1553,15 @@ export default function Home() {
               {" "}
               <div style={{ maxWidth: "620px" }}>
                 {" "}
-                <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "10px" }}>
+                <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "10px" }}>
                   Where you operate
                 </span>
                 {" "}
-                <h2 id="prov-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", marginBottom: "12px", textWrap: "pretty" }}>
+                <h2 id="prov-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", marginBottom: "12px", textWrap: "pretty" }}>
                   Business in Your Province
                 </h2>
                 {" "}
-                <p style={{ fontSize: "16.5px", lineHeight: "1.7", color: "#667085", textWrap: "pretty" }}>
+                <p style={{ fontSize: "16.5px", lineHeight: "1.7", color: "#5A6470", textWrap: "pretty" }}>
                   Sales tax, workers’ compensation, minimum wage and provincial programmes — tracked province by province.
                 </p>
                 {" "}
@@ -1555,13 +1574,13 @@ export default function Home() {
               {(v.provinceHub || []).map((p: any, _i7: number) => (
                 <Fragment key={p?.key ?? p?.id ?? p?.slug ?? _i7}>
                   {" "}
-                  <a href={u(p?.href)} style={{ display: "flex", flexDirection: "column", gap: "7px", padding: "18px 20px", background: "#fff", border: "1px solid #E4E7EC", borderRadius: "10px", color: "#101828", transition: "border-color .18s ease,transform .18s ease" }} className="h_5a6140f">
+                  <a href={u(p?.href)} style={{ display: "flex", flexDirection: "column", gap: "7px", padding: "18px 20px", background: "#fff", border: "1px solid #E4E7EC", borderRadius: "10px", color: "#14181D", transition: "border-color .18s ease,transform .18s ease" }} className="h_5a6140f">
                     {" "}
-                    <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "15.5px", lineHeight: "1.3" }}>
+                    <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "15.5px", lineHeight: "1.3" }}>
                       {p?.label}
                     </h3>
                     {" "}
-                    <p style={{ fontSize: "12.5px", lineHeight: "1.55", color: "#667085", textWrap: "pretty" }}>
+                    <p style={{ fontSize: "12.5px", lineHeight: "1.55", color: "#5A6470", textWrap: "pretty" }}>
                       {p?.watch}
                     </p>
                     {" "}
@@ -1580,21 +1599,21 @@ export default function Home() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920" }}>
+              <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                 Funding finder
               </span>
               {" "}
-              <h2 id="finder-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty" }}>
+              <h2 id="finder-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty" }}>
                 Find Grants and Financing for Your Business
               </h2>
               {" "}
-              <p style={{ fontSize: "16.5px", lineHeight: "1.7", color: "#667085", textWrap: "pretty" }}>
+              <p style={{ fontSize: "16.5px", lineHeight: "1.7", color: "#5A6470", textWrap: "pretty" }}>
                 Pick your province and what you need. We’ll show the federal programmes and regional agency that fit.
               </p>
               {" "}
-              <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467", marginTop: "8px" }}>
+              <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467", marginTop: "8px" }}>
                 Your province or territory{" "}
-                <select value={v.finderProv} onChange={v.onFinderProv} style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #D0D5DD", background: "#fff", color: "#101828", fontSize: "14.5px", fontFamily: "inherit" }}>
+                <select value={v.finderProv} onChange={v.onFinderProv} style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #D0D5DD", background: "#fff", color: "#14181D", fontSize: "14.5px", fontFamily: "inherit" }}>
                   {" "}
                   {(v.finderProvOptions || []).map((o: any, _i9: number) => (
                     <Fragment key={o?.key ?? o?.id ?? o?.slug ?? _i9}>
@@ -1610,7 +1629,7 @@ export default function Home() {
               {" "}
               <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
+                <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
                   What do you need?
                 </span>
                 {" "}
@@ -1619,7 +1638,7 @@ export default function Home() {
                   {(v.finderNeeds || []).map((n: any, _i9: number) => (
                     <Fragment key={n?.key ?? n?.id ?? n?.slug ?? _i9}>
                       {" "}
-                      <button type="button" onClick={n?.onClick} aria-pressed={n?.active} style={{ padding: "9px 14px", borderRadius: "999px", border: `1.5px solid ${n?.border ?? ""}`, background: n?.bg, color: n?.fg, fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", cursor: "pointer" }}>
+                      <button type="button" onClick={n?.onClick} aria-pressed={n?.active} style={{ padding: "9px 14px", borderRadius: "999px", border: `1.5px solid ${n?.border ?? ""}`, background: n?.bg, color: n?.fg, fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", cursor: "pointer" }}>
                         {n?.label}
                       </button>
                       {" "}
@@ -1630,7 +1649,7 @@ export default function Home() {
                 {" "}
               </div>
               {" "}
-              <p style={{ fontSize: "12.5px", lineHeight: "1.6", color: "#98A2B3" }}>
+              <p style={{ fontSize: "12.5px", lineHeight: "1.6", color: "#5A6470" }}>
                 Eligibility and intake windows change. Always confirm on the programme’s official site before applying.
               </p>
               {" "}
@@ -1638,22 +1657,22 @@ export default function Home() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "0", borderTop: "2px solid #101828" }}>
               {" "}
-              <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#475467", padding: "14px 0" }}>
+              <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#475467", padding: "14px 0" }}>
                 {v.finderCount}
               </span>
               {" "}
               {(v.finderResults || []).map((r: any, _i7: number) => (
                 <Fragment key={r?.key ?? r?.id ?? r?.slug ?? _i7}>
                   {" "}
-                  <a href={u(r?.href)} target="_blank" rel="noopener" style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) auto", gap: "16px", alignItems: "center", padding: "18px 0", borderTop: "1px solid #E4E7EC", color: "#101828" }} className="h_687399a">
+                  <a href={u(r?.href)} target="_blank" rel="noopener" style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) auto", gap: "16px", alignItems: "center", padding: "18px 0", borderTop: "1px solid #E4E7EC", color: "#14181D" }} className="h_3120047">
                     {" "}
                     <span style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
                       {" "}
-                      <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#D71920" }}>
+                      <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                         {r?.tag}
                       </span>
                       {" "}
-                      <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17px", lineHeight: "1.3" }}>
+                      <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17px", lineHeight: "1.3" }}>
                         {r?.name}
                       </span>
                       {" "}
@@ -1663,7 +1682,7 @@ export default function Home() {
                       {" "}
                     </span>
                     {" "}
-                    <span aria-hidden="true" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "18px" }}>
+                    <span aria-hidden="true" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "18px" }}>
                       ↗
                     </span>
                     {" "}
@@ -1688,11 +1707,11 @@ export default function Home() {
                   <img loading="lazy" decoding="async" src="https://smbpodcast.ca/wp-content/uploads/2023/11/Untitled-design-removebg-preview.png" alt="CanadianSME Small Business Podcast" style={{ height: "56px", width: "auto", display: "block" }} />
                 </a>
                 {" "}
-                <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#FF6B72", marginBottom: "14px" }}>
+                <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8", marginBottom: "14px" }}>
                   CanadianSME Podcast
                 </span>
                 {" "}
-                <h2 id="pod-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(28px,3.2vw,42px)", lineHeight: "1.12", letterSpacing: "-0.02em", marginBottom: "18px", textWrap: "pretty" }}>
+                <h2 id="pod-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(28px,3.2vw,42px)", lineHeight: "1.12", letterSpacing: "-0.015em", marginBottom: "18px", textWrap: "pretty" }}>
                   Insights You Can Take Anywhere
                 </h2>
                 {" "}
@@ -1702,11 +1721,11 @@ export default function Home() {
                 {" "}
                 <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginBottom: "26px" }}>
                   {" "}
-                  <a href={u(v.episodes?.[0]?.href || "#latest-episode")} style={{ padding: "14px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_900112d">
+                  <a href={u(v.episodes?.[0]?.href || "#latest-episode")} style={{ padding: "14px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_900112d">
                     Listen to the Latest Episode
                   </a>
                   {" "}
-                  <a href={u("#all-podcasts")} style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid #4A5163", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_28723ae">
+                  <a href={u("#all-podcasts")} style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid #4A5163", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_28723ae">
                     Explore All Podcasts
                   </a>
                   {" "}
@@ -1736,14 +1755,14 @@ export default function Home() {
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 {(v.episodes || []).slice(0, 3).map((ep: any, i: number) => (
                   <article key={ep.slug} style={{ display: "flex", gap: "16px", alignItems: "center", background: "#161E32", border: "1px solid #262E44", borderRadius: "10px", padding: "14px", transition: "border-color .18s ease" }} className="h_9f7643d">
-                    <div aria-hidden="true" style={{ width: "78px", height: "78px", flexShrink: "0", borderRadius: "8px", background: i === 0 ? "#D71920" : "#26304A", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "19px" }}>
+                    <div aria-hidden="true" style={{ width: "78px", height: "78px", flexShrink: "0", borderRadius: "8px", background: i === 0 ? "#D71920" : "#26304A", display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "19px" }}>
                       {ep.number}
                     </div>
                     <div style={{ minWidth: "0" }}>
-                      <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#D4A72C", marginBottom: "6px" }}>
+                      <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8", marginBottom: "6px" }}>
                         {['Episode ' + ep.number, ep.duration].filter(Boolean).join(' · ')}
                       </span>
-                      <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.35" }}>
+                      <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.35" }}>
                         <a href={u(ep.href)} style={{ color: "#fff" }} className="h_a67bccc">
                           {ep.title}
                         </a>
@@ -1764,15 +1783,15 @@ export default function Home() {
           {" "}
           <div style={{ maxWidth: "640px", marginBottom: "34px" }}>
             {" "}
-            <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "10px" }}>
+            <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "10px" }}>
               Events &amp; Community
             </span>
             {" "}
-            <h2 id="events-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", marginBottom: "12px", textWrap: "pretty" }}>
+            <h2 id="events-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", marginBottom: "12px", textWrap: "pretty" }}>
               Connect with Canada’s Small Business Community
             </h2>
             {" "}
-            <p style={{ fontSize: "16px", lineHeight: "1.65", color: "#667085", textWrap: "pretty" }}>
+            <p style={{ fontSize: "16px", lineHeight: "1.65", color: "#5A6470", textWrap: "pretty" }}>
               Join entrepreneurs, business leaders, technology providers, and industry experts at CanadianSME events created to encourage learning, partnership, recognition, and growth.
             </p>
             {" "}
@@ -1785,15 +1804,15 @@ export default function Home() {
                   <Slot src={ev.img} alt={ev.imgAlt} shape="rect" placeholder={ev.name} style={{ aspectRatio: "auto" }} />
                 </div>
                 <div style={{ padding: "18px", display: "flex", flexDirection: "column", gap: "10px", flex: "1" }}>
-                  <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#D4A72C" }}>
+                  <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                     {ev.kicker}
                   </span>
-                  <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17px", lineHeight: "1.3" }}>
-                    <a href={u(ev.href)} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17px", lineHeight: "1.3" }}>
+                    <a href={u(ev.href)} style={{ color: "#14181D" }} className="h_9e87cbe">
                       {ev.name}
                     </a>
                   </h3>
-                  <p style={{ fontSize: "14px", lineHeight: "1.6", color: "#667085" }}>
+                  <p style={{ fontSize: "14px", lineHeight: "1.6", color: "#5A6470" }}>
                     {ev.desc}
                   </p>
                 </div>
@@ -1803,11 +1822,11 @@ export default function Home() {
           {" "}
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "32px" }}>
             {" "}
-            <a href={u("#upcoming")} style={{ padding: "14px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_900112d">
+            <a href={u("#upcoming")} style={{ padding: "14px 22px", borderRadius: "8px", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_900112d">
               Explore Upcoming Events
             </a>
             {" "}
-            <a href={u("#event-partner")} style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid #101828", color: "#101828", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_a3b515a">
+            <a href={u("#event-partner")} style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid #101828", color: "#14181D", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_a3b515a">
               Become an Event Partner
             </a>
             {" "}
@@ -1819,7 +1838,7 @@ export default function Home() {
             {" "}
             <div style={{ maxWidth: "640px", marginBottom: "32px" }}>
               {" "}
-              <h2 id="res-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", marginBottom: "12px", textWrap: "pretty" }}>
+              <h2 id="res-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", marginBottom: "12px", textWrap: "pretty" }}>
                 Practical Resources for Every Stage of Business
               </h2>
               {" "}
@@ -1831,65 +1850,65 @@ export default function Home() {
             {" "}
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,200px),1fr))", gap: "24px", marginBottom: "28px" }}>
               {" "}
-              <a href={u("#resources")} aria-label="Starting a Business in Canada. See all guides" style={{ display: "flex", flexDirection: "column", gap: "12px", color: "#101828" }} className="h_687399a">
+              <a href={u("#resources")} aria-label="Starting a Business in Canada. See all guides" style={{ display: "flex", flexDirection: "column", gap: "12px", color: "#14181D" }} className="h_3120047">
                 {" "}
                 <div style={{ aspectRatio: "3/4", border: "1px solid #E4E7EC", borderRadius: "10px", overflow: "hidden", background: "#fff", boxShadow: "0 8px 20px rgba(16,24,40,0.06)" }}>
                   <Slot id="res-starting" shape="rect" placeholder="Starting a Business cover" />
                 </div>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#D71920" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                   Guide
                 </span>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.3" }}>
+                <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.3" }}>
                   Starting a Business in Canada
                 </span>
                 {" "}
               </a>
               {" "}
-              <a href={u("#resources")} aria-label="Funding and Grants. See all guides" style={{ display: "flex", flexDirection: "column", gap: "12px", color: "#101828" }} className="h_687399a">
+              <a href={u("#resources")} aria-label="Funding and Grants. See all guides" style={{ display: "flex", flexDirection: "column", gap: "12px", color: "#14181D" }} className="h_3120047">
                 {" "}
                 <div style={{ aspectRatio: "3/4", border: "1px solid #E4E7EC", borderRadius: "10px", overflow: "hidden", background: "#fff", boxShadow: "0 8px 20px rgba(16,24,40,0.06)" }}>
                   <Slot id="res-grants" shape="rect" placeholder="Funding and Grants cover" />
                 </div>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#D71920" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                   Directory
                 </span>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.3" }}>
+                <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.3" }}>
                   Funding and Grants
                 </span>
                 {" "}
               </a>
               {" "}
-              <a href={u("#resources")} aria-label="Cash Flow Forecast Template. See all guides" style={{ display: "flex", flexDirection: "column", gap: "12px", color: "#101828" }} className="h_687399a">
+              <a href={u("#resources")} aria-label="Cash Flow Forecast Template. See all guides" style={{ display: "flex", flexDirection: "column", gap: "12px", color: "#14181D" }} className="h_3120047">
                 {" "}
                 <div style={{ aspectRatio: "3/4", border: "1px solid #E4E7EC", borderRadius: "10px", overflow: "hidden", background: "#fff", boxShadow: "0 8px 20px rgba(16,24,40,0.06)" }}>
                   <Slot id="res-cashflow" shape="rect" placeholder="Cash Flow Forecast cover" />
                 </div>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#D71920" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                   Template · XLSX
                 </span>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.3" }}>
+                <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.3" }}>
                   Cash Flow Forecast Template
                 </span>
                 {" "}
               </a>
               {" "}
-              <a href={u("#resources")} aria-label="Exporting from Canada. See all guides" style={{ display: "flex", flexDirection: "column", gap: "12px", color: "#101828" }} className="h_687399a">
+              <a href={u("#resources")} aria-label="Exporting from Canada. See all guides" style={{ display: "flex", flexDirection: "column", gap: "12px", color: "#14181D" }} className="h_3120047">
                 {" "}
                 <div style={{ aspectRatio: "3/4", border: "1px solid #E4E7EC", borderRadius: "10px", overflow: "hidden", background: "#fff", boxShadow: "0 8px 20px rgba(16,24,40,0.06)" }}>
                   <Slot id="res-exporting" shape="rect" placeholder="Exporting from Canada cover" />
                 </div>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: "#D71920" }}>
+                <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364" }}>
                   Guide
                 </span>
                 {" "}
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.3" }}>
+                <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16px", lineHeight: "1.3" }}>
                   Exporting from Canada
                 </span>
                 {" "}
@@ -1899,7 +1918,7 @@ export default function Home() {
             {" "}
             <div style={{ display: "flex", justifyContent: "flex-start" }}>
               {" "}
-              <a href={u("#resources")} style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 26px", borderRadius: "999px", background: "#1E5AA8", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px" }} className="h_3a06147">
+              <a href={u("#resources")} style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 26px", borderRadius: "999px", background: "#1E5AA8", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px" }} className="h_3a06147">
                 Browse all guides{" "}
                 <span aria-hidden="true">
                   →
@@ -1914,11 +1933,11 @@ export default function Home() {
           {" "}
           <div style={{ maxWidth: "660px", marginBottom: "30px" }}>
             {" "}
-            <h2 id="partners-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.02em", marginBottom: "12px", textWrap: "pretty" }}>
+            <h2 id="partners-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(24px,2.6vw,34px)", lineHeight: "1.16", letterSpacing: "-0.015em", marginBottom: "12px", textWrap: "pretty" }}>
               Working with Organizations That Support Canadian Businesses
             </h2>
             {" "}
-            <p style={{ fontSize: "16px", lineHeight: "1.65", color: "#667085", textWrap: "pretty" }}>
+            <p style={{ fontSize: "16px", lineHeight: "1.65", color: "#5A6470", textWrap: "pretty" }}>
               CanadianSME works with leading organizations that share our commitment to helping entrepreneurs build stronger, more innovative, and more resilient businesses.
             </p>
             {" "}
@@ -1926,27 +1945,27 @@ export default function Home() {
           {" "}
           <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "26px" }}>
             {" "}
-            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
+            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
               Exclusive Partners
             </span>
             {" "}
-            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
+            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
               Technology Partners
             </span>
             {" "}
-            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
+            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
               Financial Partners
             </span>
             {" "}
-            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
+            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
               Shipping and Logistics Partner
             </span>
             {" "}
-            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
+            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
               HR and Payroll Partner
             </span>
             {" "}
-            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
+            <span style={{ padding: "6px 12px", borderRadius: "999px", background: "#F4F6F8", border: "1px solid #E4E7EC", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#475467" }}>
               Community Partners
             </span>
             {" "}
@@ -1966,7 +1985,7 @@ export default function Home() {
           {" "}
           <div style={{ display: "flex", justifyContent: "flex-start", marginTop: "30px" }}>
             {" "}
-            <a href={u("#become-partner")} style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 26px", borderRadius: "999px", background: "#1E5AA8", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px" }} className="h_3a06147">
+            <a href={u("#become-partner")} style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 26px", borderRadius: "999px", background: "#1E5AA8", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px" }} className="h_3a06147">
               Become a CanadianSME Partner
             </a>
             {" "}
@@ -1980,11 +1999,11 @@ export default function Home() {
               {" "}
               <div style={{ padding: "64px 48px 64px 0", color: "#fff" }}>
                 {" "}
-                <span style={{ display: "inline-block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#FBD5D7", marginBottom: "14px" }}>
+                <span style={{ display: "inline-block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#FBD5D7", marginBottom: "14px" }}>
                   The Tuesday Briefing · Free
                 </span>
                 {" "}
-                <h2 id="news-heading" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(27px,3vw,40px)", lineHeight: "1.12", letterSpacing: "-0.02em", marginBottom: "16px", textWrap: "pretty" }}>
+                <h2 id="news-heading" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(27px,3vw,40px)", lineHeight: "1.12", letterSpacing: "-0.015em", marginBottom: "16px", textWrap: "pretty" }}>
                   This Week’s Deadlines and Grants, in Five Minutes
                 </h2>
                 {" "}
@@ -1995,21 +2014,21 @@ export default function Home() {
                 <ul style={{ display: "flex", flexDirection: "column", gap: "12px", maxWidth: "50ch", padding: "0", listStyle: "none" }}>
                   {" "}
                   <li style={{ display: "flex", gap: "12px", fontSize: "15.5px", lineHeight: "1.5", color: "#fff" }}>
-                    <span style={{ flexShrink: "0", fontFamily: "Sora,sans-serif", fontWeight: "700", color: "#FBD5D7" }}>
+                    <span style={{ flexShrink: "0", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", color: "#FBD5D7" }}>
                       01
                     </span>
                     CRA and payroll dates coming up in the next 30 days
                   </li>
                   {" "}
                   <li style={{ display: "flex", gap: "12px", fontSize: "15.5px", lineHeight: "1.5", color: "#fff" }}>
-                    <span style={{ flexShrink: "0", fontFamily: "Sora,sans-serif", fontWeight: "700", color: "#FBD5D7" }}>
+                    <span style={{ flexShrink: "0", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", color: "#FBD5D7" }}>
                       02
                     </span>
                     Grant and financing intakes opening or closing soon
                   </li>
                   {" "}
                   <li style={{ display: "flex", gap: "12px", fontSize: "15.5px", lineHeight: "1.5", color: "#fff" }}>
-                    <span style={{ flexShrink: "0", fontFamily: "Sora,sans-serif", fontWeight: "700", color: "#FBD5D7" }}>
+                    <span style={{ flexShrink: "0", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", color: "#FBD5D7" }}>
                       03
                     </span>
                     One practical read from CanadianSME, plus rate and tariff changes that affect you
@@ -2026,21 +2045,21 @@ export default function Home() {
                   {" "}
                   <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(160px,1fr))", gap: "14px" }}>
                     {" "}
-                    <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#C8CDD6" }}>
+                    <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#C8CDD6" }}>
                       First name{" "}
-                      <input name="first" type="text" ref={v.firstRef} autoComplete="given-name" style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #33394A", background: "#fff", color: "#101828", fontSize: "14px" }} />
+                      <input name="first" type="text" ref={v.firstRef} autoComplete="given-name" style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #33394A", background: "#fff", color: "#14181D", fontSize: "14px" }} />
                       {" "}
                     </label>
                     {" "}
-                    <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#C8CDD6" }}>
+                    <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#C8CDD6" }}>
                       Email address{" "}
-                      <input name="email" type="email" ref={v.emailRef} autoComplete="email" style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #33394A", background: "#fff", color: "#101828", fontSize: "14px" }} />
+                      <input name="email" type="email" ref={v.emailRef} autoComplete="email" style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #33394A", background: "#fff", color: "#14181D", fontSize: "14px" }} />
                       {" "}
                     </label>
                     {" "}
-                    <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#C8CDD6" }}>
+                    <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#C8CDD6" }}>
                       Province{" "}
-                      <select name="province" ref={v.provRef} style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #33394A", background: "#fff", color: "#101828", fontSize: "14px" }}>
+                      <select name="province" ref={v.provRef} style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #33394A", background: "#fff", color: "#14181D", fontSize: "14px" }}>
                         {" "}
                         <option value="">
                           Select a province
@@ -2102,9 +2121,9 @@ export default function Home() {
                       {" "}
                     </label>
                     {" "}
-                    <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12px", color: "#C8CDD6" }}>
+                    <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12px", color: "#C8CDD6" }}>
                       Business stage{" "}
-                      <select name="stage" ref={v.stageRef} style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #33394A", background: "#fff", color: "#101828", fontSize: "14px" }}>
+                      <select name="stage" ref={v.stageRef} style={{ padding: "12px 14px", borderRadius: "8px", border: "1.5px solid #33394A", background: "#fff", color: "#14181D", fontSize: "14px" }}>
                         {" "}
                         <option value="">
                           Select a stage
@@ -2154,7 +2173,7 @@ export default function Home() {
                     {v.formMessage}
                   </span>
                   {" "}
-                  <button type="submit" style={{ padding: "15px", borderRadius: "8px", border: "0", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "pointer" }} className="h_d91df66">
+                  <button type="submit" style={{ padding: "15px", borderRadius: "8px", border: "0", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "pointer" }} className="h_d91df66">
                     Get the Tuesday Briefing
                   </button>
                   {" "}

@@ -16,20 +16,20 @@ export default function Episode() {
         {" "}
         <nav aria-label="Breadcrumb" style={{ background: "#F4F6F8", borderBottom: "1px solid #E4E7EC" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#667085", display: "flex", gap: "8px", flexWrap: "wrap" }}>
-            <a href={u("#home")} style={{ color: "#667085" }} className="h_1dd7993">
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#5A6470", display: "flex", gap: "8px", flexWrap: "wrap" }}>
+            <a href={u("#home")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Home
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <a href={u("#podcast")} style={{ color: "#667085" }} className="h_1dd7993">
+            <a href={u("#podcast")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Podcast
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <span style={{ color: "#101828" }}>
+            <span style={{ color: "#14181D" }}>
               Episode {v.episode?.number}
             </span>
           </div>
@@ -46,11 +46,11 @@ export default function Episode() {
             {" "}
             <div>
               {" "}
-              <span style={{ display: "inline-block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D4A72C", marginBottom: "12px" }}>
+              <span style={{ display: "inline-block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8", marginBottom: "12px" }}>
                 {['Episode ' + (v.episode?.number ?? ''), v.episode?.duration].filter(Boolean).join(' · ')}
               </span>
               {" "}
-              <h1 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(28px,3.2vw,40px)", lineHeight: "1.14", marginBottom: "16px" }}>
+              <h1 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(28px,3.2vw,40px)", lineHeight: "1.14", marginBottom: "16px", letterSpacing: "-0.025em" }}>
                 {v.episode?.title}
               </h1>
               {" "}
@@ -65,9 +65,9 @@ export default function Episode() {
           {" "}
         </div>
         {" "}
-        <div style={{ maxWidth: "820px", margin: "0 auto", padding: "56px 24px 72px", fontSize: "17px", lineHeight: "1.75", color: "#1D2939", display: "flex", flexDirection: "column", gap: "20px" }}>
+        <div style={{ maxWidth: "820px", margin: "0 auto", padding: "56px 24px 72px", fontSize: "17px", lineHeight: "1.75", color: "#14181D", display: "flex", flexDirection: "column", gap: "20px" }}>
           {" "}
-          <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "26px" }}>
+          <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "26px", letterSpacing: "-0.015em" }}>
             Episode notes
           </h2>
           {" "}
@@ -78,7 +78,7 @@ export default function Episode() {
           <ul style={{ display: "flex", flexDirection: "column", gap: "10px", fontSize: "15.5px", color: "#475467" }}>
             {(v.episode?.notes || []).map((n: any, i: number) => (
               <li key={i} style={{ display: "flex", gap: "12px" }}>
-                <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", color: "#D71920", flexShrink: "0" }}>
+                <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", color: "#002364", flexShrink: "0" }}>
                   {n.t}
                 </span>
                 <span>
@@ -88,7 +88,7 @@ export default function Episode() {
             ))}
           </ul>
           {" "}
-          <a href={u("#podcast")} style={{ alignSelf: "flex-start", marginTop: "10px", padding: "13px 22px", borderRadius: "8px", border: "1.5px solid #101828", color: "#101828", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_a3b515a">
+          <a href={u("#podcast")} style={{ alignSelf: "flex-start", marginTop: "10px", padding: "13px 22px", borderRadius: "8px", border: "1.5px solid #101828", color: "#14181D", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14px" }} className="h_a3b515a">
             All episodes
           </a>
           {" "}

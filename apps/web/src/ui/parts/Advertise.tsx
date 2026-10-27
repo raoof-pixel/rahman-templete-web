@@ -15,14 +15,14 @@ export default function Advertise() {
         {" "}
         <nav aria-label="Breadcrumb" style={{ background: "#F4F6F8", borderBottom: "1px solid #E4E7EC" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#667085", display: "flex", gap: "8px" }}>
-            <a href={u("#home")} style={{ color: "#667085" }} className="h_1dd7993">
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#5A6470", display: "flex", gap: "8px" }}>
+            <a href={u("#home")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Home
             </a>
             <span aria-hidden="true">
               /
             </span>
-            <span style={{ color: "#101828" }}>
+            <span style={{ color: "#14181D" }}>
               Advertise With Us
             </span>
           </div>
@@ -35,11 +35,11 @@ export default function Advertise() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#F59E9E", marginBottom: "0" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#7FA3E8", marginBottom: "0" }}>
                 Advertise With Us
               </span>
               {" "}
-              <h1 id="adv-h1" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(34px,4.2vw,56px)", lineHeight: "1.06", letterSpacing: "-0.025em", textWrap: "balance" }}>
+              <h1 id="adv-h1" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(34px,4.2vw,56px)", lineHeight: "1.06", letterSpacing: "-0.025em", textWrap: "balance" }}>
                 Connect Your Brand with Canada’s Small Business Community
               </h1>
               {" "}
@@ -49,13 +49,13 @@ export default function Advertise() {
               {" "}
               <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center", marginTop: "6px" }}>
                 {" "}
-                <button type="button" onClick={v.advToForm} style={{ padding: "15px 24px", borderRadius: "8px", border: "0", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "pointer" }} className="h_58d1318 f_f7775c6">
+                <button type="button" onClick={v.advToForm} style={{ padding: "15px 24px", borderRadius: "8px", border: "0", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "pointer" }} className="h_58d1318 f_f7775c6">
                   Request a Campaign Proposal
                 </button>
                 {" "}
                 {v.advKitReady ? (
                   <>
-                    <a href={u(v.advKitUrl)} target="_blank" rel="noopener" style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid rgba(255,255,255,0.55)", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px" }} className="h_44a8d48">
+                    <a href={u(v.advKitUrl)} target="_blank" rel="noopener" style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid rgba(255,255,255,0.55)", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px" }} className="h_44a8d48">
                       Download Media Kit
                     </a>
                   </>
@@ -64,7 +64,7 @@ export default function Advertise() {
                 {v.advKitMissing ? (
                   <>
                     <span style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-                      <button type="button" disabled={true} aria-describedby="adv-kit-note-1" style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid rgba(255,255,255,0.3)", background: "transparent", color: "#98A2B3", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "not-allowed" }}>
+                      <button type="button" disabled={true} aria-describedby="adv-kit-note-1" style={{ padding: "14px 22px", borderRadius: "8px", border: "1.5px solid rgba(255,255,255,0.3)", background: "transparent", color: "#98A2B3", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "not-allowed" }}>
                         Download Media Kit
                       </button>
                       <span id="adv-kit-note-1" style={{ fontSize: "12.5px", color: "#98A2B3" }}>
@@ -104,11 +104,11 @@ export default function Advertise() {
             {" "}
             <div style={{ maxWidth: "680px", marginBottom: "40px" }}>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "12px" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "12px" }}>
                 Audience
               </span>
               {" "}
-              <h2 id="adv-aud-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty", marginBottom: "14px" }}>
+              <h2 id="adv-aud-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty", marginBottom: "14px" }}>
                 Reach the People Building Canadian Business
               </h2>
               {" "}
@@ -125,11 +125,11 @@ export default function Advertise() {
                   {" "}
                   <li style={{ borderTop: "3px solid #1E5AA8", background: "#F4F6F8", borderRadius: "0 0 10px 10px", padding: "22px 20px", display: "flex", flexDirection: "column", gap: "8px" }}>
                     {" "}
-                    <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16.5px", lineHeight: "1.3", color: "#101828", textWrap: "pretty" }}>
+                    <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16.5px", lineHeight: "1.3", color: "#14181D", textWrap: "pretty" }}>
                       {a?.t}
                     </span>
                     {" "}
-                    <span style={{ fontSize: "14px", lineHeight: "1.6", color: "#667085", textWrap: "pretty" }}>
+                    <span style={{ fontSize: "14px", lineHeight: "1.6", color: "#5A6470", textWrap: "pretty" }}>
                       {a?.d}
                     </span>
                     {" "}
@@ -151,11 +151,11 @@ export default function Advertise() {
                       <div style={{ border: "1px solid #E4E7EC", borderRadius: "10px", padding: "22px", display: "flex", flexDirection: "column-reverse", gap: "6px" }}>
                         <dt style={{ fontSize: "14px", lineHeight: "1.5", color: "#475467" }}>
                           {m?.label}
-                          <span style={{ display: "block", fontSize: "12px", color: "#667085", marginTop: "4px" }}>
+                          <span style={{ display: "block", fontSize: "12px", color: "#5A6470", marginTop: "4px" }}>
                             {m?.source}
                           </span>
                         </dt>
-                        <dd style={{ margin: "0", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "32px", lineHeight: "1.1", color: "#101828" }}>
+                        <dd style={{ margin: "0", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "32px", lineHeight: "1.1", color: "#14181D" }}>
                           {m?.value}
                         </dd>
                       </div>
@@ -178,11 +178,11 @@ export default function Advertise() {
             {" "}
             <div style={{ maxWidth: "680px", marginBottom: "40px" }}>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "12px" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "12px" }}>
                 Advertising options
               </span>
               {" "}
-              <h2 id="adv-opt-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty", marginBottom: "14px" }}>
+              <h2 id="adv-opt-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty", marginBottom: "14px" }}>
                 Choose the Right Channels for Your Campaign
               </h2>
               {" "}
@@ -199,11 +199,11 @@ export default function Advertise() {
                   {" "}
                   <article style={{ background: "#fff", border: "1px solid #E4E7EC", borderRadius: "12px", padding: "28px", display: "flex", flexDirection: "column", gap: "12px", boxShadow: "0 1px 2px rgba(16,24,40,0.04)" }}>
                     {" "}
-                    <span aria-hidden="true" style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "13px", color: "#1E5AA8", letterSpacing: "0.06em" }}>
+                    <span aria-hidden="true" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "13px", color: "#004FB8", letterSpacing: "0.06em" }}>
                       {o?.n}
                     </span>
                     {" "}
-                    <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "19px", lineHeight: "1.3", color: "#101828", textWrap: "pretty" }}>
+                    <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "19px", lineHeight: "1.3", color: "#14181D", textWrap: "pretty" }}>
                       {o?.t}
                     </h3>
                     {" "}
@@ -211,7 +211,7 @@ export default function Advertise() {
                       {o?.d}
                     </p>
                     {" "}
-                    <button type="button" onClick={o?.enquire} aria-label={`Enquire about ${o?.t ?? ""}`} style={{ marginTop: "auto", alignSelf: "flex-start", padding: "6px 0", border: "0", background: "none", color: "#1E5AA8", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "14.5px", cursor: "pointer", display: "inline-flex", gap: "6px", alignItems: "center" }} className="h_7bfc70e f_d9ff5e2">
+                    <button type="button" onClick={o?.enquire} aria-label={`Enquire about ${o?.t ?? ""}`} style={{ marginTop: "auto", alignSelf: "flex-start", padding: "6px 0", border: "0", background: "none", color: "#004FB8", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "14.5px", cursor: "pointer", display: "inline-flex", gap: "6px", alignItems: "center" }} className="h_7bfc70e f_d9ff5e2">
                       Enquire About This Option{" "}
                       <span aria-hidden="true">
                         →
@@ -235,11 +235,11 @@ export default function Advertise() {
             {" "}
             <div style={{ display: "flex", flexDirection: "column", gap: "0" }}>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "12px" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "12px" }}>
                 Campaign objectives
               </span>
               {" "}
-              <h2 id="adv-goal-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty", marginBottom: "14px" }}>
+              <h2 id="adv-goal-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty", marginBottom: "14px" }}>
                 Build a Campaign Around Your Goals
               </h2>
               {" "}
@@ -247,7 +247,7 @@ export default function Advertise() {
                 Tell us what you want to achieve. CanadianSME can develop a coordinated proposal that brings together suitable channels, campaign timing and creative formats.
               </p>
               {" "}
-              <button type="button" onClick={v.advToFormIntegrated} style={{ alignSelf: "flex-start", padding: "15px 24px", borderRadius: "8px", border: "0", background: "#1E5AA8", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "pointer" }} className="h_636b15c f_d9ff5e2">
+              <button type="button" onClick={v.advToFormIntegrated} style={{ alignSelf: "flex-start", padding: "15px 24px", borderRadius: "8px", border: "0", background: "#1E5AA8", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "pointer" }} className="h_636b15c f_d9ff5e2">
                 Discuss Your Campaign
               </button>
               {" "}
@@ -259,10 +259,10 @@ export default function Advertise() {
                 <Fragment key={g?.key ?? g?.id ?? g?.slug ?? _i7}>
                   {" "}
                   <li style={{ display: "grid", gridTemplateColumns: "52px minmax(0,1fr)", gap: "16px", alignItems: "baseline", padding: "22px 0", borderBottom: "1px solid #E4E7EC" }}>
-                    <span aria-hidden="true" style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "22px", color: "#D71920" }}>
+                    <span aria-hidden="true" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "22px", color: "#002364" }}>
                       {g?.n}
                     </span>
-                    <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "18px", lineHeight: "1.35", color: "#101828" }}>
+                    <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "18px", lineHeight: "1.35", color: "#14181D" }}>
                       {g?.t}
                     </span>
                   </li>
@@ -282,11 +282,11 @@ export default function Advertise() {
             {" "}
             <div style={{ maxWidth: "680px", marginBottom: "40px" }}>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "12px" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "12px" }}>
                 Campaign examples
               </span>
               {" "}
-              <h2 id="adv-ex-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty", marginBottom: "14px" }}>
+              <h2 id="adv-ex-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty", marginBottom: "14px" }}>
                 Explore the Possibilities
               </h2>
               {" "}
@@ -309,7 +309,7 @@ export default function Advertise() {
                         {" "}
                         {(g?.blocks || []).map((b: any, _i12: number) => (
                           <Fragment key={b?.key ?? b?.id ?? b?.slug ?? _i12}>
-                            <div style={{ position: "absolute", left: b?.x, top: b?.y, width: b?.w, height: b?.h, background: b?.bg, borderRadius: b?.r, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: b?.fs, lineHeight: "1.15", color: b?.fg }}>
+                            <div style={{ position: "absolute", left: b?.x, top: b?.y, width: b?.w, height: b?.h, background: b?.bg, borderRadius: b?.r, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: b?.fs, lineHeight: "1.15", color: b?.fg }}>
                               {b?.t}
                             </div>
                           </Fragment>
@@ -317,17 +317,17 @@ export default function Advertise() {
                         {" "}
                       </div>
                       {" "}
-                      <span style={{ position: "absolute", left: "10px", top: "10px", padding: "4px 9px", borderRadius: "999px", background: "rgba(255,255,255,0.95)", border: "1px solid #D0D5DD", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.06em", textTransform: "uppercase", color: "#344054" }}>
+                      <span style={{ position: "absolute", left: "10px", top: "10px", padding: "4px 9px", borderRadius: "999px", background: "rgba(255,255,255,0.95)", border: "1px solid #D0D5DD", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#344054" }}>
                         Illustrative placement
                       </span>
                       {" "}
                     </button>
                     {" "}
                     <figcaption style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-                      <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "16px", color: "#101828" }}>
+                      <span style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "16px", color: "#14181D" }}>
                         {g?.t}
                       </span>
-                      <span style={{ fontSize: "14px", lineHeight: "1.55", color: "#667085" }}>
+                      <span style={{ fontSize: "14px", lineHeight: "1.55", color: "#5A6470" }}>
                         {g?.d}
                       </span>
                     </figcaption>
@@ -353,21 +353,21 @@ export default function Advertise() {
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "12px", padding: "16px 20px", borderBottom: "1px solid #E4E7EC", flexWrap: "wrap" }}>
                   {" "}
                   <div style={{ display: "flex", flexDirection: "column", gap: "2px" }}>
-                    <h2 id="adv-lb-title" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "18px", color: "#101828" }}>
+                    <h2 id="adv-lb-title" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "18px", color: "#14181D" }}>
                       {v.advLb?.t}
                     </h2>
-                    <span style={{ fontSize: "12.5px", color: "#667085" }}>
+                    <span style={{ fontSize: "12.5px", color: "#5A6470" }}>
                       Illustrative placement · {v.advLbCount}
                     </span>
                   </div>
                   {" "}
                   <div style={{ display: "flex", gap: "8px" }}>
                     {" "}
-                    <button type="button" onClick={v.advLbPrev} aria-label="Previous example" style={{ width: "44px", height: "44px", borderRadius: "8px", border: "1px solid #D0D5DD", background: "#fff", fontSize: "18px", cursor: "pointer", color: "#101828" }} className="h_6bcb6d2 f_d9ff5e2">
+                    <button type="button" onClick={v.advLbPrev} aria-label="Previous example" style={{ width: "44px", height: "44px", borderRadius: "8px", border: "1px solid #D0D5DD", background: "#fff", fontSize: "18px", cursor: "pointer", color: "#14181D" }} className="h_6bcb6d2 f_d9ff5e2">
                       ←
                     </button>
                     {" "}
-                    <button type="button" onClick={v.advLbNext} aria-label="Next example" style={{ width: "44px", height: "44px", borderRadius: "8px", border: "1px solid #D0D5DD", background: "#fff", fontSize: "18px", cursor: "pointer", color: "#101828" }} className="h_6bcb6d2 f_d9ff5e2">
+                    <button type="button" onClick={v.advLbNext} aria-label="Next example" style={{ width: "44px", height: "44px", borderRadius: "8px", border: "1px solid #D0D5DD", background: "#fff", fontSize: "18px", cursor: "pointer", color: "#14181D" }} className="h_6bcb6d2 f_d9ff5e2">
                       →
                     </button>
                     {" "}
@@ -385,7 +385,7 @@ export default function Advertise() {
                     {" "}
                     {(v.advLb?.blocks || []).map((b: any, _i10: number) => (
                       <Fragment key={b?.key ?? b?.id ?? b?.slug ?? _i10}>
-                        <div style={{ position: "absolute", left: b?.x, top: b?.y, width: b?.w, height: b?.h, background: b?.bg, borderRadius: b?.r, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: b?.fs, lineHeight: "1.15", color: b?.fg }}>
+                        <div style={{ position: "absolute", left: b?.x, top: b?.y, width: b?.w, height: b?.h, background: b?.bg, borderRadius: b?.r, display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: b?.fs, lineHeight: "1.15", color: b?.fg }}>
                           {b?.t}
                         </div>
                       </Fragment>
@@ -412,11 +412,11 @@ export default function Advertise() {
             {" "}
             <div style={{ maxWidth: "680px", marginBottom: "40px" }}>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "12px" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "12px" }}>
                 Why CanadianSME
               </span>
               {" "}
-              <h2 id="adv-why-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty", marginBottom: "14px" }}>
+              <h2 id="adv-why-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty", marginBottom: "14px" }}>
                 A Platform Focused on Canadian Entrepreneurs
               </h2>
               {" "}
@@ -428,7 +428,7 @@ export default function Advertise() {
                 <Fragment key={w?.key ?? w?.id ?? w?.slug ?? _i7}>
                   {" "}
                   <div style={{ display: "flex", flexDirection: "column", gap: "10px", paddingTop: "18px", borderTop: "2px solid #101828" }}>
-                    <h3 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "18px", lineHeight: "1.3", color: "#101828", textWrap: "pretty" }}>
+                    <h3 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "18px", lineHeight: "1.3", color: "#14181D", textWrap: "pretty" }}>
                       {w?.t}
                     </h3>
                     <p style={{ fontSize: "15px", lineHeight: "1.65", color: "#475467", textWrap: "pretty" }}>
@@ -451,11 +451,11 @@ export default function Advertise() {
             {" "}
             <div>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", marginBottom: "12px", color: "#C9D4E5" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", marginBottom: "12px", color: "#C9D4E5" }}>
                 Media kit
               </span>
               {" "}
-              <h2 id="adv-kit-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty", marginBottom: "14px", color: "#fff" }}>
+              <h2 id="adv-kit-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty", marginBottom: "14px", color: "#fff" }}>
                 Plan Your Next Campaign
               </h2>
               {" "}
@@ -469,7 +469,7 @@ export default function Advertise() {
               {" "}
               {v.advKitReady ? (
                 <>
-                  <a href={u(v.advKitUrl)} target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "15px 26px", borderRadius: "8px", background: "#fff", color: "#101828", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px" }} className="h_36ebb4e">
+                  <a href={u(v.advKitUrl)} target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", gap: "8px", padding: "15px 26px", borderRadius: "8px", background: "#fff", color: "#14181D", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px" }} className="h_36ebb4e">
                     Download Media Kit{" "}
                     <span aria-hidden="true">
                       ↓
@@ -481,7 +481,7 @@ export default function Advertise() {
               {v.advKitMissing ? (
                 <>
                   <span style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
-                    <button type="button" disabled={true} aria-describedby="adv-kit-note-2" style={{ padding: "15px 26px", borderRadius: "8px", border: "1.5px solid rgba(255,255,255,0.35)", background: "transparent", color: "#C9D4E5", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "not-allowed", alignSelf: "flex-start" }}>
+                    <button type="button" disabled={true} aria-describedby="adv-kit-note-2" style={{ padding: "15px 26px", borderRadius: "8px", border: "1.5px solid rgba(255,255,255,0.35)", background: "transparent", color: "#C9D4E5", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "not-allowed", alignSelf: "flex-start" }}>
                       Download Media Kit
                     </button>
                     <span id="adv-kit-note-2" style={{ fontSize: "13px", color: "#C9D4E5" }}>
@@ -503,11 +503,11 @@ export default function Advertise() {
             {" "}
             <div style={{ flex: "1 1 300px", display: "flex", flexDirection: "column", gap: "0" }}>
               {" "}
-              <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "12px" }}>
+              <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "12px" }}>
                 Advertising inquiry
               </span>
               {" "}
-              <h2 id="adv-form-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty", marginBottom: "14px" }}>
+              <h2 id="adv-form-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty", marginBottom: "14px" }}>
                 Let’s Build Your Campaign
               </h2>
               {" "}
@@ -515,9 +515,9 @@ export default function Advertise() {
                 Tell us about your brand, objectives and preferred channels so our team can discuss suitable opportunities.
               </p>
               {" "}
-              <p style={{ fontSize: "14px", lineHeight: "1.6", color: "#667085", marginTop: "18px" }}>
+              <p style={{ fontSize: "14px", lineHeight: "1.6", color: "#5A6470", marginTop: "18px" }}>
                 Prefer email?{" "}
-                <a href="mailto:partners@canadiansme.ca" style={{ color: "#1E5AA8", fontWeight: "600" }}>
+                <a href="mailto:partners@canadiansme.ca" style={{ color: "#004FB8", fontWeight: "600" }}>
                   partners@canadiansme.ca
                 </a>
               </p>
@@ -527,7 +527,7 @@ export default function Advertise() {
             <form onSubmit={v.advSubmit} noValidate={true} aria-describedby="adv-req-note" style={{ flex: "2 1 min(100%,560px)", minWidth: "0", border: "1px solid #E4E7EC", borderRadius: "12px", padding: "clamp(20px,3vw,36px)", display: "flex", flexDirection: "column", gap: "20px", background: "#fff", boxShadow: "0 1px 2px rgba(16,24,40,0.04)" }}>
               <input type="text" name="company_website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", opacity: 0 }} />
               {" "}
-              <p id="adv-req-note" style={{ fontSize: "13px", color: "#667085" }}>
+              <p id="adv-req-note" style={{ fontSize: "13px", color: "#5A6470" }}>
                 <span aria-hidden="true" style={{ color: "#B42318" }}>
                   *
                 </span>
@@ -552,66 +552,66 @@ export default function Advertise() {
               {" "}
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,220px),1fr))", gap: "16px" }}>
                 {" "}
-                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
+                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
                   <span>
                     Full name{" "}
                     <span aria-hidden="true" style={{ color: "#B42318" }}>
                       *
                     </span>
                   </span>
-                  <input id="adv-name" type="text" ref={v.advRefname} autoComplete="name" required={true} aria-required="true" aria-invalid={v.advInvname} aria-describedby="adv-name-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#101828", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBdname ?? ""}` }} className="f_d9ff5e2" />
+                  <input id="adv-name" type="text" ref={v.advRefname} autoComplete="name" required={true} aria-required="true" aria-invalid={v.advInvname} aria-describedby="adv-name-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#14181D", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBdname ?? ""}` }} className="f_d9ff5e2" />
                   <span id="adv-name-err" style={{ fontFamily: "inherit", fontWeight: "500", fontSize: "13px", color: "#B42318", minHeight: "0" }}>
                     {v.advErrname}
                   </span>
                 </label>
                 {" "}
-                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
+                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
                   <span>
                     Company or agency{" "}
                     <span aria-hidden="true" style={{ color: "#B42318" }}>
                       *
                     </span>
                   </span>
-                  <input id="adv-company" type="text" ref={v.advRefcompany} autoComplete="organization" required={true} aria-required="true" aria-invalid={v.advInvcompany} aria-describedby="adv-company-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#101828", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBdcompany ?? ""}` }} className="f_d9ff5e2" />
+                  <input id="adv-company" type="text" ref={v.advRefcompany} autoComplete="organization" required={true} aria-required="true" aria-invalid={v.advInvcompany} aria-describedby="adv-company-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#14181D", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBdcompany ?? ""}` }} className="f_d9ff5e2" />
                   <span id="adv-company-err" style={{ fontFamily: "inherit", fontWeight: "500", fontSize: "13px", color: "#B42318", minHeight: "0" }}>
                     {v.advErrcompany}
                   </span>
                 </label>
                 {" "}
-                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
+                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
                   <span>
                     Work email{" "}
                     <span aria-hidden="true" style={{ color: "#B42318" }}>
                       *
                     </span>
                   </span>
-                  <input id="adv-email" type="email" ref={v.advRefemail} autoComplete="email" required={true} aria-required="true" aria-invalid={v.advInvemail} aria-describedby="adv-email-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#101828", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBdemail ?? ""}` }} className="f_d9ff5e2" />
+                  <input id="adv-email" type="email" ref={v.advRefemail} autoComplete="email" required={true} aria-required="true" aria-invalid={v.advInvemail} aria-describedby="adv-email-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#14181D", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBdemail ?? ""}` }} className="f_d9ff5e2" />
                   <span id="adv-email-err" style={{ fontFamily: "inherit", fontWeight: "500", fontSize: "13px", color: "#B42318", minHeight: "0" }}>
                     {v.advErremail}
                   </span>
                 </label>
                 {" "}
-                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
+                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
                   <span>
                     Website{" "}
-                    <span style={{ fontWeight: "400", color: "#667085" }}>
+                    <span style={{ fontWeight: "400", color: "#5A6470" }}>
                       (optional)
                     </span>
                   </span>
-                  <input id="adv-website" type="url" ref={v.advRefwebsite} autoComplete="url" aria-invalid={v.advInvwebsite} aria-describedby="adv-website-err" inputMode="url" placeholder="company.ca" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#101828", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBdwebsite ?? ""}` }} className="f_d9ff5e2" />
+                  <input id="adv-website" type="url" ref={v.advRefwebsite} autoComplete="url" aria-invalid={v.advInvwebsite} aria-describedby="adv-website-err" inputMode="url" placeholder="company.ca" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#14181D", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBdwebsite ?? ""}` }} className="f_d9ff5e2" />
                   <span id="adv-website-err" style={{ fontFamily: "inherit", fontWeight: "500", fontSize: "13px", color: "#B42318", minHeight: "0" }}>
                     {v.advErrwebsite}
                   </span>
                 </label>
                 {" "}
-                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
+                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
                   <span>
                     Phone{" "}
-                    <span style={{ fontWeight: "400", color: "#667085" }}>
+                    <span style={{ fontWeight: "400", color: "#5A6470" }}>
                       (optional)
                     </span>
                   </span>
-                  <input id="adv-phone" type="tel" ref={v.advRefphone} autoComplete="tel" aria-invalid={v.advInvphone} aria-describedby="adv-phone-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#101828", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBdphone ?? ""}` }} className="f_d9ff5e2" />
+                  <input id="adv-phone" type="tel" ref={v.advRefphone} autoComplete="tel" aria-invalid={v.advInvphone} aria-describedby="adv-phone-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#14181D", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBdphone ?? ""}` }} className="f_d9ff5e2" />
                   <span id="adv-phone-err" style={{ fontFamily: "inherit", fontWeight: "500", fontSize: "13px", color: "#B42318", minHeight: "0" }}>
                     {v.advErrphone}
                   </span>
@@ -621,9 +621,9 @@ export default function Advertise() {
               {" "}
               <fieldset style={{ border: "0", margin: "0", padding: "0", display: "flex", flexDirection: "column", gap: "10px", minWidth: "0" }}>
                 {" "}
-                <legend style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", marginBottom: "10px" }}>
+                <legend style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", marginBottom: "10px" }}>
                   Campaign interests{" "}
-                  <span style={{ fontWeight: "400", color: "#667085" }}>
+                  <span style={{ fontWeight: "400", color: "#5A6470" }}>
                     (select all that apply)
                   </span>
                 </legend>
@@ -633,7 +633,7 @@ export default function Advertise() {
                   {(v.advInterests || []).map((i: any, _i9: number) => (
                     <Fragment key={i?.key ?? i?.id ?? i?.slug ?? _i9}>
                       {" "}
-                      <label style={{ display: "flex", gap: "10px", alignItems: "flex-start", padding: "12px 14px", borderRadius: "8px", border: `1.5px solid ${i?.bd ?? ""}`, background: i?.bg, fontSize: "14.5px", lineHeight: "1.4", color: "#101828", cursor: "pointer" }}>
+                      <label style={{ display: "flex", gap: "10px", alignItems: "flex-start", padding: "12px 14px", borderRadius: "8px", border: `1.5px solid ${i?.bd ?? ""}`, background: i?.bg, fontSize: "14.5px", lineHeight: "1.4", color: "#14181D", cursor: "pointer" }}>
                         <input type="checkbox" checked={i?.checked} onChange={i?.toggle} style={{ marginTop: "2px", width: "18px", height: "18px", accentColor: "#1E5AA8", flexShrink: "0" }} className="f_d9ff5e2" />
                         {i?.t}
                       </label>
@@ -647,14 +647,14 @@ export default function Advertise() {
               {" "}
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,220px),1fr))", gap: "16px" }}>
                 {" "}
-                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
+                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
                   <span>
                     Primary campaign objective{" "}
-                    <span style={{ fontWeight: "400", color: "#667085" }}>
+                    <span style={{ fontWeight: "400", color: "#5A6470" }}>
                       (optional)
                     </span>
                   </span>
-                  <select ref={v.advRefobjective} style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#101828", background: "#fff", width: "100%", boxSizing: "border-box", border: "1px solid #D0D5DD" }} className="f_d9ff5e2">
+                  <select ref={v.advRefobjective} style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#14181D", background: "#fff", width: "100%", boxSizing: "border-box", border: "1px solid #D0D5DD" }} className="f_d9ff5e2">
                     <option value="">
                       Select an objective
                     </option>
@@ -668,14 +668,14 @@ export default function Advertise() {
                   </select>
                 </label>
                 {" "}
-                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
+                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
                   <span>
                     Estimated budget{" "}
-                    <span style={{ fontWeight: "400", color: "#667085" }}>
+                    <span style={{ fontWeight: "400", color: "#5A6470" }}>
                       (optional)
                     </span>
                   </span>
-                  <select ref={v.advRefbudget} style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#101828", background: "#fff", width: "100%", boxSizing: "border-box", border: "1px solid #D0D5DD" }} className="f_d9ff5e2">
+                  <select ref={v.advRefbudget} style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#14181D", background: "#fff", width: "100%", boxSizing: "border-box", border: "1px solid #D0D5DD" }} className="f_d9ff5e2">
                     <option value="">
                       Select a range
                     </option>
@@ -689,14 +689,14 @@ export default function Advertise() {
                   </select>
                 </label>
                 {" "}
-                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
+                <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
                   <span>
                     Preferred launch timing{" "}
-                    <span style={{ fontWeight: "400", color: "#667085" }}>
+                    <span style={{ fontWeight: "400", color: "#5A6470" }}>
                       (optional)
                     </span>
                   </span>
-                  <select ref={v.advReftiming} style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#101828", background: "#fff", width: "100%", boxSizing: "border-box", border: "1px solid #D0D5DD" }} className="f_d9ff5e2">
+                  <select ref={v.advReftiming} style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#14181D", background: "#fff", width: "100%", boxSizing: "border-box", border: "1px solid #D0D5DD" }} className="f_d9ff5e2">
                     <option value="">
                       Select timing
                     </option>
@@ -712,17 +712,17 @@ export default function Advertise() {
                 {" "}
               </div>
               {" "}
-              <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
+              <label style={{ display: "flex", flexDirection: "column", gap: "6px", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13px", color: "#344054", minWidth: "0" }}>
                 <span>
                   Campaign details{" "}
                   <span aria-hidden="true" style={{ color: "#B42318" }}>
                     *
                   </span>
                 </span>
-                <span style={{ fontWeight: "400", color: "#667085", fontFamily: "inherit" }}>
+                <span style={{ fontWeight: "400", color: "#5A6470", fontFamily: "inherit" }}>
                   Your brand, audience, goals, key dates and anything else we should know.
                 </span>
-                <textarea id="adv-details" ref={v.advRefdetails} rows="6" required={true} aria-required="true" aria-invalid={v.advInvdetails} aria-describedby="adv-details-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#101828", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBddetails ?? ""}`, resize: "vertical" }} className="f_d9ff5e2">
+                <textarea id="adv-details" ref={v.advRefdetails} rows="6" required={true} aria-required="true" aria-invalid={v.advInvdetails} aria-describedby="adv-details-err" style={{ padding: "12px 14px", borderRadius: "8px", fontSize: "15px", fontFamily: "inherit", fontWeight: "400", color: "#14181D", background: "#fff", width: "100%", boxSizing: "border-box", border: `1px solid ${v.advBddetails ?? ""}`, resize: "vertical" }} className="f_d9ff5e2">
 
                 </textarea>
                 <span id="adv-details-err" style={{ fontFamily: "inherit", fontWeight: "500", fontSize: "13px", color: "#B42318", minHeight: "0" }}>
@@ -737,9 +737,9 @@ export default function Advertise() {
                 </span>
               </label>
               {" "}
-              <p style={{ fontSize: "13px", lineHeight: "1.6", color: "#667085" }}>
+              <p style={{ fontSize: "13px", lineHeight: "1.6", color: "#5A6470" }}>
                 We use the details you provide to respond to your inquiry. See our{" "}
-                <a href={u("#privacy")} style={{ color: "#1E5AA8", textDecoration: "underline" }}>
+                <a href={u("#privacy")} style={{ color: "#004FB8", textDecoration: "underline" }}>
                   Privacy Policy
                 </a>
                 .
@@ -757,7 +757,7 @@ export default function Advertise() {
                 </>
               ) : null}
               {" "}
-              <button type="submit" disabled={v.advSending} style={{ alignSelf: "flex-start", padding: "15px 26px", borderRadius: "8px", border: "0", background: "#D71920", color: "#fff", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "pointer", opacity: v.advBtnOpacity }} className="h_58d1318 f_d9ff5e2">
+              <button type="submit" disabled={v.advSending} style={{ alignSelf: "flex-start", padding: "15px 26px", borderRadius: "8px", border: "0", background: "#D71920", color: "#fff", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "15px", cursor: "pointer", opacity: v.advBtnOpacity }} className="h_58d1318 f_d9ff5e2">
                 {v.advBtnLabel}
               </button>
               {" "}
@@ -771,11 +771,11 @@ export default function Advertise() {
           {" "}
           <div style={{ maxWidth: "880px", margin: "0 auto", padding: "88px 24px" }}>
             {" "}
-            <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "12px" }}>
+            <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "12px" }}>
               FAQ
             </span>
             {" "}
-            <h2 id="adv-faq-h" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.02em", textWrap: "pretty", marginBottom: "28px" }}>
+            <h2 id="adv-faq-h" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(26px,3vw,38px)", lineHeight: "1.14", letterSpacing: "-0.015em", textWrap: "pretty", marginBottom: "28px" }}>
               Advertising Questions
             </h2>
             {" "}
@@ -786,7 +786,7 @@ export default function Advertise() {
                   {" "}
                   <details style={{ borderBottom: "1px solid #D0D5DD" }}>
                     {" "}
-                    <summary style={{ padding: "20px 0", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "17px", lineHeight: "1.4", color: "#101828", cursor: "pointer" }} className="f_bc2d56d">
+                    <summary style={{ padding: "20px 0", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "17px", lineHeight: "1.4", color: "#14181D", cursor: "pointer" }} className="f_bc2d56d">
                       {q?.q}
                     </summary>
                     {" "}

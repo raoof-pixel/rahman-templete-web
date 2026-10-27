@@ -16,16 +16,16 @@ export default function Category() {
         {" "}
         <nav aria-label="Breadcrumb" style={{ background: "#F4F6F8", borderBottom: "1px solid #E4E7EC" }}>
           {" "}
-          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#667085", display: "flex", gap: "8px", flexWrap: "wrap" }}>
+          <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "12px 24px", fontSize: "12.5px", color: "#5A6470", display: "flex", gap: "8px", flexWrap: "wrap" }}>
             {" "}
-            <a href={u("#home")} style={{ color: "#667085" }} className="h_1dd7993">
+            <a href={u("#home")} style={{ color: "#5A6470" }} className="h_9e87cbe">
               Home
             </a>
             <span aria-hidden="true">
               /
             </span>
             {" "}
-            <span style={{ color: "#101828" }}>
+            <span style={{ color: "#14181D" }}>
               {v.categoryName}
             </span>
             {" "}
@@ -35,21 +35,21 @@ export default function Category() {
         {" "}
         <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "52px 24px 64px" }}>
           {" "}
-          <span style={{ display: "block", fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "11px", letterSpacing: "0.16em", textTransform: "uppercase", color: "#D71920", marginBottom: "10px" }}>
+          <span style={{ display: "block", fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", color: "#002364", marginBottom: "10px" }}>
             {v.list?.eyebrow || 'Category'}
           </span>
           {" "}
-          <h1 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "clamp(32px,3.6vw,48px)", lineHeight: "1.1", letterSpacing: "-0.02em", marginBottom: "12px" }}>
+          <h1 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "clamp(32px,3.6vw,48px)", lineHeight: "1.1", letterSpacing: "-0.025em", marginBottom: "12px" }}>
             {v.categoryName}
           </h1>
           {" "}
-          <p style={{ fontSize: "17px", lineHeight: "1.65", color: "#667085", maxWidth: "62ch", textWrap: "pretty", marginBottom: "30px" }}>
+          <p style={{ fontSize: "17px", lineHeight: "1.65", color: "#5A6470", maxWidth: "62ch", textWrap: "pretty", marginBottom: "30px" }}>
             {v.list?.intro || 'Reporting, analysis, and practical guidance for Canadian small and medium-sized businesses.'} {(v.list?.total ?? 0).toLocaleString('en-CA')} articles and counting.
           </p>
           {" "}
           <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", alignItems: "center", paddingBottom: "24px", borderBottom: "1px solid #E4E7EC", marginBottom: "30px" }}>
             {" "}
-            <label htmlFor="cat-sort" style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#667085" }}>
+            <label htmlFor="cat-sort" style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "12.5px", color: "#5A6470" }}>
               Sort
             </label>
             {" "}
@@ -67,14 +67,14 @@ export default function Category() {
               </option>
             </select>
             {" "}
-            <a href={u("#search")} style={{ marginLeft: "auto", fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "13.5px" }}>
+            <a href={u("#search")} style={{ marginLeft: "auto", fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "600", fontSize: "13.5px" }}>
               Search all articles →
             </a>
             {" "}
           </div>
           {" "}
           {v.list?.articles?.length ? null : (
-            <p style={{ fontSize: "15px", color: "#667085" }}>No articles here yet.</p>
+            <p style={{ fontSize: "15px", color: "#5A6470" }}>No articles here yet.</p>
           )}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: "26px" }}>
             {(v.list?.articles || []).map((a: any, i: number) => (
@@ -83,20 +83,20 @@ export default function Category() {
                   <Slot src={a.img} alt={a.alt} shape="rect" placeholder="Article image" />
                 </div>
                 <div style={{ padding: "18px", display: "flex", flexDirection: "column", gap: "10px" }}>
-                  <span style={{ fontFamily: "Sora,sans-serif", fontWeight: "700", fontSize: "10.5px", letterSpacing: "0.12em", textTransform: "uppercase", color: a.sponsored ? "#24467A" : "#D71920" }}>
+                  <span style={{ fontFamily: "'IBM Plex Sans','Helvetica Neue',Arial,sans-serif", fontWeight: "500", fontSize: "10.5px", letterSpacing: "0.14em", textTransform: "uppercase", color: a.sponsored ? "#24467A" : "#002364" }}>
                     {a.sponsored ? 'Sponsored' : a.cat}
                   </span>
-                  <h2 style={{ fontFamily: "Sora,sans-serif", fontWeight: "600", fontSize: "20px", lineHeight: "1.24" }}>
-                    <a href={u(a.href)} style={{ color: "#101828" }} className="h_1dd7993">
+                  <h2 style={{ fontFamily: "Sora,'Helvetica Neue',Arial,sans-serif", fontWeight: "700", fontSize: "20px", lineHeight: "1.24" }}>
+                    <a href={u(a.href)} style={{ color: "#14181D" }} className="h_9e87cbe">
                       {a.title}
                     </a>
                   </h2>
                   {a.excerpt ? (
-                    <p style={{ fontSize: "14px", lineHeight: "1.6", color: "#667085", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                    <p style={{ fontSize: "14px", lineHeight: "1.6", color: "#5A6470", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
                       {a.excerpt}
                     </p>
                   ) : null}
-                  <span style={{ fontSize: "12px", color: "#667085" }}>
+                  <span style={{ fontSize: "12px", color: "#5A6470" }}>
                     {[a.date, a.read].filter(Boolean).join(' · ')}
                   </span>
                 </div>

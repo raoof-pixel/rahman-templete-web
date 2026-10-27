@@ -5,7 +5,7 @@ import { Tools } from '@/ui/tools/Tools'
 
 export const metadata: Metadata = meta({
   title: 'Free Small Business Calculators',
-  description: 'Free calculators built on Canadian rules: GST/HST, payroll deductions, 13-week cash flow and loan payments. No sign-up, nothing stored.',
+  description: 'Free GST/HST, payroll, self-employed tax, import landed cost, pricing and break-even, cash-flow and loan calculators built on current 2026 Canadian federal and provincial rates. No sign-up, nothing stored.',
   path: '/tools/',
 })
 
