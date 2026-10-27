@@ -1,0 +1,174 @@
+name: CI
+
+# Monorepo CI: installs, type-checks and builds BOTH apps against a real Postgres database, then
+# runs the CMS smoke/security tests, a 15-article WordPress test import, and checks that the website
+# renders that content. Results go to the `ci-results` branch; generated files (lockfile, CMS types,
+# import map, new migration) to the `ci-generated` branch for review.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: payload
+          POSTGRES_PASSWORD: payload
+          POSTGRES_DB: payload
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U payload" --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      # CMS
+      DATABASE_URL: postgresql://payload:payload@localhost:5432/payload
+      PAYLOAD_SECRET: ci-only-secret-0123456789abcdef0123456789abcdef
+      NEXT_PUBLIC_SERVER_URL: http://localhost:3000
+      NEXT_PUBLIC_SITE_URL: http://localhost:3001
+      WEBSITE_URL: http://localhost:3001
+      FRONTEND_REVALIDATE_URL: http://localhost:3001/api/revalidate
+      CRON_SECRET: ci-cron-secret
+      # Website
+      CMS_URL: http://localhost:3000
+      SITE_URL: http://localhost:3001
+      SITE_NOINDEX: 'true'
+      # Both
+      REVALIDATE_SECRET: ci-revalidate-secret
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Prepare output folder
+        run: mkdir -p ci-output
+
+      - name: Install
+        run: |
+          set -o pipefail
+          if [ -f pnpm-lock.yaml ]; then pnpm install --frozen-lockfile 2>&1 | tee ci-output/01-install.log
+          else pnpm install --no-frozen-lockfile 2>&1 | tee ci-output/01-install.log; fi
+
+      - name: Dependency vulnerability audit
+        continue-on-error: true
+        run: |
+          pnpm audit --prod --audit-level high 2>&1 | tee ci-output/02-audit.log || true
+          pnpm audit --prod --json > ci-output/02-audit.json 2>/dev/null || true
+          node .github/scripts/audit-summary.mjs ci-output/02-audit.json | tee -a ci-output/02-audit.log
+
+      - name: Security scanner rule tests (CMS)
+        run: |
+          set -o pipefail
+          pnpm --filter @canadiansme/cms test:security 2>&1 | tee ci-output/02b-security-rules.log
+
+      - name: Generate CMS types and import map
+        run: |
+          set -o pipefail
+          pnpm generate 2>&1 | tee ci-output/03-generate.log
+
+      - name: Type-check (shared, cms, web)
+        run: |
+          set -o pipefail
+          pnpm typecheck 2>&1 | tee ci-output/04-typecheck.log
+
+      - name: Detect schema changes without a migration
+        working-directory: apps/cms
+        run: |
+          set -o pipefail
+          pnpm payload migrate:create schema_update --force-accept-warning 2>&1 | tee ../../ci-output/05-migrate-create.log
+          NEW=$(ls -t src/migrations/*_schema_update.ts 2>/dev/null | head -1)
+          if [ -n "$NEW" ] && ! grep -qE 'ALTER|CREATE|DROP' "$NEW"; then
+            rm -f "$NEW" "${NEW%.ts}.json"; git checkout -- src/migrations/index.ts 2>/dev/null || true
+            echo "No schema changes." | tee -a ../../ci-output/05-migrate-create.log
+          fi
+
+      - name: Run migrations
+        run: |
+          set -o pipefail
+          pnpm migrate 2>&1 | tee ci-output/06-migrate.log
+
+      - name: Build CMS
+        run: |
+          set -o pipefail
+          pnpm build:cms 2>&1 | tee ci-output/07-build-cms.log
+
+      - name: Start CMS and run smoke + security tests
+        working-directory: apps/cms
+        run: |
+          set -o pipefail
+          NODE_ENV=production pnpm start > ../../ci-output/08-cms-server.log 2>&1 &
+          for i in $(seq 1 60); do curl -sf http://localhost:3000/api/health && break; sleep 2; done
+          BASE_URL=http://localhost:3000 node tests/smoke.mjs 2>&1 | tee ../../ci-output/09-smoke.log
+
+      - name: Test WordPress import (read-only, newest 15 articles)
+        continue-on-error: true
+        run: |
+          pnpm import:wp --limit=15 2>&1 | tee ci-output/10-import.log || true
+          psql "$DATABASE_URL" -c "select p.slug, p._status, p.use_legacy_html, (p.featured_image_id is not null) as has_image, length(p.legacy_html) as html_len from posts p order by p.published_at desc nulls last limit 20" > ci-output/11-imported-posts.txt 2>&1 || true
+
+      - name: Build website (reads the CMS started above)
+        run: |
+          set -o pipefail
+          pnpm build:web 2>&1 | tee ci-output/12-build-web.log
+
+      - name: Start website and check pages
+        working-directory: apps/web
+        run: |
+          set -o pipefail
+          NODE_ENV=production pnpm start > ../../ci-output/13-web-server.log 2>&1 &
+          for i in $(seq 1 60); do curl -sf -o /dev/null http://localhost:3001/ && break; sleep 2; done
+          node ../../.github/scripts/web-smoke.mjs http://localhost:3001 2>&1 | tee ../../ci-output/14-web-smoke.log
+
+      - name: Security scan of the test database (report only)
+        if: always()
+        continue-on-error: true
+        working-directory: apps/cms
+        run: |
+          pnpm security:scan --out=../../ci-output 2>&1 | tee ../../ci-output/09b-security-scan.log
+          if [ -f ../../ci-output/security-scan.md ]; then cat ../../ci-output/security-scan.md >> "$GITHUB_STEP_SUMMARY"; fi
+
+      - name: Publish results
+        if: always() && github.event_name != 'pull_request'
+        run: |
+          echo "commit: ${GITHUB_SHA}" > ci-output/00-summary.txt
+          echo "run: ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" >> ci-output/00-summary.txt
+          echo "status: ${{ job.status }}" >> ci-output/00-summary.txt
+          git config user.name "ci-bot"
+          git config user.email "ci-bot@users.noreply.github.com"
+          mkdir -p /tmp/gen/apps/cms/src
+          cp pnpm-lock.yaml /tmp/gen/ 2>/dev/null || true
+          cp apps/cms/src/payload-types.ts /tmp/gen/apps/cms/src/ 2>/dev/null || true
+          mkdir -p "/tmp/gen/apps/cms/src/app/(payload)/admin"
+          cp "apps/cms/src/app/(payload)/admin/importMap.js" "/tmp/gen/apps/cms/src/app/(payload)/admin/" 2>/dev/null || true
+          cp -r apps/cms/src/migrations /tmp/gen/apps/cms/src/ 2>/dev/null || true
+          cp -r ci-output /tmp/ci-output
+          git checkout --orphan ci-results-tmp
+          git rm -rf --cached . >/dev/null
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r /tmp/ci-output/* .
+          echo '{"git":{"deploymentEnabled":false}}' > vercel.json
+          git add -A && git commit -qm "CI results for ${GITHUB_SHA}"
+          git push -f origin HEAD:ci-results
+          git checkout --orphan ci-generated-tmp
+          git rm -rf --cached . >/dev/null 2>&1 || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r /tmp/gen/* . 2>/dev/null || true
+          echo '{"git":{"deploymentEnabled":false}}' > vercel.json
+          git add -A && git commit -qm "Generated files for ${GITHUB_SHA}" && git push -f origin HEAD:ci-generated || true

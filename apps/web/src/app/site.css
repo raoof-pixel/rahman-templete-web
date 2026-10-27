@@ -1,0 +1,142 @@
+/* Additions to the prototype's base styles for production content. */
+
+/*
+ * Article bodies. The prototype's sample articles carried these styles inline; imported WordPress
+ * HTML is plain, so the same typography is applied here (inline styles still win where present).
+ */
+.csme-prose p {
+  font-size: 17.5px;
+  line-height: 1.75;
+  color: #1d2939;
+  margin: 0 0 22px;
+}
+.csme-prose strong,
+.csme-prose b {
+  font-weight: 600;
+  color: #101828;
+}
+.csme-prose h2 {
+  font-family: Sora, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #101828;
+  margin: 40px 0 14px;
+  text-wrap: pretty;
+}
+.csme-prose h3,
+.csme-prose h4 {
+  font-family: Sora, sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.35;
+  color: #101828;
+  margin: 28px 0 10px;
+}
+.csme-prose a {
+  color: #d71920;
+  text-decoration: underline;
+}
+.csme-prose ul,
+.csme-prose ol {
+  margin: 0 0 22px;
+  padding-left: 24px;
+  list-style: disc;
+  font-size: 17.5px;
+  line-height: 1.7;
+  color: #1d2939;
+}
+.csme-prose ol {
+  list-style: decimal;
+}
+.csme-prose li {
+  margin: 0 0 8px;
+}
+.csme-prose blockquote {
+  margin: 8px 0 26px;
+  padding: 4px 0 4px 22px;
+  border-left: 3px solid #d71920;
+  font-family: Sora, sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 1.5;
+  color: #101828;
+}
+.csme-prose img {
+  display: block;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.csme-prose hr {
+  border: 0;
+  border-top: 1px solid #e4e7ec;
+  margin: 32px 0;
+}
+
+.csme-prose img,
+.csme-prose video,
+.csme-prose iframe {
+  max-width: 100%;
+  height: auto;
+}
+.csme-prose iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border: 0;
+}
+.csme-prose table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+.csme-prose figure {
+  margin: 10px 0 26px;
+}
+.csme-prose figcaption {
+  font-size: 12.5px;
+  color: #667085;
+  margin-top: 8px;
+}
+.csme-prose th,
+.csme-prose td {
+  border: 1px solid #e4e7ec;
+  padding: 8px 10px;
+  font-size: 15px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* The Tools page used slightly different base styles in its prototype. */
+.tools-root h1,
+.tools-root h2,
+.tools-root h3,
+.tools-root h4,
+.tools-root p,
+.tools-root ul,
+.tools-root ol,
+.tools-root li,
+.tools-root figure,
+.tools-root blockquote,
+.tools-root table {
+  margin: 0;
+  padding: 0;
+}
+.tools-root ul,
+.tools-root ol {
+  list-style: none;
+}
+.tools-root table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.tools-root a:hover {
+  text-decoration: none;
+}

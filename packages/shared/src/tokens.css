@@ -1,0 +1,51 @@
+/*
+ * CanadianSME design tokens (Developer Handoff Guide v1, section 4).
+ * Never add new hues or gradients outside the hero slides.
+ */
+:root {
+  /* Brand */
+  --red: #d71920;
+  --red-deep: #a5121a;
+  --ink: #101828;
+  --blue: #1e5aa8;
+  --blue-deep: #174a8c;
+  --navy: #24467a;
+  --burgundy: #7a1f2b;
+  --gold: #d4a72c;
+  --gold-tint: #fdf8ec;
+
+  /* Neutrals */
+  --slate-700: #475467;
+  --slate-500: #667085;
+  --slate-400: #98a2b3;
+  --line-strong: #d0d5dd;
+  --line: #e4e7ec;
+  --mist: #f4f6f8;
+  --white: #ffffff;
+
+  /* Tinted section backgrounds */
+  --tint-blue: #eef2f8;
+  --tint-red: #fdf2f2;
+
+  /* Status (tools and forms only) */
+  --error: #b42318;
+  --warn: #b54708;
+  --success: #0b7a47;
+
+  /* Type */
+  --font-head: 'Sora', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+
+  /* Shape */
+  --r-sm: 6px;
+  --r-btn: 8px;
+  --r-card: 10px;
+  --r-panel: 14px;
+  --r-pill: 999px;
+
+  /* Layout */
+  --max: 1280px;
+  --gutter: 24px;
+  --band-y: 72px;
+  --header-offset: 88px;
+}

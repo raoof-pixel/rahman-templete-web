@@ -1,0 +1,53 @@
+# AWS Amplify Hosting — one repo, two Amplify apps.
+#   App 1 "canadiansme-web": monorepo app root apps/web  -> canadiansme.ca
+#   App 2 "canadiansme-cms": monorepo app root apps/cms  -> cms.canadiansme.ca
+# Amplify picks the entry whose appRoot matches the app's AMPLIFY_MONOREPO_APP_ROOT.
+# Commands run inside the appRoot folder; installs run from the repo root (pnpm workspace).
+#
+# Amplify only hands environment variables to the running Next.js server if they are written to
+# .env.production during the build — that is what the first build command does. Only the names listed
+# are copied, so build-only Amplify variables never reach the server.
+version: 1
+applications:
+  - appRoot: apps/web
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - corepack enable
+            - corepack prepare pnpm@10.20.0 --activate
+            - pnpm install --frozen-lockfile   # pnpm finds the workspace root itself
+        build:
+          commands:
+            - env | grep -E '^(CMS_URL|SITE_URL|SUPABASE_URL|FORMS_SECRET|FORMS_ALLOWED_ORIGINS|REVALIDATE_SECRET|SITE_NOINDEX)=' >> .env.production || true
+            - pnpm run build
+      artifacts:
+        baseDirectory: .next
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - .next/cache/**/*
+          - ../../node_modules/.pnpm/**/*
+
+  - appRoot: apps/cms
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - corepack enable
+            - corepack prepare pnpm@10.20.0 --activate
+            - pnpm install --frozen-lockfile   # pnpm finds the workspace root itself
+        build:
+          commands:
+            - env | grep -E '^(DATABASE_URL|DATABASE_POOL_MAX|DATABASE_CA_CERT|PAYLOAD_SECRET|NEXT_PUBLIC_[A-Z_]+|SUPABASE_URL|S3_[A-Z_]+|CRON_SECRET|CORS_ORIGINS|WEBSITE_URL|FRONTEND_REVALIDATE_URL|REVALIDATE_SECRET|FORMS_SECRET|MAILCHIMP_[A-Z_]+|DOWNLOAD_ALLOWED_HOSTS|AUTOMATION_CAN_PUBLISH)=' >> .env.production || true
+            # Applies database migrations, then builds. A failed migration stops the deploy.
+            - pnpm run ci
+      artifacts:
+        baseDirectory: .next
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - .next/cache/**/*
+          - ../../node_modules/.pnpm/**/*

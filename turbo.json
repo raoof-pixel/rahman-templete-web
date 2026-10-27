@@ -1,0 +1,18 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["NODE_ENV"],
+  "tasks": {
+    "dev": { "cache": false, "persistent": true },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"],
+      "env": [
+        "DATABASE_URL", "DATABASE_POOL_MAX", "PAYLOAD_SECRET", "NEXT_PUBLIC_SERVER_URL", "NEXT_PUBLIC_SITE_URL",
+        "S3_*", "SUPABASE_*", "CRON_SECRET", "CORS_ORIGINS", "WEBSITE_URL", "FRONTEND_REVALIDATE_URL",
+        "REVALIDATE_SECRET", "CMS_URL", "SITE_URL", "LEGACY_UPLOADS_BASE", "AUTOMATION_CAN_PUBLISH"
+      ]
+    },
+    "typecheck": { "dependsOn": ["^typecheck"] },
+    "test": {}
+  }
+}

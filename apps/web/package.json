@@ -1,0 +1,30 @@
+{
+  "name": "@canadiansme/web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "canadiansme.ca public website (Next.js). Reads published content from the CMS in apps/cms.",
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "typecheck": "next typegen && tsc --noEmit"
+  },
+  "dependencies": {
+    "@canadiansme/shared": "workspace:*",
+    "next": "^15.5.9",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "server-only": "0.0.1"
+  },
+  "devDependencies": {
+    "@canadiansme/cms": "workspace:*",
+    "@types/node": "22.19.9",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
+}

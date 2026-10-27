@@ -1,0 +1,34 @@
+{
+  "name": "canadiansme",
+  "private": true,
+  "description": "CanadianSME: public website (Next.js) and CMS dashboard (Payload) in one repo, backed by Supabase",
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@10.20.0",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:cms": "pnpm --filter @canadiansme/cms dev",
+    "dev:web": "pnpm --filter @canadiansme/web dev",
+    "build": "turbo run build",
+    "build:cms": "pnpm --filter @canadiansme/cms build",
+    "build:web": "pnpm --filter @canadiansme/web build",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "migrate": "pnpm --filter @canadiansme/cms migrate",
+    "import:wp": "pnpm --filter @canadiansme/cms import:wp",
+    "generate": "pnpm --filter @canadiansme/cms generate:types && pnpm --filter @canadiansme/cms generate:importmap"
+  },
+  "devDependencies": {
+    "turbo": "2.5.8",
+    "typescript": "5.7.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["sharp", "esbuild", "unrs-resolver"],
+    "overrides": {
+      "dompurify": "3.4.17",
+      "sharp": "0.35.5"
+    }
+  }
+}

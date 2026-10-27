@@ -1,0 +1,62 @@
+{
+  "name": "@canadiansme/cms",
+  "version": "1.0.0",
+  "description": "CanadianSME CMS dashboard (Payload + Supabase Postgres + Supabase Storage)",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=--no-deprecation next dev -p 3000",
+    "devsafe": "rm -rf .next && cross-env NODE_OPTIONS=--no-deprecation next dev -p 3000",
+    "build": "cross-env NODE_OPTIONS=--no-deprecation next build",
+    "start": "cross-env NODE_OPTIONS=--no-deprecation next start -p 3000",
+    "ci": "cross-env NODE_OPTIONS=--no-deprecation payload migrate && pnpm build",
+    "payload": "cross-env NODE_OPTIONS=--no-deprecation payload",
+    "generate:importmap": "cross-env NODE_OPTIONS=--no-deprecation payload generate:importmap",
+    "generate:types": "cross-env NODE_OPTIONS=--no-deprecation payload generate:types",
+    "migrate:create": "cross-env NODE_OPTIONS=--no-deprecation payload migrate:create",
+    "migrate": "cross-env NODE_OPTIONS=--no-deprecation payload migrate",
+    "import:wp": "cross-env NODE_OPTIONS=--no-deprecation tsx --env-file-if-exists=.env src/scripts/import-wordpress.ts",
+    "security:scan": "cross-env NODE_OPTIONS=--no-deprecation tsx --env-file-if-exists=.env src/scripts/security-scan.ts",
+    "test:security": "node --import tsx --test tests/security-rules.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "audit": "pnpm audit --prod",
+    "test": "pnpm test:security && pnpm test:site",
+    "seed:prototype": "cross-env NODE_OPTIONS=--no-deprecation tsx --env-file-if-exists=.env src/scripts/seed-prototype.ts",
+    "test:site": "tsx --tsconfig tsconfig.test.json --test src/site/__tests__/*.test.ts"
+  },
+  "dependencies": {
+    "@canadiansme/shared": "workspace:*",
+    "@payloadcms/db-postgres": "3.92.0",
+    "@payloadcms/next": "3.92.0",
+    "@payloadcms/plugin-redirects": "3.92.0",
+    "@payloadcms/plugin-seo": "3.92.0",
+    "@payloadcms/richtext-lexical": "3.92.0",
+    "@payloadcms/storage-s3": "3.92.0",
+    "@payloadcms/ui": "3.92.0",
+    "cross-env": "^7.0.3",
+    "graphql": "^16.8.1",
+    "jsdom": "28.0.0",
+    "next": "^15.4.11",
+    "payload": "3.92.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "sanitize-html": "2.17.0",
+    "sharp": "0.35.5"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "22.19.9",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/sanitize-html": "^2.13.0",
+    "tsx": "4.23.15",
+    "typescript": "5.7.3"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "exports": {
+    "./types": "./src/payload-types.ts"
+  }
+}
