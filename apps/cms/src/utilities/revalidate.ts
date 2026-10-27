@@ -9,7 +9,7 @@ export type { RevalidatePayload }
  * Tells the public website (apps/web in this repo) that content changed, so it can
  * refresh its cache. Configure on the website side an endpoint that accepts this JSON.
  *
- *   FRONTEND_REVALIDATE_URL=https://canadiansme.ca/api/revalidate
+ *   FRONTEND_REVALIDATE_URL=https://canadiansme.ca/api/revalidate/
  *   REVALIDATE_SECRET=<shared secret>  (sent as the x-revalidate-secret header)
  *
  * Never throws: a website that is down must not block editors from saving.
@@ -17,8 +17,10 @@ export type { RevalidatePayload }
  */
 export const notifyFrontend = async (req: PayloadRequest, body: RevalidatePayload) => {
   if (req.context?.disableRevalidate) return
-  const url = process.env.FRONTEND_REVALIDATE_URL
-  if (!url) return
+  const raw = process.env.FRONTEND_REVALIDATE_URL
+  if (!raw) return
+  // The website uses trailing-slash URLs, so /api/revalidate would answer with a 308 redirect.
+  const url = raw.endsWith('/') ? raw : raw + '/'
 
   try {
     const controller = new AbortController()

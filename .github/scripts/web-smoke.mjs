@@ -39,9 +39,9 @@ const preview = await (await get('/_preview/')).text()
 check('/_preview/ template has placeholders', preview.includes('%%TITLE%%') && preview.includes('%%BODY%%'))
 check(
   '/api/revalidate rejects a wrong secret',
-  (await get('/api/revalidate', { method: 'POST', headers: { 'x-revalidate-secret': 'wrong' }, body: '{}' })).status === 401,
+  (await get('/api/revalidate/', { method: 'POST', headers: { 'x-revalidate-secret': 'wrong' }, body: '{}' })).status === 401,
 )
-const ok = await get('/api/revalidate', {
+const ok = await get('/api/revalidate/', {
   method: 'POST',
   headers: { 'content-type': 'application/json', 'x-revalidate-secret': process.env.REVALIDATE_SECRET || '' },
   body: JSON.stringify({ collection: 'posts', event: 'change', paths: ['/'], tags: ['posts'] }),

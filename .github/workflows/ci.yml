@@ -39,7 +39,7 @@ jobs:
       NEXT_PUBLIC_SERVER_URL: http://localhost:3000
       NEXT_PUBLIC_SITE_URL: http://localhost:3001
       WEBSITE_URL: http://localhost:3001
-      FRONTEND_REVALIDATE_URL: http://localhost:3001/api/revalidate
+      FRONTEND_REVALIDATE_URL: http://localhost:3001/api/revalidate/
       CRON_SECRET: ci-cron-secret
       # Website
       CMS_URL: http://localhost:3000
